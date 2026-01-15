@@ -1,0 +1,1010 @@
+--------- beginning of system
+01-15 09:00:20.514   798   830 E PackageManager: Optimistic bind failed.
+01-15 09:00:20.514   798   830 E PackageManager: java.util.concurrent.TimeoutException: [Optimistic Bind] Didn't bind to resolver in time!
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.waitForBindLocked(InstantAppResolverConnection.java:160)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.bind(InstantAppResolverConnection.java:230)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.lambda$optimisticBind$0(InstantAppResolverConnection.java:260)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.$r8$lambda$66W2s2mMKe4pk_xXCScH9RCqav8(InstantAppResolverConnection.java:0)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+--------- beginning of main
+01-15 09:00:20.554  1198  1198 E CannedAnimCoordinator: Trying to play two animations together, k6.t@7b7f8b0 and null
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:   01-15 09:00:20.448 100 c2901a22 status=not-charging health=good plug=none temp=250 volt=5000 charge=10 modemRailChargemAh=0 wifiRailChargemAh=0 +running +wake_lock +sensor +mobile_radio +screen data_conn=lte phone_signal_strength=great brightness=medium +wifi wifi_signal_strength=4 wifi_suppl=completed
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:                  Details: cpu=9510u+72090s
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:                           /proc/stat=16130 usr, 92560 sys, 2700 io, 0 irq, 2050 sirq, 23570 idle (82.8% of 22m 50s 100ms), SubsystemPowerState SubsystemPowerState subsystem_0 name=CPU state_0 name=Idle time=3000 count=196 last entry=14000 state_1 name=Active time=3000 count=196 last entry=14000 subsystem_1 name=Display state_0 name=Off time=3000 count=196 last entry=14000 state_1 name=On time=3000 count=196 last entry=14000
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:   01-15 09:00:20.432 100 c2901a22 procstate: u0a146: cached
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:     Unexpected time delta: -16
+01-15 09:00:20.811   798  2048 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: Out-of-order battery history event. Check logcat for details
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: android.util.Log$TerribleFailure: Out-of-order battery history event. Check logcat for details
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.util.Log.wtf(Log.java:339)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.util.Slog.wtfStack(Slog.java:246)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryDelta(BatteryStatsHistory.java:1949)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryItem(BatteryStatsHistory.java:1816)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryItem(BatteryStatsHistory.java:1751)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryItem(BatteryStatsHistory.java:1635)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.recordProcessStateChange(BatteryStatsHistory.java:1229)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.power.stats.BatteryStatsImpl$Uid.updateUidProcessStateLocked(BatteryStatsImpl.java:10424)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.power.stats.BatteryStatsImpl.noteUidProcessStateLocked(BatteryStatsImpl.java:4724)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.am.BatteryStatsService.lambda$noteUidProcessState$13(BatteryStatsService.java:914)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.am.BatteryStatsService.$r8$lambda$QChUd1G6g1_FJ1G5zg2vCcUJr6g(BatteryStatsService.java:0)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.am.BatteryStatsService$$ExternalSyntheticLambda76.run(R8$$SyntheticClass:0)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:21.264   798   968 E AppOps  : attributionTag VCN not declared in manifest of android
+01-15 09:00:21.472  1182  1299 E SatelliteAppTracker: packageName: com.geek2geeks.level, value: null
+01-15 09:00:21.473  1182  1299 E SatelliteAppTracker: packageName: com.geek2geeks.level, value: null
+01-15 09:00:21.639   798   957 E WifiStaIfaceAidlImpl: setRoamingMode failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+01-15 09:00:21.639   798   957 E WifiRoamingModeManager: Failed to set roaming mode due to unknown error.
+01-15 09:00:21.708   282   286 E lowmemorykiller: process_mrelease 1431 failed: No such process
+01-15 09:00:21.763   798  1745 E AppOps  : attributionTag VCN not declared in manifest of android
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: Writing exception to parcel
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: java.lang.UnsupportedOperationException
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at com.google.android.apps.gsa.staticplugins.publiccontent.GsaPublicContentProvider.query(PG:361)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProvider.query(ContentProvider.java:1662)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProvider.query(ContentProvider.java:1758)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:296)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:21.781   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'INTERFACE' not found
+01-15 09:00:21.782   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'STATE' not found
+01-15 09:00:21.782   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'TIME_NS' not found
+01-15 09:00:21.782   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'UID' not found
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: Error fetching doodle
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: java.lang.UnsupportedOperationException
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:209)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:177)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:495)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:196)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:178)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:168)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at x5.b.d(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:24)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at x5.e.run(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:3)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:21.828   282   287 E lowmemorykiller: process_mrelease 2112 failed: No such process
+01-15 09:00:21.828   282   286 E lowmemorykiller: process_mrelease 1787 failed: No such process
+01-15 09:00:21.857  1182  1299 E SatelliteModemInterface: requestIsSatelliteSupported: Satellite service is unavailable.
+01-15 09:00:21.858  1182  1299 E SatelliteServiceUtils: isSatelliteSupported SatelliteException: android.telephony.satellite.SatelliteManager$SatelliteException
+01-15 09:00:21.859  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:21.911  2008  2425 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:21.952   578   643 E netd    : Error adding route ::/0 -> fe80::2 wlan0 to table 1016: File exists
+01-15 09:00:21.959   798   968 E AppOps  : attributionTag VCN not declared in manifest of android
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: No service published for: ethernet
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:203)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$156.createService(SystemServiceRegistry.java:2418)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:2531)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:2063)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2434)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:991)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1853)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2834)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2808)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:561)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.lambda$new$4(Tethering.java:354)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.$r8$lambda$4V1rGOzF7AkW0XBFoABAQmt9cHM(Tethering.java:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$$ExternalSyntheticLambda10.accept(R8$$SyntheticClass:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver.lambda$onReceive$0(VersionedBroadcastListener.java:107)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver.$r8$lambda$_Z7KkSifencKcebyQaai-Spxf2M(VersionedBroadcastListener.java:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:22.092  2330  2391 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:22.092   798  1243 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:22.186  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:22.206  2247  2463 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:22.319  2330  2499 E PhotosApiClient: Execution exception occurred: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: UNIMPLEMENTED: bindService(Intent { act=grpc.io.action.BIND xflg=0x4 cmp=com.google.android.apps.photos/.curatedwallpapers.apiservice.PhotosCuratedWallpapersApiService }) returned false
+01-15 09:00:22.348   798   957 E WifiStaIfaceAidlImpl: setDtimMultiplier failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+01-15 09:00:22.377  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:22.529  1053  1053 E NotifRow: Magnetic state changed from IDLE to IDLE on a null swiped listener, or the logging key of the listener is null
+01-15 09:00:22.530  1053  1053 E LauncherProxyService: Failed to get launcher proxy for disable flags.
+01-15 09:00:22.601  2348  2348 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: failed to register observer for remaining time
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: java.lang.SecurityException: Failed to find provider com.google.android.apps.turbo.estimated_time_remaining for user 0; expected to find a valid ContentProvider for this authority
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3373)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.createException(Parcel.java:3357)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.readException(Parcel.java:3340)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.readException(Parcel.java:3282)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1044)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2730)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.google.android.systemui.power.BatteryInfoBroadcast.registerObserver(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:9)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.google.android.systemui.power.PowerNotificationWarningsGoogleImpl$$ExternalSyntheticLambda0.run(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:195)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at java.lang.reflect.Method.invoke(Native Method)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: Caused by: android.os.RemoteException: Remote stack trace:
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:382)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.content.IContentService$Stub.onTransact(IContentService.java:498)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Binder.execTransactInternal(Binder.java:1478)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 
+01-15 09:00:22.684   798   916 E InputDispatcher: channel '[Gesture Monitor] swipe-up' ~ Channel is unrecoverably broken and will be disposed!
+01-15 09:00:22.864   798  1243 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:22.971  1639  1955 E libbinder.IPCThreadState: Binder transaction failure. id: 62959, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+01-15 09:00:22.983   798   957 E WifiStaIfaceAidlImpl: stopRssiMonitoring failed with service-specific exception: android.os.ServiceSpecificException:  (code 5)
+01-15 09:00:23.030  1717  2113 E AiAiEcho: EchoSearch: SettingsFetcherImpl: DB already exists.
+01-15 09:00:23.124   798  1863 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:23.316  1351  2572 E CastAuth: [CastAuthModuleInitIntent] Feature is not available, reason = CastAuth feature is disabled on this 1p device.. [CONTEXT service_id=360 ]
+01-15 09:00:23.737   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION, user: 0
+01-15 09:00:23.773  1351  1429 E libbinder.IPCThreadState: Binder transaction failure. id: 64565, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+01-15 09:00:23.777   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_DEPENDENCY_INSTALLER, user: 0
+01-15 09:00:23.795  2542  2599 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:23.920  1630  1985 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():42 No pack mapping pack found in []
+01-15 09:00:23.952  1210  1210 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:24.032   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET, user: 0
+01-15 09:00:24.050  1182  1299 E SatelliteController: registerForSatelliteCommunicationAccessStateChanged: SatelliteManager is null
+01-15 09:00:24.053  2348  2618 E ActivityThread: Failed to find provider info for androidx.car.app.connection
+01-15 09:00:24.474  2568  2568 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+01-15 09:00:24.543   798   869 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:24.553   798  1838 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-15 09:00:24.646   798   816 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:24.669   282   286 E lowmemorykiller: process_mrelease 2483 failed: No such process
+01-15 09:00:25.040  1620  1683 E .apps.wellbeing: Failed to open APK '/data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk': I/O error
+01-15 09:00:25.059  1620  1683 E .apps.wellbeing: Failed to open APK '/data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk': I/O error
+01-15 09:00:25.059  1620  1683 E ResourcesManager: failed to add asset path '/data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk'
+01-15 09:00:25.059  1620  1683 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:321)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:170)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:596)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:262)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:692)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:766)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplPairForKeyLocked(ResourcesManager.java:847)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:832)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1200)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1303)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:3153)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2188)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2171)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2514)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.pm.PackageItemInfo.loadUnsafeLabel(PackageItemInfo.java:237)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.pm.PackageItemInfo.loadLabel(PackageItemInfo.java:226)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getApplicationLabel(ApplicationPackageManager.java:2559)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at etg.a(PG:38)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at eel.apply(PG:391)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at a$$ExternalSyntheticApiModelOutline0.m(D8$$SyntheticClass:46)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nfo.accept(PG:44)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.d2.accept(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:3)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.desugar.sun.nio.fs.c.z(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:24)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.o0.forEachRemaining(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:24)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.a.a(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:21)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.a.p(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:8)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.x1.a(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:5)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.a.d(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:35)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.s2.collect(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:88)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at dto.a(PG:96)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at mdk.a(PG:297)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at mdk.a(PG:38)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nwk.a(PG:3)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nvp.run(PG:19)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nwm.run(PG:5)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nut.run(PG:17)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at keu.run(PG:7)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nrq.run(PG:44)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at bl.run(PG:349)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at kgg.run(PG:61)
+01-15 09:00:25.133  2603  2712 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:25.146  2377  2377 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:25.353   798  1807 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:25.519   798  2038 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+01-15 09:00:25.544  1351  2534 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+01-15 09:00:25.579  2505  2664 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.dialer failed
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wme.I(PG:48)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wtv.c(PG:15)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wtv.d(PG:38)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at pdl.call(PG:128)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at advz.call(PG:17)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at adyn.a(PG:3)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at adxp.run(PG:19)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at adyo.run(PG:5)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at xlk.run(PG:7)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wvj.run(PG:254)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at xkw.run(PG:470)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at xmm.run(PG:61)
+01-15 09:00:25.825  1767  2047 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:26.199   798  1856 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:26.885   282   287 E lowmemorykiller: process_mrelease 2008 failed: No such process
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: Failed to get service from broker. 
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: java.lang.SecurityException: Unknown calling package name 'com.google.android.gms'.
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3373)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Parcel.createException(Parcel.java:3357)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Parcel.readException(Parcel.java:3340)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Parcel.readException(Parcel.java:3282)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at bded.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):36)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at bdce.z(:com.google.android.gms@254932038@25.49.32 (260800-843446962):143)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at bcih.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):42)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at cqni.mv(:com.google.android.gms@254932038@25.49.32 (260800-843446962):1)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at cqni.dispatchMessage(:com.google.android.gms@254932038@25.49.32 (260800-843446962):5)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:26.932  2603  2836 E GoogleApiManager: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:27.699  2770  2882 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:29.337  2505  2687 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:29.337  2505  2687 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:29.337  2505  2687 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:29.337  2505  2913 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:29.337  2505  2913 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:29.337  2505  2913 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:29.512  2505  2968 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:29.512  2505  2968 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:29.512  2505  2968 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:29.623  2505  2967 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:29.623  2505  2967 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:29.623  2505  2967 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:29.656  1351  2699 E AbstractGmsTracer: Traced class shouldn't be obfuscated: dgtj [CONTEXT service_id=259 ]
+01-15 09:00:29.799  2505  2968 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:29.799  2505  2968 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:29.799  2505  2968 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:29.886  2505  2968 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:29.886  2505  2968 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:29.886  2505  2968 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:29.907  2972  2972 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:30.247  1351  1412 E gtti    : RuntimeException while executing runnable gttx{amgr@89c3a34} with executor MoreExecutors.directExecutor()
+01-15 09:00:30.247  1351  1412 E gtti    : java.lang.NullPointerException: Attempt to get length of null array
+01-15 09:00:30.247  1351  1412 E gtti    : 	at android.util.Base64.encode(Base64.java:497)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at android.util.Base64.encodeToString(Base64.java:459)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at com.google.android.gms.auth.proximity.RemoteDevice.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):3)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at amgr.kk(:com.google.android.gms@254932038@25.49.32 (260800-843446962):3)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at gttx.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):29)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at gtte.execute(:com.google.android.gms@254932038@25.49.32 (260800-843446962):1)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at gtti.c(:com.google.android.gms@254932038@25.49.32 (260800-843446962):1)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at gtti.b(:com.google.android.gms@254932038@25.49.32 (260800-843446962):32)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at bdxz.done(:com.google.android.gms@254932038@25.49.32 (260800-843446962):6)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:434)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at java.util.concurrent.FutureTask.set(FutureTask.java:285)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at java.util.concurrent.FutureTask.run(FutureTask.java:325)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at bdxu.c(:com.google.android.gms@254932038@25.49.32 (260800-843446962):50)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at bdxu.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):73)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at bedl.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):8)
+01-15 09:00:30.247  1351  1412 E gtti    : 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:30.541  2993  2993 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:30.646  2933  2986 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:30.797   798   957 E WifiChipAidlImpl: getUsableChannels failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVvmCarrierService.getMsisdn:420 Retrieved phone number in an unexpected format: +15551234567 [CONTEXT disable_client_error_logging=true ]
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: adis: MEDIUM
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at a.dC(PG:15)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at smu.apply(PG:1019)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at acnt.apply(PG:13)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at advm.d(PG:3)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at advn.run(PG:38)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at xlk.run(PG:7)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at adoy.run(PG:44)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at wvj.run(PG:254)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at tif.run(PG:267)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:30.872  2348  2598 E DialerRestVvmCarrierService: 	at xmm.run(PG:61)
+01-15 09:00:31.188  2247  2463 E ecya    : (REDACTED) Failed to recover geofences for LBT Routines using Geller data
+01-15 09:00:31.188  2247  2463 E ecya    : com.google.android.libraries.geller.portable.GellerException: Code: INVALID_ARGUMENT, Message: Account name is null.
+01-15 09:00:31.188  2247  2463 E ecya    : 	at doca.a(PG:21)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at dock.a(PG:26)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at eepj.a(PG:13)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at encc.a(PG:3)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at ends.run(PG:19)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at ckfm.run(PG:5)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at elzk.run(PG:44)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at ckey.run(PG:83)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:31.188  2247  2463 E ecya    : 	at ckgq.run(PG:62)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVvmCarrierService.getMsisdn:420 Retrieved phone number in an unexpected format: +15551234567 [CONTEXT disable_client_error_logging=true ]
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: adis: MEDIUM
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at a.dC(PG:15)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at smu.apply(PG:1019)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at acnt.apply(PG:13)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at advm.d(PG:3)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at advn.run(PG:38)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at xlk.run(PG:7)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at adoy.run(PG:44)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at wvj.run(PG:254)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at tif.run(PG:267)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:31.326  2348  2600 E DialerRestVvmCarrierService: 	at xmm.run(PG:61)
+01-15 09:00:31.663   282   286 E lowmemorykiller: process_mrelease 2542 failed: No such process
+01-15 09:00:31.791  2505  2957 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (no permission to fix)
+01-15 09:00:32.030   282   287 E lowmemorykiller: process_mrelease 2729 failed: No such process
+01-15 09:00:32.034   282   286 E lowmemorykiller: process_mrelease 2799 failed: No such process
+01-15 09:00:32.127   282   286 E lowmemorykiller: process_mrelease 2972 failed: No such process
+01-15 09:00:32.128   282   287 E lowmemorykiller: process_mrelease 2952 failed: No such process
+01-15 09:00:32.274  1639  2559 E libbinder.IPCThreadState: Binder transaction failure. id: 86367, cmd: BR_FAILED_REPLY (29201), error: -28 (No space left on device)
+01-15 09:00:32.274  1639  2559 E JavaBinder: !!! FAILED BINDER TRANSACTION !!!  (parcel size = 1056768)
+01-15 09:00:32.396  3121  3121 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:32.424  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.425  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.425  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.425  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.425  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.426  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.426  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.426  1351  1351 E WorkSourceUtil: Could not find package: gms_cast_prober
+01-15 09:00:32.601  3096  3190 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:32.805  1351  1506 E libbinder.IPCThreadState: Process seems to be sending too many oneway calls.
+01-15 09:00:33.035  3091  3162 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:33.982  1210  3254 E saftm   : mmap.cc:249: Error during Unmap / munmap: Invalid argument
+01-15 09:00:34.462  2505  2913 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:34.462  2505  2913 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:34.462  2505  2913 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:34.464  2505  2968 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:34.464  2505  2968 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:34.464  2505  2968 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: Exception in native call
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: java.lang.RuntimeException: Unable to load script.
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: Make sure you're running Metro or that your bundle 'index.android.bundle' is packaged correctly for release.
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: The device must either be USB connected (with bundler set to "localhost:8081") or be on the same Wi-Fi network as your computer (with bundler set to your computer IP) to connect to Metro.
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: If you're using USB on a physical device, make sure you also run this command:
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative:   adb reverse tcp:8081 tcp:8081
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactInstance.loadJSBundleFromAssets(Native Method)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactInstance.access$loadJSBundleFromAssets(ReactInstance.kt:85)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactInstance$loadJSBundle$1.loadScriptFromAssets(ReactInstance.kt:314)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.bridge.JSBundleLoader$Companion$createAssetLoader$1.loadScript(JSBundleLoader.kt:33)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactInstance.loadJSBundle(ReactInstance.kt:293)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReactInstanceTask$lambda$41$lambda$38(ReactHostImpl.kt:939)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$LQY77bFECGrnkUqd7Ku55sJ721A(Unknown Source:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda22.then(D8$$SyntheticClass:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately$lambda$3(Task.kt:356)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$b7MTC0ufkn_2TjF4BGcNqGR9qK0(Unknown Source:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately(Task.kt:354)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeImmediately(Task.kt:250)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith(Task.kt:132)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith$default(Task.kt:117)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess$lambda$12(Task.kt:174)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task.$r8$lambda$l0wwo5AvbHxlwfI1R7CH_codxoo(Unknown Source:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$$ExternalSyntheticLambda2.then(D8$$SyntheticClass:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:390)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$IPpysnehFwANEiW061YzapkMdoE(Unknown Source:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:34.872  2377  2795 E unknown:ReactNative: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: Unhandled SoftException
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateDestroyTask()): handleHostException(message = "Unable to load script.
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: Make sure you're running Metro or that your bundle 'index.android.bundle' is packaged correctly for release.
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: The device must either be USB connected (with bundler set to "localhost:8081") or be on the same Wi-Fi network as your computer (with bundler set to your computer IP) to connect to Metro.
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: If you're using USB on a physical device, make sure you also run this command:
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost:   adb reverse tcp:8081 tcp:8081")
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:787)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateDestroyTask(ReactHostImpl.kt:1311)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.destroy$lambda$10(ReactHostImpl.kt:473)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$vrU67S1pce6ypI1MpEJ0yfM09iA(Unknown Source:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda35.call(D8$$SyntheticClass:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.call$lambda$2(Task.kt:315)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$MFqd_-X5KhHmu0hvNE2Bec_4mJM(Unknown Source:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda1.run(D8$$SyntheticClass:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: Caused by: java.lang.RuntimeException: Unable to load script.
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: Make sure you're running Metro or that your bundle 'index.android.bundle' is packaged correctly for release.
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: The device must either be USB connected (with bundler set to "localhost:8081") or be on the same Wi-Fi network as your computer (with bundler set to your computer IP) to connect to Metro.
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: If you're using USB on a physical device, make sure you also run this command:
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost:   adb reverse tcp:8081 tcp:8081
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactInstance.loadJSBundleFromAssets(Native Method)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactInstance.access$loadJSBundleFromAssets(ReactInstance.kt:85)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactInstance$loadJSBundle$1.loadScriptFromAssets(ReactInstance.kt:314)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.bridge.JSBundleLoader$Companion$createAssetLoader$1.loadScript(JSBundleLoader.kt:33)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactInstance.loadJSBundle(ReactInstance.kt:293)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateReactInstanceTask$lambda$41$lambda$38(ReactHostImpl.kt:939)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$LQY77bFECGrnkUqd7Ku55sJ721A(Unknown Source:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda22.then(D8$$SyntheticClass:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately$lambda$3(Task.kt:356)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$b7MTC0ufkn_2TjF4BGcNqGR9qK0(Unknown Source:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda3.run(D8$$SyntheticClass:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Executors$ImmediateExecutor.execute(Executors.kt:41)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeImmediately(Task.kt:354)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.access$completeImmediately(Task.kt:250)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith(Task.kt:132)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.continueWith$default(Task.kt:117)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.onSuccess$lambda$12(Task.kt:174)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task.$r8$lambda$l0wwo5AvbHxlwfI1R7CH_codxoo(Unknown Source:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$$ExternalSyntheticLambda2.then(D8$$SyntheticClass:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:390)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$IPpysnehFwANEiW061YzapkMdoE(Unknown Source:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+01-15 09:00:34.876  2377  2795 E unknown:ReactHost: 	... 3 more
+01-15 09:00:35.039  3294  3316 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: Unable to get suggestions from AGA for zero state
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: io.grpc.StatusRuntimeException: UNAVAILABLE: Channel shutdown invoked
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at v8.g.a(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:37)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at t8.n.b(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:28)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at t8.n.a(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:14)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at t8.z.run(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:7)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at t8.j5.run(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:19)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:35.063  1198  2915 E OneSearchSuggestProvider: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: Unhandled SoftException
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(getOrCreateDestroyTask()): Destroy: ReactInstance task faulted. Stage: 1: Starting destroy. Fault reason: Unable to load script.
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: Make sure you're running Metro or that your bundle 'index.android.bundle' is packaged correctly for release.
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: The device must either be USB connected (with bundler set to "localhost:8081") or be on the same Wi-Fi network as your computer (with bundler set to your computer IP) to connect to Metro.
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: If you're using USB on a physical device, make sure you also run this command:
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost:   adb reverse tcp:8081 tcp:8081. Destroy reason: handleHostException(message = "Unable to load script.
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: Make sure you're running Metro or that your bundle 'index.android.bundle' is packaged correctly for release.
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: The device must either be USB connected (with bundler set to "localhost:8081") or be on the same Wi-Fi network as your computer (with bundler set to your computer IP) to connect to Metro.
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: If you're using USB on a physical device, make sure you also run this command:
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost:   adb reverse tcp:8081 tcp:8081")
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:787)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:779)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.createReactInstanceUnwrapper$lambda$46(ReactHostImpl.kt:1129)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$TjbS0TZW9o8rbR9te9jnWsd5w3w(Unknown Source:0)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda36.invoke(D8$$SyntheticClass:0)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateDestroyTask$lambda$57(ReactHostImpl.kt:1326)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$h_JBtd6eAd3fmOqdV80aRC4HfmY(Unknown Source:0)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda25.then(D8$$SyntheticClass:0)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:390)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$IPpysnehFwANEiW061YzapkMdoE(Unknown Source:0)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+01-15 09:00:35.076  2377  2377 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+01-15 09:00:35.085  2377  2377 E unknown:ReactNative: Tried to remove non-existent frame callback
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: Unhandled SoftException
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: java.lang.IllegalStateException: Trying to stop surface that hasn't started yet
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.fabric.FabricUIManager.stopSurface(FabricUIManager.java:395)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactInstance.stopSurface(ReactInstance.kt:397)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl.stopAttachedSurfaces(ReactHostImpl.kt:1098)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl.getOrCreateDestroyTask$lambda$59(ReactHostImpl.kt:1363)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl.$r8$lambda$MEC88LePtSrM-qRlOlAmlPb1RWo(Unknown Source:0)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.ReactHostImpl$$ExternalSyntheticLambda26.then(D8$$SyntheticClass:0)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.completeAfterTask$lambda$5(Task.kt:390)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion.$r8$lambda$IPpysnehFwANEiW061YzapkMdoE(Unknown Source:0)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at com.facebook.react.runtime.internal.bolts.Task$Companion$$ExternalSyntheticLambda4.run(D8$$SyntheticClass:0)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:35.101  2377  2795 E unknown:FabricUIManager: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:35.466  3121  3121 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:35.584  2377  2795 E unknown:ReactNative: Tried to remove non-existent frame callback
+01-15 09:00:35.658   282   287 E lowmemorykiller: process_mrelease 2933 failed: No such process
+01-15 09:00:35.659  3121  3121 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:36.280  2568  2568 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:36.436  1351  1430 E .gms.persistent: hiddenapi: Accessing hidden method Landroid/net/ConnectivityManager;->isNetworkSupported(I)Z (runtime_flags=0, domain=platform, api=max-target-p) from Lbebv; (domain=app, TargetSdkVersion=36) using reflection: denied
+01-15 09:00:36.472  3346  3398 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:36.474   645   645 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1352):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+01-15 09:00:36.496   645   645 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1352):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+01-15 09:00:36.501  2603  2721 E tflite  : third_party/tensorflow/lite/core/subgraph.cc:1082 tensor.data.raw != nullptr was not true.
+01-15 09:00:36.565  3396  3396 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:36.569  2603  2721 E native  : E0000 00:00:1768460436.569202    2721 re2.cc:250] Error parsing '^|[^\p{Letter}\\]': invalid character class range: \p{Letter}
+01-15 09:00:36.569  2603  2721 E native  : E0000 00:00:1768460436.569361    2721 replacement_rule.cc:40] Invalid context regexp: invalid character class range: \p{Letter}
+01-15 09:00:36.569  2603  2721 E native  : E0000 00:00:1768460436.569387    2721 replacement_rule.cc:151] Error creating replacement rule.
+01-15 09:00:36.569  2603  2721 E native  : E0000 00:00:1768460436.569623    2721 regexp_rewriter.cc:34] Error creating rule MessageLite at 0x72c1aa42f450.
+01-15 09:00:36.630  1639  2467 E SharedPreferencesImpl: Couldn't create directory for SharedPreferences file /data/user/0/com.google.android.gsf/shared_prefs/CheckinService.xml
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: Cannot write token, exception in Context lookup [CONTEXT service_id=130 ]
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: java.io.FileNotFoundException: /data/user/0/com.google.android.gsf/files/security_token: open failed: ENOENT (No such file or directory)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at libcore.io.IoBridge.open(IoBridge.java:574)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at java.io.FileOutputStream.<init>(FileOutputStream.java:259)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at android.app.ContextImpl.openFileOutput(ContextImpl.java:823)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at axta.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):1738)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at axuk.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):824)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at com.google.android.gms.checkin.CheckinIntentOperation.onHandleIntent(:com.google.android.gms@254932038@25.49.32 (260800-843446962):30)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at com.google.android.chimera.IntentOperation.onHandleIntent(:com.google.android.gms@254932038@25.49.32 (260800-843446962):1)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at ayhj.onHandleIntent(:com.google.android.gms@254932038@25.49.32 (260800-843446962):84)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at ync.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):64)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at ynb.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):132)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at gleb.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):19)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at libcore.io.Linux.open(Native Method)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:274)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at libcore.io.ForwardingOs.open(ForwardingOs.java:574)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at android.app.AndroidForwardingOs.open(AndroidForwardingOs.java:120)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	at libcore.io.IoBridge.open(IoBridge.java:560)
+01-15 09:00:36.631  1639  2769 E GoogleSettingsUtils: 	... 13 more
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: Failed to get service from broker. 
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: java.lang.SecurityException: Unknown calling package name 'com.google.android.gms'.
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3373)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Parcel.createException(Parcel.java:3357)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Parcel.readException(Parcel.java:3340)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Parcel.readException(Parcel.java:3282)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at bded.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):36)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at bdce.z(:com.google.android.gms@254932038@25.49.32 (260800-843446962):143)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at bcih.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):42)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at cqni.mv(:com.google.android.gms@254932038@25.49.32 (260800-843446962):1)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at cqni.dispatchMessage(:com.google.android.gms@254932038@25.49.32 (260800-843446962):5)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:36.711  2603  2836 E GoogleApiManager: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:36.956   282   286 E lowmemorykiller: process_mrelease 2770 failed: No such process
+01-15 09:00:36.965  1630  1959 E NotificationCenter: NotificationCenter.registerListenerInternal():378 Listener lpm@55a4813 is already registered for notification class lpc
+01-15 09:00:36.981   798  1966 E AppOps  : Bad call made by uid 1000. Package "com.google.android.googlequicksearchbox" does not belong to uid 1000.
+01-15 09:00:37.135   798   921 E ReportEncoder: No watchlist hash
+01-15 09:00:37.270  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.287  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.379  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.431  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.582  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.662  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.688  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.703  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.716  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.721  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:37.725  3428  3428 E ConfigUpdater: ignoring update request
+01-15 09:00:38.244  1630  1972 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():42 No pack mapping pack found in []
+01-15 09:00:38.392  1717  1906 E SP.Service.AiAi: captions_i18n_v0_mandatory is opened by other clients. It will stay open until all clients close it.
+01-15 09:00:38.393  1717  1906 E SP.Service.AiAi: captions_i18n_v0_en-US is opened by other clients. It will stay open until all clients close it.
+01-15 09:00:38.446   798   911 E ActivityManager: Sending non-protected broadcast android.intent.action.UPDATE_CT_LOGS from system uid 1000 pkg android
+01-15 09:00:38.446   798   911 E ActivityManager: java.lang.Throwable
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.BroadcastController.checkBroadcastFromSystem(BroadcastController.java:2163)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.BroadcastController.broadcastIntentLockedTraced(BroadcastController.java:1663)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.BroadcastController.broadcastIntentLocked(BroadcastController.java:811)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.BroadcastController.broadcastIntentInPackage(BroadcastController.java:778)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.ActivityManagerService$LocalService.broadcastIntentInPackage(ActivityManagerService.java:17402)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.PendingIntentRecord.sendInner(PendingIntentRecord.java:675)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.PendingIntentRecord.sendWithResult(PendingIntentRecord.java:381)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.am.ActivityManagerService.sendIntentSender(ActivityManagerService.java:5723)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at android.app.PendingIntent.sendAndReturnResult(PendingIntent.java:1120)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at android.app.PendingIntent.send(PendingIntent.java:1086)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.alarm.AlarmManagerService$DeliveryTracker.deliverLocked(AlarmManagerService.java:5357)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.alarm.AlarmManagerService.deliverAlarmsLocked(AlarmManagerService.java:4319)
+01-15 09:00:38.446   798   911 E ActivityManager: 	at com.android.server.alarm.AlarmManagerService$AlarmThread.run(AlarmManagerService.java:4597)
+01-15 09:00:38.519  3518  3518 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:38.824  3566  3566 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:38.975  1639  1680 E Pay     : NfcAdapter is null while obtaining CardEmulation instance. [CONTEXT service_id=198 ]
+01-15 09:00:38.975  1639  1680 E Pay     : CardEmulation is null while checking aid registration. [CONTEXT service_id=198 ]
+01-15 09:00:39.260   798   894 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.276  3580  3611 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:39.304   798  1243 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.349   798  2088 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.353   798  2088 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.356   798  2088 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.360   798  2088 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.369   798  1244 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.390   798  1863 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.415   798  1244 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.462   798  1742 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.466   798  1742 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.476   798   869 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.492   798   869 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:39.634   282   287 E lowmemorykiller: process_mrelease 3121 failed: No such process
+01-15 09:00:39.644   282   286 E lowmemorykiller: process_mrelease 3294 failed: No such process
+01-15 09:00:39.661  3608  3654 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:39.799   282   287 E lowmemorykiller: process_mrelease 2568 failed: No such process
+01-15 09:00:40.403  3739  3762 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:40.448  2505  2687 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:40.448  2505  2687 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:40.448  2505  2687 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:40.448  2505  2968 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:40.448  2505  2968 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:40.448  2505  2968 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:40.457  3675  3778 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:40.794  1182  1299 E SatelliteAppTracker: packageName: com.google.android.ext.services, value: null
+01-15 09:00:40.843  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:40.859  1182  1299 E SatelliteAppTracker: packageName: com.google.android.gms, value: com.google.android.gms
+01-15 09:00:40.877  3760  3810 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:40.936  1182  1396 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:40.937   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION, user: 0
+01-15 09:00:40.971  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:41.033   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_DEPENDENCY_INSTALLER, user: 0
+01-15 09:00:41.074  1182  1396 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:41.156   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET, user: 0
+01-15 09:00:41.164  1053  1235 E ServiceManager: error in isDeclared
+01-15 09:00:41.164  1053  1235 E ServiceManager: java.lang.SecurityException: SELinux denied for service.
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3373)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.Parcel.createException(Parcel.java:3357)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.Parcel.readException(Parcel.java:3340)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.Parcel.readException(Parcel.java:3282)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.IServiceManager$Stub$Proxy.isDeclared(IServiceManager.java:689)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.ServiceManagerProxy.isDeclared(ServiceManagerNative.java:104)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.ServiceManager.isDeclared(ServiceManager.java:297)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at android.os.ServiceManager.waitForDeclaredService(ServiceManager.java:353)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at com.google.android.systemui.googlebattery.GoogleBatteryManager.initHalInterface(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:16)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at com.google.android.systemui.power.batteryhealth.HealthManager$initHalInterface$2.invokeSuspend(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:21)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at com.google.android.systemui.power.batteryhealth.HealthManager$initHalInterface$2.invoke(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:13)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at com.google.android.systemui.power.batteryhealth.HealthManager$runOnBackground$2.invokeSuspend(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:36)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:8)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at kotlinx.coroutines.DispatchedTask.run(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:110)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:520)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at java.util.concurrent.FutureTask.run(FutureTask.java:317)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:348)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:41.164  1053  1235 E ServiceManager: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:41.492  3853  3853 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+01-15 09:00:41.569  1351  1359 E UsageReportingOptionsSt: INTERNAL_ERROR: setOptInOption should not be called while user is locked. [CONTEXT service_id=41 ]
+01-15 09:00:41.744   282   287 E lowmemorykiller: process_mrelease 3396 failed: No such process
+01-15 09:00:41.780  3894  3894 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:41.859   282   286 E lowmemorykiller: process_mrelease 2603 failed: No such process
+01-15 09:00:42.236   798  1336 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:00:42.270  3894  3903 E ScreenResolutionController: No support
+01-15 09:00:42.270  3894  3904 E ScreenResolutionController: No support
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: No service published for: ethernet
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:203)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$156.createService(SystemServiceRegistry.java:2418)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:2531)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:2063)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2434)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:991)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.content.Context.getSystemService(Context.java:4901)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at com.android.settings.network.tether.TetherSettings$2.getNonIndexableKeys(TetherSettings.java:689)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.getNonIndexableKeysFromProvider(SettingsSearchIndexablesProvider.java:291)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:164)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:87)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.provider.SearchIndexablesProvider.query(SearchIndexablesProvider.java:127)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1662)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.content.ContentProvider.query(ContentProvider.java:1758)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:296)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+01-15 09:00:42.374  3894  3903 E SystemServiceRegistry: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: Could not parse manufactured year from serial.
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: java.lang.NumberFormatException: For input string: "E"
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at java.lang.Integer.parseInt(Integer.java:781)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at java.lang.Integer.valueOf(Integer.java:1108)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.google.android.settings.hardwareinfo.HardwareInfoFeatureProviderGoogleImpl.getManufacturedYear(HardwareInfoFeatureProviderGoogleImpl.kt:24)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.deviceinfo.hardwareinfo.ManufacturedYearPreferenceController.<init>(ManufacturedYearPreferenceController.kt:26)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:190)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.core.PreferenceControllerListHelper.getPreferenceControllersFromXml(PreferenceControllerListHelper.java:86)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.BaseSearchIndexProvider.getPreferenceControllers(BaseSearchIndexProvider.java:195)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.BaseSearchIndexProvider.getDynamicRawDataToIndex(BaseSearchIndexProvider.java:102)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.SettingsSearchIndexablesProvider.getDynamicSearchIndexableRawData(SettingsSearchIndexablesProvider.java:385)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryDynamicRawData(SettingsSearchIndexablesProvider.java:187)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryDynamicRawData(SettingsSearchIndexablesProvider.java:87)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.provider.SearchIndexablesProvider.query(SearchIndexablesProvider.java:133)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProvider.query(ContentProvider.java:1662)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProvider.query(ContentProvider.java:1758)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:296)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+01-15 09:00:42.610  3894  3904 E HardwareInfoFeatureProviderImpl: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: Could not parse manufactured year from serial.
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: java.lang.NumberFormatException: For input string: "E"
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at java.lang.Integer.parseInt(Integer.java:781)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at java.lang.Integer.valueOf(Integer.java:1108)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.google.android.settings.hardwareinfo.HardwareInfoFeatureProviderGoogleImpl.getManufacturedYear(HardwareInfoFeatureProviderGoogleImpl.kt:24)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.deviceinfo.hardwareinfo.ManufacturedYearPreferenceController.<init>(ManufacturedYearPreferenceController.kt:26)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at java.lang.reflect.Constructor.newInstance0(Native Method)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at java.lang.reflect.Constructor.newInstance(Constructor.java:343)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.core.BasePreferenceController.createInstance(BasePreferenceController.java:190)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.core.PreferenceControllerListHelper.getPreferenceControllersFromXml(PreferenceControllerListHelper.java:86)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.BaseSearchIndexProvider.getPreferenceControllers(BaseSearchIndexProvider.java:195)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.BaseSearchIndexProvider.updateNonIndexableKeysFromControllers(BaseSearchIndexProvider.java:142)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.BaseSearchIndexProvider.getNonIndexableKeys(BaseSearchIndexProvider.java:136)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.SettingsSearchIndexablesProvider.getNonIndexableKeysFromProvider(SettingsSearchIndexablesProvider.java:291)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:164)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at com.android.settings.search.SettingsSearchIndexablesProvider.queryNonIndexableKeys(SettingsSearchIndexablesProvider.java:87)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.provider.SearchIndexablesProvider.query(SearchIndexablesProvider.java:127)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProvider.query(ContentProvider.java:1662)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProvider.query(ContentProvider.java:1758)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:296)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+01-15 09:00:42.876  3894  3903 E HardwareInfoFeatureProviderImpl: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:43.032  3894  3904 E ScreenResolutionController: No support
+01-15 09:00:43.233  3894  3903 E ConvertToEsimPreference: Fail to check pSIM conversion supported carrier: Attempt to invoke virtual method 'boolean android.telephony.euicc.EuiccManager.isPsimConversionSupported(int)' on a null object reference
+01-15 09:00:43.235  3894  3903 E ConvertToEsimPreference: Fail to check pSIM conversion supported carrier: Attempt to invoke virtual method 'boolean android.telephony.euicc.EuiccManager.isPsimConversionSupported(int)' on a null object reference
+01-15 09:00:43.345  3894  3903 E ScreenResolutionController: No support
+01-15 09:00:43.624  3968  3979 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:43.675  3991  4022 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:44.002  4000  4075 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: Can't find Chimera operation impl class com.google.android.gms.people.settings.PeopleInternalSettingsChimeraActivity$MenagerieInternalDebugSettingsOperation dropping operation
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.people.settings.PeopleInternalSettingsChimeraActivity$MenagerieInternalDebugSettingsOperation" on path: DexPathList[[zip file "/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/lib/x86_64, /data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:642)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:578)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at yna.<init>(:com.google.android.gms@254932038@25.49.32 (260800-843446962):27)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at ayhg.<init>(:com.google.android.gms@254932038@25.49.32 (260800-843446962):6)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at ayhk.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):3)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at ynh.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):477)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at ynb.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):44)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at gleb.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):19)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:44.127  4000  4069 E LoadManifestTask: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:44.333  3853  3863 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:44.347  4097  4137 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: Can't find Chimera operation impl class com.google.android.gms.people.settings.PeopleInternalSettingsChimeraActivity$MenagerieInternalDebugSettingsOperation dropping operation
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: java.lang.ClassNotFoundException: Didn't find class "com.google.android.gms.people.settings.PeopleInternalSettingsChimeraActivity$MenagerieInternalDebugSettingsOperation" on path: DexPathList[[zip file "/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/base.apk"],nativeLibraryDirectories=[/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/lib/x86_64, /data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/base.apk!/lib/x86_64, /system/lib64, /system_ext/lib64]]
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:259)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:642)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at java.lang.ClassLoader.loadClass(ClassLoader.java:578)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at yna.<init>(:com.google.android.gms@254932038@25.49.32 (260800-843446962):27)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at ayhg.<init>(:com.google.android.gms@254932038@25.49.32 (260800-843446962):6)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at ayhk.a(:com.google.android.gms@254932038@25.49.32 (260800-843446962):3)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at ynh.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):477)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at ynb.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):44)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at gleb.run(:com.google.android.gms@254932038@25.49.32 (260800-843446962):19)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:44.374  4000  4084 E LoadManifestTask: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:45.175  1351  1506 E libbinder.IPCThreadState: Process seems to be sending too many oneway calls.
+01-15 09:00:45.242  2505  2967 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:45.242  2505  2967 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:45.242  2505  2967 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:00:45.242  2505  2968 E BugleRcs: RcsEngineLifecycleManagerV2: RcsServiceConnectionException was raised while waiting to connect to RcsEngineLifecycleServiceV2
+01-15 09:00:45.242  2505  2968 E BugleRcs: crsk: RcsServiceConnectionException:com.google.android.rcs.client.lifecycle.RcsEngineLifecycleServiceV2:UNKNOWN
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at crrr.a(PG:54)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at kol.a(PG:19)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at crrs.a(PG:14)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at eiht.a(PG:13)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at eota.a(PG:3)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at eory.run(PG:19)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at eotc.run(PG:5)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at dqkn.run(PG:7)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at dqju.run(PG:6)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:45.242  2505  2968 E BugleRcs: 	at dqlo.run(PG:61)
+01-15 09:01:17.546   798  2058 E JobScheduler.JobStatus: App com.google.android.apps.photos became active but still in NEVER bucket
+01-15 09:01:17.634  4227  4227 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:01:17.765  4227  4264 E ActivityThread: Failed to find provider info for androidx.car.app.connection
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVvmCarrierService.getMsisdn:420 Retrieved phone number in an unexpected format: +15551234567 [CONTEXT disable_client_error_logging=true ]
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: adis: MEDIUM
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at a.dC(PG:15)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at smu.apply(PG:1019)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at acnt.apply(PG:13)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at advm.d(PG:3)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at advn.run(PG:38)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at xlk.run(PG:7)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at adoy.run(PG:44)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at wvj.run(PG:254)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at tif.run(PG:267)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:01:18.052  4227  4263 E DialerRestVvmCarrierService: 	at xmm.run(PG:61)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVvmCarrierService.getMsisdn:420 Retrieved phone number in an unexpected format: +15551234567 [CONTEXT disable_client_error_logging=true ]
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: adis: MEDIUM
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at a.dC(PG:15)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at smu.apply(PG:1019)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at acnt.apply(PG:13)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at advm.d(PG:3)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at advn.run(PG:38)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at xlk.run(PG:7)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at adoy.run(PG:44)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at wvj.run(PG:254)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at tif.run(PG:267)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:01:18.111  4227  4260 E DialerRestVvmCarrierService: 	at xmm.run(PG:61)
+01-15 09:01:18.837   798  1009 E system_server: No package ID 7f found for resource ID 0x7f08038f.
+01-15 09:01:18.838   798  1009 E system_server: No package ID 7f found for resource ID 0x7f1403f2.
+01-15 09:01:18.838   798  1009 E system_server: No package ID 7f found for resource ID 0x7f1403f1.
+01-15 09:01:18.855   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION, user: 0
+01-15 09:01:18.859   798  1009 E system_server: No package ID 7f found for resource ID 0x7f08038f.
+01-15 09:01:18.859   798  1009 E system_server: No package ID 7f found for resource ID 0x7f1403f2.
+01-15 09:01:18.859   798  1009 E system_server: No package ID 7f found for resource ID 0x7f1403f1.
+01-15 09:01:18.859  1182  1299 E SatelliteAppTracker: packageName: com.google.android.dialer, value: null
+01-15 09:01:18.859  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:01:18.882   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_DEPENDENCY_INSTALLER, user: 0
+01-15 09:01:18.895  1182  1396 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:01:18.912   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET, user: 0
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: com.android.dialer.voicemail.service.impl.vvmclients.rest.RestVvmCarrierService.getMsisdn:420 Retrieved phone number in an unexpected format: +15551234567 [CONTEXT disable_client_error_logging=true ]
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: adis: MEDIUM
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at a.dC(PG:15)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at smu.apply(PG:1019)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at acnt.apply(PG:13)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at advm.d(PG:3)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at advn.run(PG:38)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at xlk.run(PG:7)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at adoy.run(PG:44)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at wvj.run(PG:254)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at tif.run(PG:267)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:01:48.986  4227  4257 E DialerRestVvmCarrierService: 	at xmm.run(PG:61)
+01-15 09:01:49.106   798  2058 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+01-15 09:01:49.115  3894  4342 E WifiScanner: listener does not exist
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: Unhandled SoftException
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: com.facebook.react.bridge.ReactNoCrashSoftException: raiseSoftException(onNewIntent(intent = "Intent { act=android.intent.action.VIEW dat=level-fitness://expo-development-client/... flg=0x10000000 xflg=0x4 cmp=com.geek2geeks.level/.MainActivity }")): Tried to access onNewIntent while context is not ready
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException(ReactHostImpl.kt:787)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.raiseSoftException$default(ReactHostImpl.kt:779)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.facebook.react.runtime.ReactHostImpl.onNewIntent(ReactHostImpl.kt:614)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.facebook.react.ReactDelegate.onNewIntent(ReactDelegate.kt:184)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.facebook.react.ReactActivityDelegate.onNewIntent(ReactActivityDelegate.java:232)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at expo.modules.ReactActivityDelegateWrapper.onNewIntent(ReactActivityDelegateWrapper.kt:346)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.facebook.react.ReactActivity.onNewIntent(ReactActivity.java:131)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.Activity.onNewIntent(Activity.java:2526)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.Activity.performNewIntent(Activity.java:9333)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1661)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.Instrumentation.internalCallActivityOnNewIntent(Instrumentation.java:1682)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1670)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.ActivityThread.deliverNewIntents(ActivityThread.java:4744)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.ActivityThread.handleNewIntent(ActivityThread.java:4754)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.servertransaction.NewIntentItem.execute(NewIntentItem.java:69)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.servertransaction.ActivityTransactionItem.execute(ActivityTransactionItem.java:63)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2961)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.os.Handler.dispatchMessage(Handler.java:132)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at java.lang.reflect.Method.invoke(Native Method)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+01-15 09:04:01.958  2377  2377 E unknown:ReactHost: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)

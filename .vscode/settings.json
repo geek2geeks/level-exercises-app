@@ -1,0 +1,8 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
+  },
+  "java.jdt.ls.java.home": "C:\\Program Files\\Microsoft\\jdk-17.0.14.7-hotspot"
+}

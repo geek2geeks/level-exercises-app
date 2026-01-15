@@ -1,0 +1,236 @@
+--------- beginning of system
+01-15 09:00:20.514   798   830 E PackageManager: Optimistic bind failed.
+01-15 09:00:20.514   798   830 E PackageManager: java.util.concurrent.TimeoutException: [Optimistic Bind] Didn't bind to resolver in time!
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.waitForBindLocked(InstantAppResolverConnection.java:160)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.bind(InstantAppResolverConnection.java:230)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.lambda$optimisticBind$0(InstantAppResolverConnection.java:260)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection.$r8$lambda$66W2s2mMKe4pk_xXCScH9RCqav8(InstantAppResolverConnection.java:0)
+01-15 09:00:20.514   798   830 E PackageManager: 	at com.android.server.pm.InstantAppResolverConnection$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:20.514   798   830 E PackageManager: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+--------- beginning of main
+01-15 09:00:20.554  1198  1198 E CannedAnimCoordinator: Trying to play two animations together, k6.t@7b7f8b0 and null
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:   01-15 09:00:20.448 100 c2901a22 status=not-charging health=good plug=none temp=250 volt=5000 charge=10 modemRailChargemAh=0 wifiRailChargemAh=0 +running +wake_lock +sensor +mobile_radio +screen data_conn=lte phone_signal_strength=great brightness=medium +wifi wifi_signal_strength=4 wifi_suppl=completed
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:                  Details: cpu=9510u+72090s
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:                           /proc/stat=16130 usr, 92560 sys, 2700 io, 0 irq, 2050 sirq, 23570 idle (82.8% of 22m 50s 100ms), SubsystemPowerState SubsystemPowerState subsystem_0 name=CPU state_0 name=Idle time=3000 count=196 last entry=14000 state_1 name=Active time=3000 count=196 last entry=14000 subsystem_1 name=Display state_0 name=Off time=3000 count=196 last entry=14000 state_1 name=On time=3000 count=196 last entry=14000
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:   01-15 09:00:20.432 100 c2901a22 procstate: u0a146: cached
+01-15 09:00:20.808   798   841 E BatteryStatsHistory:     Unexpected time delta: -16
+01-15 09:00:20.811   798  2048 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: Out-of-order battery history event. Check logcat for details
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: android.util.Log$TerribleFailure: Out-of-order battery history event. Check logcat for details
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.util.Log.wtf(Log.java:339)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.util.Slog.wtfStack(Slog.java:246)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryDelta(BatteryStatsHistory.java:1949)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryItem(BatteryStatsHistory.java:1816)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryItem(BatteryStatsHistory.java:1751)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.writeHistoryItem(BatteryStatsHistory.java:1635)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.internal.os.BatteryStatsHistory.recordProcessStateChange(BatteryStatsHistory.java:1229)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.power.stats.BatteryStatsImpl$Uid.updateUidProcessStateLocked(BatteryStatsImpl.java:10424)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.power.stats.BatteryStatsImpl.noteUidProcessStateLocked(BatteryStatsImpl.java:4724)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.am.BatteryStatsService.lambda$noteUidProcessState$13(BatteryStatsService.java:914)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.am.BatteryStatsService.$r8$lambda$QChUd1G6g1_FJ1G5zg2vCcUJr6g(BatteryStatsService.java:0)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at com.android.server.am.BatteryStatsService$$ExternalSyntheticLambda76.run(R8$$SyntheticClass:0)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:20.821   798   841 E BatteryStatsHistory: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:21.264   798   968 E AppOps  : attributionTag VCN not declared in manifest of android
+01-15 09:00:21.472  1182  1299 E SatelliteAppTracker: packageName: com.geek2geeks.level, value: null
+01-15 09:00:21.473  1182  1299 E SatelliteAppTracker: packageName: com.geek2geeks.level, value: null
+01-15 09:00:21.639   798   957 E WifiStaIfaceAidlImpl: setRoamingMode failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+01-15 09:00:21.639   798   957 E WifiRoamingModeManager: Failed to set roaming mode due to unknown error.
+01-15 09:00:21.708   282   286 E lowmemorykiller: process_mrelease 1431 failed: No such process
+01-15 09:00:21.763   798  1745 E AppOps  : attributionTag VCN not declared in manifest of android
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: Writing exception to parcel
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: java.lang.UnsupportedOperationException
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at com.google.android.apps.gsa.staticplugins.publiccontent.GsaPublicContentProvider.query(PG:361)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProvider.query(ContentProvider.java:1662)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProvider.query(ContentProvider.java:1758)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProvider$Transport.query(ContentProvider.java:296)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:107)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.os.Binder.execTransactInternal(Binder.java:1473)
+01-15 09:00:21.769  2247  2349 E DatabaseUtils: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:21.781   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'INTERFACE' not found
+01-15 09:00:21.782   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'STATE' not found
+01-15 09:00:21.782   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'TIME_NS' not found
+01-15 09:00:21.782   578   630 E NetlinkEvent: NetlinkEvent::FindParam(): Parameter 'UID' not found
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: Error fetching doodle
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: java.lang.UnsupportedOperationException
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:209)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:177)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:495)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:196)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:178)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.content.ContentProviderClient.query(ContentProviderClient.java:168)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at x5.b.d(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:24)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at x5.e.run(go/retraceme f3a19d912c87c27267cfbc05ba0bc7b202ab72a6648bd76225f5f7e128d94583:3)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:21.799  1198  2303 E DoodleDataLoader: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:21.828   282   287 E lowmemorykiller: process_mrelease 2112 failed: No such process
+01-15 09:00:21.828   282   286 E lowmemorykiller: process_mrelease 1787 failed: No such process
+01-15 09:00:21.857  1182  1299 E SatelliteModemInterface: requestIsSatelliteSupported: Satellite service is unavailable.
+01-15 09:00:21.858  1182  1299 E SatelliteServiceUtils: isSatelliteSupported SatelliteException: android.telephony.satellite.SatelliteManager$SatelliteException
+01-15 09:00:21.859  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:21.911  2008  2425 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:21.952   578   643 E netd    : Error adding route ::/0 -> fe80::2 wlan0 to table 1016: File exists
+01-15 09:00:21.959   798   968 E AppOps  : attributionTag VCN not declared in manifest of android
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: No service published for: ethernet
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: android.os.ServiceManager$ServiceNotFoundException: No service published for: ethernet
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:203)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$156.createService(SystemServiceRegistry.java:2418)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:2531)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:2063)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.app.ContextImpl.getSystemService(ContextImpl.java:2434)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:991)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.isEthernetSupported(Tethering.java:1853)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.makeSupportedDownstreams(Tethering.java:2834)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateSupportedDownstreams(Tethering.java:2808)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.updateConfiguration(Tethering.java:561)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.lambda$new$4(Tethering.java:354)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering.$r8$lambda$4V1rGOzF7AkW0XBFoABAQmt9cHM(Tethering.java:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.Tethering$$ExternalSyntheticLambda10.accept(R8$$SyntheticClass:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver.lambda$onReceive$0(VersionedBroadcastListener.java:107)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver.$r8$lambda$_Z7KkSifencKcebyQaai-Spxf2M(VersionedBroadcastListener.java:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at com.android.networkstack.tethering.util.VersionedBroadcastListener$Receiver$$ExternalSyntheticLambda0.run(R8$$SyntheticClass:0)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:22.042  1147  1267 E SystemServiceRegistry: 	at android.os.HandlerThread.run(HandlerThread.java:139)
+01-15 09:00:22.092  2330  2391 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:22.092   798  1243 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:22.186  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:22.206  2247  2463 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:22.319  2330  2499 E PhotosApiClient: Execution exception occurred: java.util.concurrent.ExecutionException: io.grpc.StatusRuntimeException: UNIMPLEMENTED: bindService(Intent { act=grpc.io.action.BIND xflg=0x4 cmp=com.google.android.apps.photos/.curatedwallpapers.apiservice.PhotosCuratedWallpapersApiService }) returned false
+01-15 09:00:22.348   798   957 E WifiStaIfaceAidlImpl: setDtimMultiplier failed with service-specific exception: android.os.ServiceSpecificException:  (code 4)
+01-15 09:00:22.377  1182  1182 E SmsApplication: com.google.android.apps.messaging lost android:read_cell_broadcasts:  (fixing)
+01-15 09:00:22.529  1053  1053 E NotifRow: Magnetic state changed from IDLE to IDLE on a null swiped listener, or the logging key of the listener is null
+01-15 09:00:22.530  1053  1053 E LauncherProxyService: Failed to get launcher proxy for disable flags.
+01-15 09:00:22.601  2348  2348 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: failed to register observer for remaining time
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: java.lang.SecurityException: Failed to find provider com.google.android.apps.turbo.estimated_time_remaining for user 0; expected to find a valid ContentProvider for this authority
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.createExceptionOrNull(Parcel.java:3373)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.createException(Parcel.java:3357)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.readException(Parcel.java:3340)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Parcel.readException(Parcel.java:3282)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.content.IContentService$Stub$Proxy.registerContentObserver(IContentService.java:1044)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.content.ContentResolver.registerContentObserver(ContentResolver.java:2730)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.google.android.systemui.power.BatteryInfoBroadcast.registerObserver(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:9)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.google.android.systemui.power.PowerNotificationWarningsGoogleImpl$$ExternalSyntheticLambda0.run(go/retraceme d7434036f30927423ce8aca1e3c453e1261a0e8c346035197b57fdd4a4917e53:195)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Looper.loop(Looper.java:367)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at java.lang.reflect.Method.invoke(Native Method)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: Caused by: android.os.RemoteException: Remote stack trace:
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at com.android.server.content.ContentService.registerContentObserver(ContentService.java:382)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.content.IContentService$Stub.onTransact(IContentService.java:498)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Binder.execTransactInternal(Binder.java:1478)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 	at android.os.Binder.execTransact(Binder.java:1418)
+01-15 09:00:22.673  1053  1053 E BatteryInfoBroadcast: 
+01-15 09:00:22.684   798   916 E InputDispatcher: channel '[Gesture Monitor] swipe-up' ~ Channel is unrecoverably broken and will be disposed!
+01-15 09:00:22.864   798  1243 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:22.971  1639  1955 E libbinder.IPCThreadState: Binder transaction failure. id: 62959, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+01-15 09:00:22.983   798   957 E WifiStaIfaceAidlImpl: stopRssiMonitoring failed with service-specific exception: android.os.ServiceSpecificException:  (code 5)
+01-15 09:00:23.030  1717  2113 E AiAiEcho: EchoSearch: SettingsFetcherImpl: DB already exists.
+01-15 09:00:23.124   798  1863 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:23.316  1351  2572 E CastAuth: [CastAuthModuleInitIntent] Feature is not available, reason = CastAuth feature is disabled on this 1p device.. [CONTEXT service_id=360 ]
+01-15 09:00:23.737   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION, user: 0
+01-15 09:00:23.773  1351  1429 E libbinder.IPCThreadState: Binder transaction failure. id: 64565, cmd: BR_DEAD_REPLY (29189), error: -22 (Invalid argument)
+01-15 09:00:23.777   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_DEPENDENCY_INSTALLER, user: 0
+01-15 09:00:23.795  2542  2599 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:23.920  1630  1985 E HandwritingSuperpacksUtil: HandwritingSuperpacksUtil.getPackMappingPackName():42 No pack mapping pack found in []
+01-15 09:00:23.952  1210  1210 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:24.032   798  2552 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.WALLET, user: 0
+01-15 09:00:24.050  1182  1299 E SatelliteController: registerForSatelliteCommunicationAccessStateChanged: SatelliteManager is null
+01-15 09:00:24.053  2348  2618 E ActivityThread: Failed to find provider info for androidx.car.app.connection
+01-15 09:00:24.474  2568  2568 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+01-15 09:00:24.543   798   869 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:24.553   798  1838 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-15 09:00:24.646   798   816 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:24.669   282   286 E lowmemorykiller: process_mrelease 2483 failed: No such process
+01-15 09:00:25.040  1620  1683 E .apps.wellbeing: Failed to open APK '/data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk': I/O error
+01-15 09:00:25.059  1620  1683 E .apps.wellbeing: Failed to open APK '/data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk': I/O error
+01-15 09:00:25.059  1620  1683 E ResourcesManager: failed to add asset path '/data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk'
+01-15 09:00:25.059  1620  1683 E ResourcesManager: java.io.IOException: Failed to load asset path /data/app/~~ZPNdclV6eeCb8bpRAhF3Vg==/com.geek2geeks.level-_n4l15wsL2YMOibDJo0e_g==/base.apk
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.res.ApkAssets.nativeLoad(Native Method)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.res.ApkAssets.<init>(ApkAssets.java:321)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.res.ApkAssets.loadFromPath(ApkAssets.java:170)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.loadApkAssets(ResourcesManager.java:596)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager$ApkAssetsSupplier.load(ResourcesManager.java:262)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.createAssetManager(ResourcesManager.java:692)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.createResourcesImpl(ResourcesManager.java:766)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplPairForKeyLocked(ResourcesManager.java:847)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.findOrCreateResourcesImplForKeyLocked(ResourcesManager.java:832)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.createResources(ResourcesManager.java:1200)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ResourcesManager.getResources(ResourcesManager.java:1303)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ActivityThread.getTopLevelResources(ActivityThread.java:3153)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2188)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getResourcesForApplication(ApplicationPackageManager.java:2171)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getText(ApplicationPackageManager.java:2514)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.pm.PackageItemInfo.loadUnsafeLabel(PackageItemInfo.java:237)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.content.pm.PackageItemInfo.loadLabel(PackageItemInfo.java:226)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at android.app.ApplicationPackageManager.getApplicationLabel(ApplicationPackageManager.java:2559)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at etg.a(PG:38)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at eel.apply(PG:391)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at a$$ExternalSyntheticApiModelOutline0.m(D8$$SyntheticClass:46)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nfo.accept(PG:44)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.d2.accept(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:3)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.desugar.sun.nio.fs.c.z(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:24)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.o0.forEachRemaining(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:24)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.a.a(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:21)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.a.p(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:8)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.x1.a(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:5)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.a.d(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:35)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at j$.util.stream.s2.collect(r8-map-id-c51a02224ec0f34dd9a056fd47fc96fb2d78d7428f5037cd4d93dbf6c6e41aaf:88)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at dto.a(PG:96)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at mdk.a(PG:297)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at mdk.a(PG:38)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nwk.a(PG:3)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nvp.run(PG:19)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nwm.run(PG:5)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nut.run(PG:17)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at keu.run(PG:7)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at nrq.run(PG:44)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at bl.run(PG:349)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:25.059  1620  1683 E ResourcesManager: 	at kgg.run(PG:61)
+01-15 09:00:25.133  2603  2712 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:25.146  2377  2377 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:25.353   798  1807 E JobScheduler.JobStatus: App com.google.android.inputmethod.latin became active but still in NEVER bucket
+01-15 09:00:25.519   798  2038 E WifiService: Attempt to retrieve passpoint with invalid scanResult List
+01-15 09:00:25.544  1351  2534 E WorkSourceUtil: Could not find package: com.google.android.gms.westworld
+01-15 09:00:25.579  2505  2664 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: Retrieving snapshot for com.google.android.dialer failed
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: java.util.concurrent.TimeoutException: Timed out waiting for Task
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wme.I(PG:48)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wtv.c(PG:15)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wtv.d(PG:38)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at pdl.call(PG:128)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at advz.call(PG:17)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at adyn.a(PG:3)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at adxp.run(PG:19)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at adyo.run(PG:5)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at xlk.run(PG:7)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1154)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:652)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at wvj.run(PG:254)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at xkw.run(PG:470)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 09:00:25.793  2348  2589 E PhenotypeFlagCommitter: 	at xmm.run(PG:61)
+01-15 09:00:25.825  1767  2047 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.

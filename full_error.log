@@ -1,0 +1,88 @@
+--------- beginning of main
+01-14 23:00:59.975  9412  9412 E SoLoader: Checking /data/app missing libraries.
+01-14 23:00:59.975  9412  9412 E SoLoader: Successfully recovered from /data/app disk failure.
+01-14 23:00:59.975  9412  9412 E SoLoader: Checking /data/data missing libraries.
+01-14 23:00:59.975  9412  9412 E SoLoader: No libraries missing from unpacking so paths while recovering /data/data failure
+--------- beginning of crash
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: FATAL EXCEPTION: main
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: Process: com.geek2geeks.level, PID: 9412
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: com.facebook.soloader.SoLoaderDSONotFoundError: couldn't find DSO to load: libreactnative.so
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	existing SO sources: 
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 		SoSource 0: ApplicationSoSource[DirectorySoSource[root = /data/app/~~swU7YB39kKjmpcLcBlMrgg==/com.geek2geeks.level-r-BSEeW8RLdQ6ViwTdABHw==/lib/arm64 flags = 0]]
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 		SoSource 1: DirectApkSoSource[root = [/data/app/~~swU7YB39kKjmpcLcBlMrgg==/com.geek2geeks.level-r-BSEeW8RLdQ6ViwTdABHw==/base.apk!/lib/x86_64]]
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 		SoSource 2: DirectorySoSource[root = /system/lib64 flags = 3]
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 		SoSource 3: DirectorySoSource[root = /vendor/lib64 flags = 3]
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	Native lib dir: /data/app/~~swU7YB39kKjmpcLcBlMrgg==/com.geek2geeks.level-r-BSEeW8RLdQ6ViwTdABHw==/lib/arm64
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1216)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:1078)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:943)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryOnAndroid(SoLoader.java:859)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:842)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:812)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxInterop.<clinit>(ReactNativeFeatureFlagsCxxInterop.kt:28)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxAccessor.override(ReactNativeFeatureFlagsCxxAccessor.kt:635)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlags.override(ReactNativeFeatureFlags.kt:414)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:97)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:43)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative(ReactNativeApplicationEntryPoint.java:31)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.geek2geeks.level.MainApplication.onCreate(MainApplication.kt:48)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1396)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8139)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2690)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:132)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+01-14 23:00:59.976  9412  9412 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+01-14 23:01:03.094   645   645 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1352):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+01-14 23:01:03.120   645   645 E WVCdm   : [oemcrypto_adapter_dynamic.cpp(1352):ValidateOrInstallL1KeyboxOrCert] L1 not initialized. Falling back to L3
+01-14 23:01:03.138  5561  6801 E SQLiteLog: (1) no such column: local_modification_time in "SELECT local_modification_time FROM sync_entities"
+--------- beginning of system
+01-14 23:01:03.276   796  3535 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-14 23:01:05.554  9475  9475 E SoLoader: Checking /data/app missing libraries.
+01-14 23:01:05.554  9475  9475 E SoLoader: Successfully recovered from /data/app disk failure.
+01-14 23:01:05.554  9475  9475 E SoLoader: Checking /data/data missing libraries.
+01-14 23:01:05.554  9475  9475 E SoLoader: No libraries missing from unpacking so paths while recovering /data/data failure
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: FATAL EXCEPTION: main
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: Process: com.geek2geeks.level, PID: 9475
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: com.facebook.soloader.SoLoaderDSONotFoundError: couldn't find DSO to load: libreactnative.so
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	existing SO sources: 
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 		SoSource 0: ApplicationSoSource[DirectorySoSource[root = /data/app/~~swU7YB39kKjmpcLcBlMrgg==/com.geek2geeks.level-r-BSEeW8RLdQ6ViwTdABHw==/lib/arm64 flags = 0]]
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 		SoSource 1: DirectApkSoSource[root = [/data/app/~~swU7YB39kKjmpcLcBlMrgg==/com.geek2geeks.level-r-BSEeW8RLdQ6ViwTdABHw==/base.apk!/lib/x86_64]]
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 		SoSource 2: DirectorySoSource[root = /system/lib64 flags = 3]
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 		SoSource 3: DirectorySoSource[root = /vendor/lib64 flags = 3]
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	Native lib dir: /data/app/~~swU7YB39kKjmpcLcBlMrgg==/com.geek2geeks.level-r-BSEeW8RLdQ6ViwTdABHw==/lib/arm64
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.doLoadLibraryBySoName(SoLoader.java:1216)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoNameImpl(SoLoader.java:1078)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryBySoName(SoLoader.java:943)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibraryOnAndroid(SoLoader.java:859)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:842)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.soloader.SoLoader.loadLibrary(SoLoader.java:812)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxInterop.<clinit>(ReactNativeFeatureFlagsCxxInterop.kt:28)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlagsCxxAccessor.override(ReactNativeFeatureFlagsCxxAccessor.kt:635)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.react.internal.featureflags.ReactNativeFeatureFlags.override(ReactNativeFeatureFlags.kt:414)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:97)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.load(DefaultNewArchitectureEntryPoint.kt:43)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.facebook.react.ReactNativeApplicationEntryPoint.loadReactNative(ReactNativeApplicationEntryPoint.java:31)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.geek2geeks.level.MainApplication.onCreate(MainApplication.kt:48)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1396)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:8139)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.app.ActivityThread.-$$Nest$mhandleBindApplication(Unknown Source:0)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2690)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:132)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:9287)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:566)
+01-14 23:01:05.555  9475  9475 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:929)
+01-14 23:01:08.834   796  3535 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-14 23:01:12.841  5702  5758 E PlayCommon: [80] Failed to connect to server for server timestamp: java.net.UnknownHostException: Unable to resolve host "play.googleapis.com": No address associated with hostname
+01-14 23:01:12.842  5702  5758 E PlayCommon: [80] Failed to connect to server for log upload.

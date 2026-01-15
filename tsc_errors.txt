@@ -1,0 +1,1050 @@
+app/_layout.tsx(49,11): error TS2367: This comparison appears to be unintentional because the types '1 | 2' and '0' have no overlap.
+archive/app/app.tsx(24,34): error TS2307: Cannot find module 'react-native-keyboard-controller' or its corresponding type declarations.
+archive/app/components/Button.tsx(11,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Button.tsx(12,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Button.tsx(13,52): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/Button.tsx(181,51): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Button.tsx(191,51): error TS7031: Binding element 'typography' implicitly has an 'any' type.
+archive/app/components/Button.tsx(201,57): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Button.tsx(205,56): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Button.tsx(214,8): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Button.tsx(223,8): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Button.tsx(228,8): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Button.tsx(235,33): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Button.tsx(239,15): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Button.tsx(240,14): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Button.tsx(241,16): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Card.tsx(12,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Card.tsx(13,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Card.tsx(14,52): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/Card.tsx(258,49): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/Card.tsx(286,6): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/Card.tsx(294,6): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/Card.tsx(303,15): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/Card.tsx(308,15): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/Card.tsx(313,15): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/CVCamera.tsx(213,65): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(214,39): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(220,81): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(224,53): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(232,35): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(237,84): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(239,61): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/components/CVCamera.tsx(280,5): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/components/CVCamera.tsx(287,5): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/components/CVCamera.tsx(301,5): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/components/CVCamera.tsx(358,5): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/components/CVCamera.tsx(372,5): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/components/DeviceList.tsx(4,24): error TS2307: Cannot find module '@/theme/colors' or its corresponding type declarations.
+archive/app/components/DeviceList.tsx(5,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/components/DeviceList.tsx(6,24): error TS2307: Cannot find module 'react-native-ble-plx' or its corresponding type declarations.
+archive/app/components/EmptyState.tsx(3,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/components/EmptyState.tsx(4,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/EmptyState.tsx(5,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/EmptyState.tsx(241,45): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/EmptyState.tsx(245,45): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Header.tsx(11,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/components/Header.tsx(12,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/components/Header.tsx(13,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Header.tsx(14,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Header.tsx(15,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/Header.tsx(16,54): error TS2307: Cannot find module '@/utils/useSafeAreaInsetsStyle' or its corresponding type declarations.
+archive/app/components/Header.tsx(289,57): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Header.tsx(298,48): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Header.tsx(302,57): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Header.tsx(319,56): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Icon.tsx(12,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/ListItem.tsx(11,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/ListItem.tsx(12,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/ListItem.tsx(13,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/ListItem.tsx(211,50): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/ListItem.tsx(216,53): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/ListItem.tsx(221,47): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/ListItem.tsx(237,55): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/ListItem.tsx(241,56): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Screen.tsx(14,61): error TS2307: Cannot find module 'react-native-edge-to-edge' or its corresponding type declarations.
+archive/app/components/Screen.tsx(15,41): error TS2307: Cannot find module 'react-native-keyboard-controller' or its corresponding type declarations.
+archive/app/components/Screen.tsx(17,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Screen.tsx(18,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Screen.tsx(19,54): error TS2307: Cannot find module '@/utils/useSafeAreaInsetsStyle' or its corresponding type declarations.
+archive/app/components/Screen.tsx(213,18): error TS7006: Parameter 'e' implicitly has an 'any' type.
+archive/app/components/Text.test.tsx(2,24): error TS2307: Cannot find module '@testing-library/react-native' or its corresponding type declarations.
+archive/app/components/Text.test.tsx(12,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/components/Text.test.tsx(13,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/components/Text.test.tsx(21,5): error TS2304: Cannot find name 'expect'.
+archive/app/components/Text.tsx(4,26): error TS2307: Cannot find module 'i18next' or its corresponding type declarations.
+archive/app/components/Text.tsx(6,34): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/components/Text.tsx(7,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/components/Text.tsx(8,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Text.tsx(9,52): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/Text.tsx(10,28): error TS2307: Cannot find module '@/theme/typography' or its corresponding type declarations.
+archive/app/components/Text.tsx(96,45): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(14,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/components/TextField.tsx(15,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/components/TextField.tsx(16,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/TextField.tsx(17,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/TextField.tsx(18,52): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/TextField.tsx(249,48): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(253,55): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(262,48): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(262,56): error TS7031: Binding element 'typography' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(262,68): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(276,49): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(280,57): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/TextField.tsx(287,56): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Toggle/Checkbox.tsx(4,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Toggle/Checkbox.tsx(5,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Toggle/Radio.tsx(4,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Toggle/Radio.tsx(5,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Toggle/Switch.tsx(4,30): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/components/Toggle/Switch.tsx(5,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/components/Toggle/Switch.tsx(6,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Toggle/Switch.tsx(7,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Toggle/Switch.tsx(8,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/Toggle/Switch.tsx(228,49): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/components/Toggle/Toggle.tsx(16,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/components/Toggle/Toggle.tsx(17,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/components/Toggle/Toggle.tsx(18,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/components/Toggle/Toggle.tsx(271,44): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Toggle/Toggle.tsx(279,48): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/components/Toggle/Toggle.tsx(283,47): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/context/AuthContext.tsx(2,31): error TS2307: Cannot find module 'react-native-mmkv' or its corresponding type declarations.
+archive/app/context/AuthContext.tsx(3,41): error TS2307: Cannot find module '@react-native-firebase/auth' or its corresponding type declarations.
+archive/app/context/EpisodeContext.tsx(11,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/context/EpisodeContext.tsx(12,21): error TS2307: Cannot find module '@/services/api' or its corresponding type declarations.
+archive/app/context/EpisodeContext.tsx(13,34): error TS2307: Cannot find module '@/services/api/types' or its corresponding type declarations.
+archive/app/context/EpisodeContext.tsx(14,28): error TS2307: Cannot find module '@/utils/formatDate' or its corresponding type declarations.
+archive/app/devtools/ReactotronClient.ts(7,24): error TS2307: Cannot find module 'reactotron-react-native' or its corresponding type declarations.
+archive/app/devtools/ReactotronClient.web.ts(10,24): error TS2307: Cannot find module 'reactotron-react-js' or its corresponding type declarations.
+archive/app/devtools/ReactotronConfig.ts(7,25): error TS2307: Cannot find module 'reactotron-core-client' or its corresponding type declarations.
+archive/app/devtools/ReactotronConfig.ts(8,39): error TS2307: Cannot find module 'reactotron-react-native' or its corresponding type declarations.
+archive/app/devtools/ReactotronConfig.ts(9,24): error TS2307: Cannot find module 'reactotron-react-native-mmkv' or its corresponding type declarations.
+archive/app/devtools/ReactotronConfig.ts(11,45): error TS2307: Cannot find module '@/navigators/navigationUtilities' or its corresponding type declarations.
+archive/app/devtools/ReactotronConfig.ts(12,25): error TS2307: Cannot find module '@/utils/storage' or its corresponding type declarations.
+archive/app/devtools/ReactotronConfig.ts(67,13): error TS7006: Parameter 'args' implicitly has an 'any' type.
+archive/app/hooks/usePairing.ts(2,34): error TS2307: Cannot find module 'react-native-ble-plx' or its corresponding type declarations.
+archive/app/hooks/usePairing.ts(3,28): error TS2307: Cannot find module '@/services/BLEService' or its corresponding type declarations.
+archive/app/hooks/usePairing.ts(4,33): error TS2307: Cannot find module '@/services/DatabaseService' or its corresponding type declarations.
+archive/app/hooks/usePairing.ts(23,14): error TS7006: Parameter 'device' implicitly has an 'any' type.
+archive/app/hooks/usePairing.ts(29,14): error TS7006: Parameter 'error' implicitly has an 'any' type.
+archive/app/i18n/index.ts(2,31): error TS2307: Cannot find module 'expo-localization' or its corresponding type declarations.
+archive/app/i18n/index.ts(3,18): error TS2307: Cannot find module 'i18next' or its corresponding type declarations.
+archive/app/i18n/index.ts(4,34): error TS2307: Cannot find module 'react-i18next' or its corresponding type declarations.
+archive/app/i18n/index.ts(31,30): error TS7006: Parameter 'locale' implicitly has an 'any' type.
+archive/app/i18n/translate.ts(1,18): error TS2307: Cannot find module 'i18next' or its corresponding type declarations.
+archive/app/i18n/translate.ts(2,31): error TS2307: Cannot find module 'i18next' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(10,20): error TS2307: Cannot find module '@/config' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(11,25): error TS2307: Cannot find module '@/context/AuthContext' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(12,31): error TS2307: Cannot find module '@/screens/ErrorScreen/ErrorBoundary' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(13,29): error TS2307: Cannot find module '@/screens/LoginScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(14,31): error TS2307: Cannot find module '@/screens/WelcomeScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(15,30): error TS2307: Cannot find module '@/screens/SplashScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(16,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(18,35): error TS2307: Cannot find module '@/screens/Workout/WorkoutPlanScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(19,39): error TS2307: Cannot find module '@/screens/Workout/ExerciseSessionScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(20,38): error TS2307: Cannot find module '@/screens/Workout/SessionSummaryScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(22,35): error TS2307: Cannot find module '@/screens/Onboarding/PermissionsScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(23,31): error TS2307: Cannot find module '@/screens/Onboarding/ProfileScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(24,36): error TS2307: Cannot find module '@/screens/Onboarding/FitnessGoalsScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(25,40): error TS2307: Cannot find module '@/screens/Onboarding/TrainerSelectionScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(26,34): error TS2307: Cannot find module '@/screens/Onboarding/DisclaimerScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(27,31): error TS2307: Cannot find module '@/screens/Onboarding/PairingScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(29,39): error TS2307: Cannot find module '@/screens/ModelComparisonScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(30,30): error TS2307: Cannot find module '@/screens/CVTestScreen' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(32,29): error TS2307: Cannot find module '@/screens/Website/LandingPage' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.tsx(69,7): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: Omit<NativeStackNavigatorProps, "children" | "id" | "layout" | "initialRouteName" | "screenListeners" | "screenOptions" | "screenLayout" | "UNSTABLE_router" | "UNSTABLE_routeNamesChangeBehavior"> & DefaultRouterOptions<...> & ({ ...; } & ({ ...; } | { ...; })), context?: any): string | ... 8 more ... | undefined', gave the following error.
+    Type '"Welcome" | "Splash" | "LandingPage"' is not assignable to type 'keyof AppStackParamList | undefined'.
+      Type '"LandingPage"' is not assignable to type 'keyof AppStackParamList | undefined'.
+  Overload 2 of 2, '(props: Omit<NativeStackNavigatorProps, "children" | "id" | "layout" | "initialRouteName" | "screenListeners" | "screenOptions" | "screenLayout" | "UNSTABLE_router" | "UNSTABLE_routeNamesChangeBehavior"> & DefaultRouterOptions<...> & ({ ...; } & ({ ...; } | { ...; }))): string | ... 8 more ... | undefined', gave the following error.
+    Type '"Welcome" | "Splash" | "LandingPage"' is not assignable to type 'keyof AppStackParamList | undefined'.
+      Type '"LandingPage"' is not assignable to type 'keyof AppStackParamList | undefined'.
+archive/app/navigators/AppNavigator.tsx(74,25): error TS2322: Type '"ModelComparison"' is not assignable to type 'keyof AppStackParamList'.
+archive/app/navigators/AppNavigator.tsx(97,29): error TS2322: Type '"ModelComparison"' is not assignable to type 'keyof AppStackParamList'.
+archive/app/navigators/AppNavigator.web.tsx(4,29): error TS2307: Cannot find module '@/screens/Website/LandingPage' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.web.tsx(5,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.web.tsx(7,20): error TS2307: Cannot find module '@/config' or its corresponding type declarations.
+archive/app/navigators/AppNavigator.web.tsx(8,31): error TS2307: Cannot find module '@/screens/ErrorScreen/ErrorBoundary' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(5,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(6,33): error TS2307: Cannot find module '@/context/EpisodeContext' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(7,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(8,37): error TS2307: Cannot find module '@/screens/DemoCommunityScreen' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(9,33): error TS2307: Cannot find module '@/screens/DemoDebugScreen' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(10,39): error TS2307: Cannot find module '@/screens/DemoPodcastListScreen' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(11,36): error TS2307: Cannot find module '@/screens/DemoShowroomScreen/DemoShowroomScreen' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(12,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(13,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/navigators/DemoNavigator.tsx(103,44): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/navigators/DemoNavigator.tsx(108,48): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/navigators/DemoNavigator.tsx(112,49): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/navigators/DemoNavigator.tsx(112,57): error TS7031: Binding element 'typography' implicitly has an 'any' type.
+archive/app/navigators/navigationUtilities.ts(9,20): error TS2307: Cannot find module '@/config' or its corresponding type declarations.
+archive/app/navigators/navigationUtilities.ts(10,46): error TS2307: Cannot find module '@/config/config.base' or its corresponding type declarations.
+archive/app/navigators/navigationUtilities.ts(11,26): error TS2307: Cannot find module '@/utils/storage' or its corresponding type declarations.
+archive/app/navigators/navigationUtilities.ts(12,30): error TS2307: Cannot find module '@/utils/useIsMounted' or its corresponding type declarations.
+archive/app/screens/CVTestScreen.tsx(3,37): error TS2307: Cannot find module '@/navigators' or its corresponding type declarations.
+archive/app/screens/CVTestScreen.tsx(4,26): error TS2307: Cannot find module '@/components/CVCamera' or its corresponding type declarations.
+archive/app/screens/CVTestScreen.tsx(5,46): error TS2307: Cannot find module '@/components' or its corresponding type declarations.
+archive/app/screens/CVTestScreen.tsx(6,33): error TS2307: Cannot find module '@/theme' or its corresponding type declarations.
+archive/app/screens/CVTestScreen.tsx(12,13): error TS2339: Property 'navigation' does not exist on type 'CVTestScreenProps'.
+archive/app/screens/DemoCommunityScreen.tsx(4,26): error TS2307: Cannot find module '@/components/ListItem' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(5,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(6,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(7,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(8,36): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(9,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(10,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(11,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(12,35): error TS2307: Cannot find module '@/utils/openLinkInBrowser' or its corresponding type declarations.
+archive/app/screens/DemoCommunityScreen.tsx(113,43): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoCommunityScreen.tsx(117,45): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoCommunityScreen.tsx(121,49): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoCommunityScreen.tsx(125,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoCommunityScreen.tsx(129,51): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(11,30): error TS2307: Cannot find module 'expo-application' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(13,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(14,26): error TS2307: Cannot find module '@/components/ListItem' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(15,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(16,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(17,25): error TS2307: Cannot find module '@/context/AuthContext' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(18,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(19,36): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(20,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(21,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(22,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoDebugScreen.tsx(155,47): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(159,43): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(163,52): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(163,60): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(169,42): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(173,52): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(177,44): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(181,53): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(185,42): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoDebugScreen.tsx(185,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(23,51): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(24,22): error TS2307: Cannot find module '@/components/Card' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(25,28): error TS2307: Cannot find module '@/components/EmptyState' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(26,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(27,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(28,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(29,24): error TS2307: Cannot find module '@/components/Toggle/Switch' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(30,41): error TS2307: Cannot find module '@/context/EpisodeContext' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(31,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(32,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(33,36): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(34,34): error TS2307: Cannot find module '@/services/api/types' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(35,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(36,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(37,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(38,23): error TS2307: Cannot find module '@/utils/delay' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(39,35): error TS2307: Cannot find module '@/utils/openLinkInBrowser' or its corresponding type declarations.
+archive/app/screens/DemoPodcastListScreen.tsx(311,58): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(317,45): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(321,42): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(321,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(328,52): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(334,44): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(342,51): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(348,46): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(348,54): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(353,50): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(353,58): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(359,52): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(359,60): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(372,54): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoPodcastListScreen.tsx(377,48): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoDivider.tsx(4,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoDivider.tsx(5,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoDivider.tsx(59,42): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(4,27): error TS2307: Cannot find module '@/components/AutoImage' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(6,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(7,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(8,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(18,60): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoAutoImage.tsx(34,63): error TS7006: Parameter 'theme' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(4,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(5,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(6,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(7,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(8,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(15,55): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(19,62): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(22,59): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(22,67): error TS7031: Binding element 'typography' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(28,66): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(31,69): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(39,77): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(44,61): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(81,26): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(91,25): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(116,26): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(119,25): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(152,26): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoButton.tsx(207,26): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(2,27): error TS2307: Cannot find module '@/components/AutoImage' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(3,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(4,22): error TS2307: Cannot find module '@/components/Card' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(5,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(101,29): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(108,29): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoCard.tsx(115,29): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoEmptyState.tsx(2,28): error TS2307: Cannot find module '@/components/EmptyState' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(4,24): error TS2307: Cannot find module '@/components/Header' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(5,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(6,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(7,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(17,54): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(26,49): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoHeader.tsx(33,54): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(4,52): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(6,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(7,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(12,55): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(16,46): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(22,51): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(22,59): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(27,57): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(27,65): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoIcon.tsx(32,49): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(5,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(6,26): error TS2307: Cannot find module '@/components/ListItem' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(7,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(8,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(9,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(10,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(21,48): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(30,53): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(34,58): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(38,58): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(43,47): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoListItem.tsx(43,55): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoText.tsx(2,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoText.tsx(3,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(4,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(5,27): error TS2307: Cannot find module '@/components/TextField' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(6,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(12,54): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(17,61): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(22,58): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(26,63): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(30,77): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(34,62): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(40,63): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(123,26): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(134,25): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoTextField.tsx(146,26): error TS7006: Parameter 'props' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(6,47): error TS2307: Cannot find module '@/components/Toggle/Checkbox' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(7,41): error TS2307: Cannot find module '@/components/Toggle/Radio' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(8,43): error TS2307: Cannot find module '@/components/Toggle/Switch' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(9,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(10,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(11,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/DemoToggle.tsx(37,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/demos/types.ts(3,27): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/demos/types.ts(4,28): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(13,24): error TS2307: Cannot find module 'react-native-drawer-layout' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(15,26): error TS2307: Cannot find module '@/components/ListItem' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(16,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(17,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(18,34): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(19,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(20,54): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(21,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(22,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(23,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(24,40): error TS2307: Cannot find module '@/utils/useSafeAreaInsetsStyle' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(282,44): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(287,58): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(291,65): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(295,45): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(304,51): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(311,51): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(316,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(321,57): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoShowroomScreen.tsx(325,56): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(4,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(5,32): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(6,27): error TS2307: Cannot find module '@/i18n/translate' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(7,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(8,25): error TS2307: Cannot find module '@/theme/styles' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(9,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(37,49): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(41,42): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(41,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DemoUseCase.tsx(48,42): error TS7031: Binding element 'typography' implicitly has an 'any' type.
+archive/app/screens/DemoShowroomScreen/DrawerIconButton.tsx(2,35): error TS2307: Cannot find module 'react-native-drawer-layout' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DrawerIconButton.tsx(5,23): error TS2307: Cannot find module '@/i18n' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/DrawerIconButton.tsx(6,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/SectionListWithKeyboardAwareScrollView.tsx(3,41): error TS2307: Cannot find module 'react-native-keyboard-controller' or its corresponding type declarations.
+archive/app/screens/DemoShowroomScreen/SectionListWithKeyboardAwareScrollView.tsx(5,39): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(4,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(5,22): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(6,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(7,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(8,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(9,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(58,54): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(70,45): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(70,53): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(75,50): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(75,58): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(82,66): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(86,50): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(90,52): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(90,60): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(95,49): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/ErrorScreen/ErrorDetails.tsx(95,57): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(5,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(6,31): error TS2307: Cannot find module '@/components/Icon' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(7,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(8,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(9,57): error TS2307: Cannot find module '@/components/TextField' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(10,25): error TS2307: Cannot find module '@/context/AuthContext' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(11,42): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(12,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(13,34): error TS2307: Cannot find module '@/theme/types' or its corresponding type declarations.
+archive/app/screens/LoginScreen.tsx(124,60): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(129,43): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(133,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(137,42): error TS7031: Binding element 'colors' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(137,50): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(142,47): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/LoginScreen.tsx(146,47): error TS7031: Binding element 'spacing' implicitly has an 'any' type.
+archive/app/screens/ModelComparisonScreen.tsx(171,54): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(172,59): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(173,102): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(188,54): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(189,59): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(190,100): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(199,62): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(200,45): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(203,37): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(206,60): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(207,45): error TS2322: Type 'ViewStyle' is not assignable to type 'StyleProp<TextStyle>'.
+  Type 'ViewStyle' is not assignable to type 'TextStyle'.
+    Types of property 'userSelect' are incompatible.
+      Type 'string | undefined' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+        Type 'string' is not assignable to type '"auto" | "none" | "contain" | "text" | "all" | undefined'.
+archive/app/screens/ModelComparisonScreen.tsx(217,33): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/screens/ModelComparisonScreen.tsx(218,32): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/screens/ModelComparisonScreen.tsx(221,31): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/screens/ModelComparisonScreen.tsx(222,33): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/screens/ModelComparisonScreen.tsx(223,30): error TS2353: Object literal may only specify known properties, and 'color' does not exist in type 'ViewStyle'.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(3,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(4,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(6,33): error TS2307: Cannot find module '@/services/DatabaseService' or its corresponding type declarations.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(7,42): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(8,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/screens/Onboarding/DisclaimerScreen.tsx(13,13): error TS2339: Property 'navigation' does not exist on type 'DisclaimerScreenProps'.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(3,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(4,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(6,33): error TS2307: Cannot find module '@/services/DatabaseService' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(7,37): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(8,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(9,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/Onboarding/FitnessGoalsScreen.tsx(17,13): error TS2339: Property 'navigation' does not exist on type 'FitnessGoalsScreenProps'.
+archive/app/screens/Onboarding/PairingScreen.tsx(3,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(4,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(5,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(6,28): error TS2307: Cannot find module '@/components/DeviceList' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(7,28): error TS2307: Cannot find module '@/hooks/usePairing' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(8,37): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(9,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(10,24): error TS2307: Cannot find module '@/theme/colors' or its corresponding type declarations.
+archive/app/screens/Onboarding/PairingScreen.tsx(14,85): error TS2339: Property 'navigation' does not exist on type 'PairingScreenProps'.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(3,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(4,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(6,31): error TS2307: Cannot find module '@/services/HealthService' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(7,42): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(8,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(9,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/screens/Onboarding/PermissionsScreen.tsx(14,13): error TS2339: Property 'navigation' does not exist on type 'PermissionsScreenProps'.
+archive/app/screens/Onboarding/ProfileScreen.tsx(3,37): error TS2307: Cannot find module 'react-hook-form' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(4,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(5,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(6,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(7,33): error TS2307: Cannot find module '@/services/DatabaseService' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(8,42): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(9,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(10,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/screens/Onboarding/ProfileScreen.tsx(22,13): error TS2339: Property 'navigation' does not exist on type 'ProfileScreenProps'.
+archive/app/screens/Onboarding/ProfileScreen.tsx(55,41): error TS7031: Binding element 'onChange' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(55,51): error TS7031: Binding element 'onBlur' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(55,59): error TS7031: Binding element 'value' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(74,41): error TS7031: Binding element 'onChange' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(74,51): error TS7031: Binding element 'onBlur' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(74,59): error TS7031: Binding element 'value' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(93,41): error TS7031: Binding element 'onChange' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(93,51): error TS7031: Binding element 'onBlur' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(93,59): error TS7031: Binding element 'value' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(112,41): error TS7031: Binding element 'onChange' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(112,51): error TS7031: Binding element 'onBlur' implicitly has an 'any' type.
+archive/app/screens/Onboarding/ProfileScreen.tsx(112,59): error TS7031: Binding element 'value' implicitly has an 'any' type.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(3,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(4,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(5,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(6,33): error TS2307: Cannot find module '@/services/DatabaseService' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(7,37): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(8,25): error TS2307: Cannot find module '@/theme/spacing' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(9,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/Onboarding/TrainerSelectionScreen.tsx(41,13): error TS2339: Property 'navigation' does not exist on type 'TrainerSelectionScreenProps'.
+archive/app/screens/SplashScreen.tsx(3,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/SplashScreen.tsx(4,37): error TS2307: Cannot find module '@/navigators' or its corresponding type declarations.
+archive/app/screens/SplashScreen.tsx(5,33): error TS2307: Cannot find module '@/theme' or its corresponding type declarations.
+archive/app/screens/SplashScreen.tsx(6,40): error TS2307: Cannot find module '@/utils/useSafeAreaInsetsStyle' or its corresponding type declarations.
+archive/app/screens/SplashScreen.tsx(23,76): error TS2339: Property 'navigation' does not exist on type 'SplashScreenProps'.
+archive/app/screens/Website/LandingPage.tsx(3,30): error TS2307: Cannot find module '@/components' or its corresponding type declarations.
+archive/app/screens/Website/LandingPage.tsx(4,29): error TS2307: Cannot find module '@/theme/context' or its corresponding type declarations.
+archive/app/screens/Website/LandingPage.tsx(6,26): error TS2307: Cannot find module 'expo-blur' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(3,24): error TS2307: Cannot find module '@/components/Screen' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(4,22): error TS2307: Cannot find module '@/components/Text' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(5,24): error TS2307: Cannot find module '@/components/Button' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(6,37): error TS2307: Cannot find module '@/navigators' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(7,33): error TS2307: Cannot find module '@/theme' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(8,40): error TS2307: Cannot find module '@/utils/useSafeAreaInsetsStyle' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(18,29): error TS2307: Cannot find module '@/services/AuthService' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(19,25): error TS2307: Cannot find module '@/context/AuthContext' or its corresponding type declarations.
+archive/app/screens/WelcomeScreen.tsx(27,79): error TS2339: Property 'navigation' does not exist on type 'WelcomeScreenProps'.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(7,40): error TS2307: Cannot find module '@/services/CV/TFLiteDelegateService' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(12,46): error TS2307: Cannot find module '@/services/Workout/ActiveSessionManager' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(13,35): error TS2307: Cannot find module '@/services/CV/RepetitionCounter' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(14,36): error TS2307: Cannot find module '@/services/CV/CalibrationService' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(15,44): error TS2307: Cannot find module '@/services/CV/NormalizationService' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(16,36): error TS2307: Cannot find module '@/services/DeviceCapabilityService' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(17,25): error TS2307: Cannot find module '@/components/PoseHUD' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(18,34): error TS2307: Cannot find module '@/components/Workout/RPEFeedbackModal' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(19,33): error TS2307: Cannot find module '@/theme' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(20,37): error TS2307: Cannot find module '@/navigators/navigationTypes' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(21,45): error TS2307: Cannot find module '@/services/AudioService' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(22,22): error TS2307: Cannot find module '@/components' or its corresponding type declarations.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(29,112): error TS2339: Property 'navigation' does not exist on type 'ExerciseSessionScreenProps'.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(29,124): error TS2339: Property 'route' does not exist on type 'ExerciseSessionScreenProps'.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(226,38): error TS2554: Expected 1 arguments, but got 2.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(481,28): error TS7006: Parameter 'rpe' implicitly has an 'any' type.
+archive/app/screens/Workout/ExerciseSessionScreen.tsx(481,33): error TS7006: Parameter 'rec' implicitly has an 'any' type.
+archive/app/screens/Workout/SessionSummaryScreen.tsx(4,33): error TS2307: Cannot find module '@/theme' or its corresponding type declarations.
+archive/app/screens/Workout/SessionSummaryScreen.tsx(5,35): error TS2307: Cannot find module '@/navigators' or its corresponding type declarations.
+archive/app/screens/Workout/SessionSummaryScreen.tsx(58,52): error TS2769: No overload matches this call.
+  Argument of type '[string]' is not assignable to parameter of type 'never'.
+  Overload 2 of 2, '(options: never): void', gave the following error.
+    Argument of type '"Welcome"' is not assignable to parameter of type 'never'.
+archive/app/services/api/apiProblem.test.ts(1,34): error TS2307: Cannot find module 'apisauce' or its corresponding type declarations.
+archive/app/services/api/apiProblem.test.ts(5,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(6,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(12,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(13,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(19,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(20,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(26,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(27,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(32,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(33,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(39,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(40,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(47,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(48,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(55,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(56,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(63,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(64,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.test.ts(71,1): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/api/apiProblem.test.ts(72,3): error TS2304: Cannot find name 'expect'.
+archive/app/services/api/apiProblem.ts(1,29): error TS2307: Cannot find module 'apisauce' or its corresponding type declarations.
+archive/app/services/api/index.ts(8,55): error TS2307: Cannot find module 'apisauce' or its corresponding type declarations.
+archive/app/services/api/index.ts(10,20): error TS2307: Cannot find module '@/config' or its corresponding type declarations.
+archive/app/services/api/index.ts(11,34): error TS2307: Cannot find module '@/services/api/types' or its corresponding type declarations.
+archive/app/services/api/index.ts(67,29): error TS7006: Parameter 'raw' implicitly has an 'any' type.
+archive/app/services/AudioService.ts(1,25): error TS2307: Cannot find module 'expo-speech' or its corresponding type declarations.
+archive/app/services/AudioService.ts(2,23): error TS2307: Cannot find module 'expo-av' or its corresponding type declarations.
+archive/app/services/AudioService.ts(118,23): error TS7006: Parameter 'e' implicitly has an 'any' type.
+archive/app/services/AuthService.ts(1,30): error TS2307: Cannot find module '@react-native-google-signin/google-signin' or its corresponding type declarations.
+archive/app/services/AuthService.ts(2,18): error TS2307: Cannot find module '@react-native-firebase/auth' or its corresponding type declarations.
+archive/app/services/AuthService.ts(53,40): error TS2339: Property 'nonce' does not exist on type 'AppleAuthenticationCredential'.
+archive/app/services/BLEService.ts(1,46): error TS2307: Cannot find module 'react-native-ble-plx' or its corresponding type declarations.
+archive/app/services/BLEService.ts(96,51): error TS7006: Parameter 'error' implicitly has an 'any' type.
+archive/app/services/BLEService.ts(96,58): error TS7006: Parameter 'device' implicitly has an 'any' type.
+archive/app/services/BLEService.ts(131,58): error TS7006: Parameter 'state' implicitly has an 'any' type.
+archive/app/services/CV/NormalizationService.ts(42,12): error TS2352: Conversion of type 'ArrayBufferView<ArrayBufferLike>' to type 'ArrayLike<number>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Property 'length' is missing in type 'ArrayBufferView<ArrayBufferLike>' but required in type 'ArrayLike<number>'.
+archive/app/services/CV/RepetitionCounter.ts(68,79): error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+archive/app/services/CV/RepetitionCounter.ts(83,21): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(86,21): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(88,21): error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+archive/app/services/CV/RepetitionCounter.ts(95,21): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(97,21): error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+archive/app/services/CV/RepetitionCounter.ts(104,65): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+archive/app/services/CV/RepetitionCounter.ts(105,21): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(110,28): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(120,65): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+archive/app/services/CV/RepetitionCounter.ts(121,21): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(131,21): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(137,28): error TS18047: 'kneeAngle' is possibly 'null'.
+archive/app/services/CV/RepetitionCounter.ts(148,50): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+archive/app/services/CV/TFLiteDelegateService.ts(11,48): error TS2307: Cannot find module '@/utils/storage' or its corresponding type declarations.
+archive/app/services/CV/validators/SquatValidator.ts(1,26): error TS2307: Cannot find module '../../NormalizationService' or its corresponding type declarations.
+archive/app/services/DatabaseService.ts(135,30): error TS2347: Untyped function calls may not accept type arguments.
+archive/app/services/DeviceCapabilityService.ts(1,25): error TS2307: Cannot find module 'expo-device' or its corresponding type declarations.
+archive/app/services/HealthService.ts(5,8): error TS2307: Cannot find module 'react-native-health' or its corresponding type declarations.
+archive/app/services/HealthService.ts(11,8): error TS2307: Cannot find module 'react-native-health-connect' or its corresponding type declarations.
+archive/app/services/SquatAudioService.ts(1,23): error TS2307: Cannot find module 'expo-av' or its corresponding type declarations.
+archive/app/services/SquatAudioService.ts(277,46): error TS7006: Parameter 'status' implicitly has an 'any' type.
+archive/app/services/Workout/ActiveSessionManager.test.ts(3,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(7,24): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(8,29): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(18,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(20,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/ActiveSessionManager.test.ts(28,5): error TS2304: Cannot find name 'beforeEach'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(33,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/ActiveSessionManager.test.ts(34,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(37,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/ActiveSessionManager.test.ts(38,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(39,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(42,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/ActiveSessionManager.test.ts(44,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(47,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(48,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(51,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/ActiveSessionManager.test.ts(53,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(58,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(60,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(61,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.test.ts(64,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/ActiveSessionManager.test.ts(66,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(69,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/app/services/Workout/ActiveSessionManager.test.ts(74,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/ActiveSessionManager.ts(95,9): error TS2322: Type 'number' is not assignable to type 'Timeout'.
+archive/app/services/Workout/IntensityOptimizer.test.ts(3,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/IntensityOptimizer.test.ts(4,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/IntensityOptimizer.test.ts(6,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/IntensityOptimizer.test.ts(9,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/IntensityOptimizer.test.ts(11,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/IntensityOptimizer.test.ts(14,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/IntensityOptimizer.test.ts(16,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/IntensityOptimizer.test.ts(19,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/IntensityOptimizer.test.ts(21,9): error TS2304: Cannot find name 'expect'.
+archive/app/services/Workout/IntensityOptimizer.test.ts(24,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/services/Workout/IntensityOptimizer.test.ts(27,9): error TS2304: Cannot find name 'expect'.
+archive/app/theme/context.tsx(16,31): error TS2307: Cannot find module 'react-native-mmkv' or its corresponding type declarations.
+archive/app/theme/context.tsx(18,25): error TS2307: Cannot find module '@/utils/storage' or its corresponding type declarations.
+archive/app/utils/formatDate.ts(5,24): error TS2307: Cannot find module 'date-fns/format' or its corresponding type declarations.
+archive/app/utils/formatDate.ts(6,29): error TS2307: Cannot find module 'date-fns/locale' or its corresponding type declarations.
+archive/app/utils/formatDate.ts(7,26): error TS2307: Cannot find module 'date-fns/parseISO' or its corresponding type declarations.
+archive/app/utils/formatDate.ts(8,18): error TS2307: Cannot find module 'i18next' or its corresponding type declarations.
+archive/app/utils/storage/index.ts(1,22): error TS2307: Cannot find module 'react-native-mmkv' or its corresponding type declarations.
+archive/app/utils/storage/storage.test.ts(6,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(7,3): error TS2304: Cannot find name 'beforeEach'.
+archive/app/utils/storage/storage.test.ts(13,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(14,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(17,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(18,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(21,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(22,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(23,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(25,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(26,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(29,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(31,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(34,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(36,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(38,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(41,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(43,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(46,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(48,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(49,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(52,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(53,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(56,3): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/app/utils/storage/storage.test.ts(57,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/storage/storage.test.ts(59,5): error TS2304: Cannot find name 'expect'.
+archive/app/utils/useHeader.tsx(5,37): error TS2307: Cannot find module '@/components/Header' or its corresponding type declarations.
+archive/index.tsx(4,21): error TS2307: Cannot find module '@/app' or its corresponding type declarations.
+archive/modules/cv-engine/index.ts(1,15): error TS2307: Cannot find module './cpp' or its corresponding type declarations.
+archive/modules/health-bridge/index.ts(1,15): error TS2307: Cannot find module './android' or its corresponding type declarations.
+archive/modules/health-bridge/index.ts(2,15): error TS2307: Cannot find module './ios' or its corresponding type declarations.
+archive/test/hooks/usePairing.test.ts(1,42): error TS2307: Cannot find module '@testing-library/react-native' or its corresponding type declarations.
+archive/test/hooks/usePairing.test.ts(7,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(9,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(11,26): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(12,25): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(13,26): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(14,29): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(18,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(20,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/hooks/usePairing.test.ts(21,40): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(23,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/hooks/usePairing.test.ts(24,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(25,52): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/hooks/usePairing.test.ts(26,54): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/hooks/usePairing.test.ts(29,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/hooks/usePairing.test.ts(36,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(37,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(38,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(41,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/hooks/usePairing.test.ts(42,45): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/hooks/usePairing.test.ts(42,71): error TS7006: Parameter 'onDevice' implicitly has an 'any' type.
+archive/test/hooks/usePairing.test.ts(52,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(53,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(56,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/hooks/usePairing.test.ts(57,27): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/hooks/usePairing.test.ts(61,36): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/hooks/usePairing.test.ts(61,62): error TS7006: Parameter 'title' implicitly has an 'any' type.
+archive/test/hooks/usePairing.test.ts(61,69): error TS7006: Parameter 'msg' implicitly has an 'any' type.
+archive/test/hooks/usePairing.test.ts(61,74): error TS7006: Parameter 'buttons' implicitly has an 'any' type.
+archive/test/hooks/usePairing.test.ts(67,51): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/hooks/usePairing.test.ts(75,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(76,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(77,9): error TS2304: Cannot find name 'expect'.
+archive/test/hooks/usePairing.test.ts(78,9): error TS2304: Cannot find name 'expect'.
+archive/test/i18n.test.ts(19,18): error TS7006: Parameter 'obj' implicitly has an 'any' type.
+archive/test/i18n.test.ts(19,23): error TS7006: Parameter 'stack' implicitly has an 'any' type.
+archive/test/i18n.test.ts(19,30): error TS7006: Parameter 'array' implicitly has an 'any' type.
+archive/test/i18n.test.ts(22,18): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.
+  No index signature with a parameter of type 'string' was found on type '{}'.
+archive/test/i18n.test.ts(54,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/i18n.test.ts(55,3): error TS2582: Cannot find name 'test'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/i18n.test.ts(55,38): error TS7006: Parameter 'done' implicitly has an 'any' type.
+archive/test/i18n.test.ts(62,69): error TS7006: Parameter 'key' implicitly has an 'any' type.
+archive/test/i18n.test.ts(69,11): error TS2304: Cannot find name 'expect'.
+archive/test/screens/DisclaimerScreen.test.tsx(3,44): error TS2307: Cannot find module '@testing-library/react-native' or its corresponding type declarations.
+archive/test/screens/DisclaimerScreen.test.tsx(6,10): error TS2305: Module '"../../app/services/DatabaseService"' has no exported member 'database'.
+archive/test/screens/DisclaimerScreen.test.tsx(9,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/DisclaimerScreen.test.tsx(10,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/DisclaimerScreen.test.tsx(12,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/DisclaimerScreen.test.tsx(19,12): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/DisclaimerScreen.test.tsx(26,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/DisclaimerScreen.test.tsx(27,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/screens/DisclaimerScreen.test.tsx(28,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/DisclaimerScreen.test.tsx(31,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/DisclaimerScreen.test.tsx(35,39): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & DisclaimerScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & DisclaimerScreenProps'.
+archive/test/screens/DisclaimerScreen.test.tsx(40,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/DisclaimerScreen.test.tsx(41,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/DisclaimerScreen.test.tsx(44,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/DisclaimerScreen.test.tsx(48,39): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & DisclaimerScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & DisclaimerScreenProps'.
+archive/test/screens/DisclaimerScreen.test.tsx(57,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/DisclaimerScreen.test.tsx(58,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/DisclaimerScreen.test.tsx(65,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/DisclaimerScreen.test.tsx(68,28): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/DisclaimerScreen.test.tsx(73,39): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & DisclaimerScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & DisclaimerScreenProps'.
+archive/test/screens/DisclaimerScreen.test.tsx(82,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(3,44): error TS2307: Cannot find module '@testing-library/react-native' or its corresponding type declarations.
+archive/test/screens/PermissionsScreen.test.tsx(9,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/PermissionsScreen.test.tsx(11,29): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/PermissionsScreen.test.tsx(16,15): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/PermissionsScreen.test.tsx(23,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/PermissionsScreen.test.tsx(24,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/screens/PermissionsScreen.test.tsx(25,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/PermissionsScreen.test.tsx(28,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/PermissionsScreen.test.tsx(32,40): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & PermissionsScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & PermissionsScreenProps'.
+archive/test/screens/PermissionsScreen.test.tsx(37,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(38,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(39,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(42,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/PermissionsScreen.test.tsx(43,51): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/screens/PermissionsScreen.test.tsx(48,40): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & PermissionsScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & PermissionsScreenProps'.
+archive/test/screens/PermissionsScreen.test.tsx(57,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(58,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(63,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(67,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/PermissionsScreen.test.tsx(68,51): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/screens/PermissionsScreen.test.tsx(73,40): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & PermissionsScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & PermissionsScreenProps'.
+archive/test/screens/PermissionsScreen.test.tsx(82,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(83,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/PermissionsScreen.test.tsx(87,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/PermissionsScreen.test.tsx(91,40): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & PermissionsScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & PermissionsScreenProps'.
+archive/test/screens/PermissionsScreen.test.tsx(99,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(3,44): error TS2307: Cannot find module '@testing-library/react-native' or its corresponding type declarations.
+archive/test/screens/ProfileScreen.test.tsx(9,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/ProfileScreen.test.tsx(10,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/ProfileScreen.test.tsx(19,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/ProfileScreen.test.tsx(22,17): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/ProfileScreen.test.tsx(27,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/ProfileScreen.test.tsx(28,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/screens/ProfileScreen.test.tsx(29,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/screens/ProfileScreen.test.tsx(32,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/ProfileScreen.test.tsx(36,36): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & ProfileScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & ProfileScreenProps'.
+archive/test/screens/ProfileScreen.test.tsx(41,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(42,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(43,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(44,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(47,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/ProfileScreen.test.tsx(51,36): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & ProfileScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & ProfileScreenProps'.
+archive/test/screens/ProfileScreen.test.tsx(70,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(74,13): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(78,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/screens/ProfileScreen.test.tsx(82,36): error TS2322: Type '{ navigation: any; route: any; }' is not assignable to type 'IntrinsicAttributes & ProfileScreenProps'.
+  Property 'navigation' does not exist on type 'IntrinsicAttributes & ProfileScreenProps'.
+archive/test/screens/ProfileScreen.test.tsx(90,9): error TS2304: Cannot find name 'expect'.
+archive/test/screens/ProfileScreen.test.tsx(91,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(5,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(7,21): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(8,30): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(9,29): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(10,30): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(11,37): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(12,28): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(14,19): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(20,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(25,21): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(25,30): error TS7006: Parameter 'objs' implicitly has an 'any' type.
+archive/test/services/BLEService.test.ts(28,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(41,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(44,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/services/BLEService.test.ts(45,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(49,5): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(50,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(53,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(56,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(60,49): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/BLEService.test.ts(64,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(66,17): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(68,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(70,17): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(72,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(75,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(79,49): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/BLEService.test.ts(83,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(85,17): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(87,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(91,5): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(92,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(93,30): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(94,29): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(96,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(99,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(101,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(105,5): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(106,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/BLEService.test.ts(109,56): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/BLEService.test.ts(112,46): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/BLEService.test.ts(116,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(117,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/BLEService.test.ts(118,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(4,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(5,24): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(8,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(9,19): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(10,19): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(12,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(15,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(16,26): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(24,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/DatabaseService.test.ts(27,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/services/DatabaseService.test.ts(28,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(31,24): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(32,23): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(33,28): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(34,25): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(35,35): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/DatabaseService.test.ts(37,43): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/DatabaseService.test.ts(40,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/DatabaseService.test.ts(42,43): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/DatabaseService.test.ts(44,45): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/DatabaseService.test.ts(51,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(52,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(53,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(55,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(57,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(60,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/DatabaseService.test.ts(61,43): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/DatabaseService.test.ts(65,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(66,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(69,5): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/DatabaseService.test.ts(70,43): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/DatabaseService.test.ts(76,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(79,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(82,9): error TS2304: Cannot find name 'expect'.
+archive/test/services/DatabaseService.test.ts(82,55): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(5,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(6,20): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(16,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(17,17): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(18,24): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(19,18): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(23,28): error TS2307: Cannot find module 'react-native-health' or its corresponding type declarations.
+archive/test/services/HealthService.test.ts(24,32): error TS2307: Cannot find module 'react-native-health-connect' or its corresponding type declarations.
+archive/test/services/HealthService.test.ts(26,1): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(27,5): error TS2304: Cannot find name 'beforeEach'.
+archive/test/services/HealthService.test.ts(28,9): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/services/HealthService.test.ts(31,5): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(32,9): error TS2304: Cannot find name 'beforeAll'.
+archive/test/services/HealthService.test.ts(36,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(38,51): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/HealthService.test.ts(38,77): error TS7006: Parameter 'opts' implicitly has an 'any' type.
+archive/test/services/HealthService.test.ts(38,83): error TS7006: Parameter 'cb' implicitly has an 'any' type.
+archive/test/services/HealthService.test.ts(42,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(43,17): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(44,34): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(45,31): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(46,32): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(49,17): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(51,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(54,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(55,51): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/HealthService.test.ts(55,77): error TS7006: Parameter 'opts' implicitly has an 'any' type.
+archive/test/services/HealthService.test.ts(55,83): error TS7006: Parameter 'cb' implicitly has an 'any' type.
+archive/test/services/HealthService.test.ts(57,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(61,5): error TS2582: Cannot find name 'describe'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(62,9): error TS2304: Cannot find name 'beforeAll'.
+archive/test/services/HealthService.test.ts(66,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(67,47): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/HealthService.test.ts(68,54): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/HealthService.test.ts(72,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(73,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(74,13): error TS2304: Cannot find name 'expect'.
+archive/test/services/HealthService.test.ts(77,9): error TS2582: Cannot find name 'it'. Do you need to install type definitions for a test runner? Try `npm i --save-dev @types/jest` or `npm i --save-dev @types/mocha`.
+archive/test/services/HealthService.test.ts(78,47): error TS2694: Namespace 'global.jest' has no exported member 'Mock'.
+archive/test/services/HealthService.test.ts(80,13): error TS2304: Cannot find name 'expect'.
+archive/test/setup.ts(8,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(16,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(20,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(21,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(27,29): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(27,38): error TS7006: Parameter '_source' implicitly has an 'any' type.
+archive/test/setup.ts(28,18): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(36,23): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(42,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(52,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(53,6): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(57,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(64,23): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(67,13): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(71,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(71,37): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(74,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(76,10): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(77,16): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(78,16): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(79,17): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(80,13): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(81,17): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(82,15): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(84,20): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(87,20): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(87,35): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(87,46): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(88,20): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(88,35): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(88,46): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(89,21): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(89,36): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(89,47): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(94,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(95,26): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(98,21): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(103,1): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(104,15): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(105,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(106,21): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(107,22): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(108,20): error TS2708: Cannot use namespace 'jest' as a value.
+archive/test/setup.ts(113,15): error TS7005: Variable 'tron' implicitly has an 'any' type.
+features/auth/screens/LoginScreen.tsx(35,44): error TS2339: Property 'errors' does not exist on type 'ZodError<unknown>'.
+features/auth/screens/SignupScreen.tsx(40,28): error TS2339: Property 'errors' does not exist on type 'ZodError<unknown>'.
+features/auth/services/firebase-auth.ts(1,10): error TS7034: Variable 'auth' implicitly has type 'any' in some locations where its type cannot be determined.
+features/auth/services/firebase-auth.ts(12,59): error TS7005: Variable 'auth' implicitly has an 'any' type.
+features/auth/services/firebase-auth.ts(21,63): error TS7005: Variable 'auth' implicitly has an 'any' type.
+features/auth/services/firebase-auth.ts(29,23): error TS7005: Variable 'auth' implicitly has an 'any' type.
+features/auth/services/firebase-auth.ts(33,16): error TS7005: Variable 'auth' implicitly has an 'any' type.
+features/vision/components/CameraView.tsx(27,41): error TS2304: Cannot find name 'RepCounter'.
+features/vision/components/CameraView.tsx(51,13): error TS2304: Cannot find name 'setRepCount'.
+features/vision/components/CameraView.tsx(53,13): error TS2304: Cannot find name 'setDebugAngle'.
+features/vision/components/CameraView.tsx(157,47): error TS2304: Cannot find name 'repCount'.
+features/vision/components/CameraView.tsx(161,49): error TS2304: Cannot find name 'debugAngle'.
+features/welcome/screens/WelcomeScreen.tsx(89,25): error TS17001: JSX elements cannot have multiple attributes with the same name.
+services/vision/PoseDetectionService.ts(1,22): error TS6137: Cannot import type declaration files. Consider importing 'vision' instead of '@types/vision'.
+services/vision/RepCounter.ts(1,46): error TS6137: Cannot import type declaration files. Consider importing 'vision' instead of '@types/vision'.
+shared/services/firebase/config.ts(3,19): error TS2305: Module '"firebase/auth"' has no exported member 'getReactNativePersistence'.
+shared/stores/auth-store.ts(2,10): error TS7034: Variable 'auth' implicitly has type 'any' in some locations where its type cannot be determined.
+shared/stores/auth-store.ts(39,52): error TS7005: Variable 'auth' implicitly has an 'any' type.
+shared/stores/auth-store.ts(61,23): error TS7005: Variable 'auth' implicitly has an 'any' type.

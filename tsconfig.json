@@ -1,0 +1,41 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "@/*": [
+        "./app/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@constants/*": [
+        "./constants/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@features/*": [
+        "./features/*"
+      ],
+      "@services/*": [
+        "./services/*"
+      ],
+      "@shared/*": [
+        "./shared/*"
+      ],
+      "@types/*": [
+        "./types/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
+}

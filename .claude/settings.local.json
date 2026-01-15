@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(..specifyscriptspowershellcheck-prerequisites.ps1 -Json -PathsOnly)",
+      "Bash(pwsh -File \".\\\\.specify\\\\scripts\\\\powershell\\\\check-prerequisites.ps1\" -Json -PathsOnly)",
+      "Skill(speckit.constitution)",
+      "Bash(git fetch:*)",
+      "Bash(pwsh:*)",
+      "mcp__MCP_DOCKER__mcp-find",
+      "WebSearch",
+      "Bash(dir:*)",
+      "Bash(adb shell:*)",
+      "Bash(adb pull:*)",
+      "Bash(where:*)",
+      "Bash(java -version:*)",
+      "Bash(cmd /c \"where java 2>nul || echo not found in PATH\")",
+      "Bash(cmd /c \"dir /b /ad \"\"C:\\\\Program Files\\\\Java\"\" 2>nul || echo no Java folder\")",
+      "Bash(cmd /c \"dir /b /ad \"\"C:\\\\Program Files\\\\Microsoft\\\\jdk*\"\" 2>nul || echo no Microsoft JDK\")",
+      "Bash(cmd /c \"dir /b /ad \"\"C:\\\\Program Files\\\\Eclipse Adoptium\"\" 2>nul || echo no Adoptium\")",
+      "Bash(powershell -Command:*)",
+      "Bash(cmd.exe /c \"dir /b \"\"C:\\\\Program Files\\\\Java\"\" 2>nul\")",
+      "Bash(cmd.exe /c \"dir /b \"\"C:\\\\Program Files\\\\Eclipse Adoptium\"\" 2>nul\")",
+      "Bash(cmd.exe:*)",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command \"Invoke-WebRequest -Uri ''https://aka.ms/download-jdk/microsoft-jdk-17.0.14-windows-x64.msi'' -OutFile ''C:\\\\Users\\\\ukped\\\\Downloads\\\\openjdk17.msi''\")",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Users\\\\ukped\\\\Downloads\\\\openjdk17.msi''\")",
+      "Bash(powershell.exe -Command \"Start-Process msiexec.exe -ArgumentList ''/i'', ''C:\\\\Users\\\\ukped\\\\Downloads\\\\openjdk17.msi'', ''ADDLOCAL=FeatureMain,FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome'', ''/quiet'' -Wait -Verb RunAs\")",
+      "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Program Files\\\\Microsoft\\\\jdk-17*''\")",
+      "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Microsoft'' -Directory | Where-Object Name -like ''jdk*''\")",
+      "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\Microsoft\\\\jdk-17.0.14.7-hotspot\\\\bin\\\\java.exe'' -version\")",
+      "Bash(powershell.exe -Command \"Remove-Item ''C:\\\\Users\\\\ukped\\\\Downloads\\\\openjdk17.msi'' -Force\")"
+    ]
+  }
+}

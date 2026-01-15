@@ -1,0 +1,49 @@
+--------- beginning of main
+01-15 18:04:58.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493098
+01-15 18:04:58.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:04:58.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:04:58.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:04:59.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493099
+01-15 18:04:59.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:04:59.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:04:59.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:04:59.509  1016  1033 E BatteryDump: !@new_battery_dump : 3907,738,1000,1800,50,309,268,335,309,0,362,328,0,Charging,NO_CHARGING,Normal,Good,USB,1,Normal,0,0,8700,0x20008000,0xf0000,0x0,0,0,0000,0000,00000000,0,0,0,0,1595,3859,4970,990,0,
+01-15 18:05:00.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493100
+01-15 18:05:00.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:00.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:00.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:05:01.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493101
+01-15 18:05:01.460  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:01.460  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:01.460  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:05:01.669 18394 18394 E id.agent:remote: Not starting debugger since process cannot load the jdwp agent.
+01-15 18:05:01.798 18392 18392 E SemDvfsManager_JNI: SemDvfsManager: registerfunction enter
+01-15 18:05:01.798 18392 18392 E SemAffinityControl: SemAffinityControl: registerfunction enter
+01-15 18:05:01.825 18392 18392 E FeatureFlagsImplExport: android.os.flagging.AconfigStorageReadException: ERROR_PACKAGE_NOT_FOUND: package android.xr cannot be found on the device
+01-15 18:05:01.891  3039  3039 E pageboostd: Received HALT command code 2
+--------- beginning of system
+01-15 18:05:01.892  1302  1635 E WindowManager: Display reconfigured outside of a transition: Display{#0 state=ON size=1080x2316 ROTATION_0}
+01-15 18:05:01.903  1027  1027 E Sensors : inject_scontext_data: New ssp_data_injection_fd(45)
+01-15 18:05:01.935  1027  1587 E Sensors : Sensor : Meta event
+01-15 18:05:01.973  1302  1635 E WindowManager: Display reconfigured outside of a transition: Display{#0 state=ON size=1080x2316 ROTATION_0}
+01-15 18:05:02.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493102
+01-15 18:05:02.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:02.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:02.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:05:03.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493103
+01-15 18:05:03.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:03.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:03.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:05:04.219  1027  1027 E Sensors : inject_scontext_data: New ssp_data_injection_fd(45)
+01-15 18:05:04.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493104
+01-15 18:05:04.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:04.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:04.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:05:05.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493105
+01-15 18:05:05.459  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:05.459  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:05.459  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
+01-15 18:05:06.458  1074  1122 E HeatmapThread: ECT Thread time in milliseconds: 1768493106
+01-15 18:05:06.458  1074  1122 E HeatmapThread: !@Could not open '/efs/FactoryApp/bsoh', errno = 13
+01-15 18:05:06.458  1074  1122 E HeatmapThread: !@ CAM Could not access BSOH EFS
+01-15 18:05:06.458  1074  1122 E HeatmapThread: !@ CAM New BSOH: 0
