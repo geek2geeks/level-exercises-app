@@ -27,7 +27,13 @@
       "Bash(powershell.exe -Command \"Test-Path ''C:\\\\Program Files\\\\Microsoft\\\\jdk-17*''\")",
       "Bash(powershell.exe -Command \"Get-ChildItem ''C:\\\\Program Files\\\\Microsoft'' -Directory | Where-Object Name -like ''jdk*''\")",
       "Bash(powershell.exe -Command \"& ''C:\\\\Program Files\\\\Microsoft\\\\jdk-17.0.14.7-hotspot\\\\bin\\\\java.exe'' -version\")",
-      "Bash(powershell.exe -Command \"Remove-Item ''C:\\\\Users\\\\ukped\\\\Downloads\\\\openjdk17.msi'' -Force\")"
+      "Bash(powershell.exe -Command \"Remove-Item ''C:\\\\Users\\\\ukped\\\\Downloads\\\\openjdk17.msi'' -Force\")",
+      "Bash(git rm:*)",
+      "Bash(git filter-branch:*)",
+      "Bash(git stash:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nsecurity: add .env to gitignore to prevent credential exposure\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)"
     ]
   }
 }

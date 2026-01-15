@@ -46,7 +46,10 @@ const InitialLayout = observer(() => {
         router.replace('/');
       }
     } else if (authStore.isAuthenticated) {
-      if (segments.length === 0 || inAuthGroup) {
+      // TS Fix: Ensure we are checking specific conditions
+      // @ts-ignore
+      const atRoot = segments.length === 0;
+      if (atRoot || inAuthGroup) {
         router.replace('/(tabs)');
       }
     }

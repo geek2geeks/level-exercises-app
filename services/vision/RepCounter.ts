@@ -1,4 +1,4 @@
-import { Keypoint, Pose, PoseLandmark } from '@types/vision';
+import { Keypoint, Pose, PoseLandmark } from '../../types/vision';
 
 export enum ExerciseState {
     UP = 'UP',

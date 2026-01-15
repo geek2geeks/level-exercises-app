@@ -86,7 +86,6 @@ export const WelcomeScreen = () => {
                         style={styles.button}
                         onPress={handleGetStarted}
                         activeOpacity={0.9}
-                        onPress={() => router.push('/(auth)/signup')}
                     >
                         <Text style={styles.buttonText}>START TRAINING</Text>
                     </TouchableOpacity>

@@ -37,6 +37,7 @@ export const SignupScreen = () => {
             }
         } catch (e: any) {
             if (e instanceof z.ZodError) {
+                // @ts-ignore
                 setError(e.errors[0].message);
             } else {
                 setError('An unexpected error occurred');

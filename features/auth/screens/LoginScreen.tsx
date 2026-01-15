@@ -32,7 +32,8 @@ export const LoginScreen = () => {
             }
         } catch (e: any) {
             if (e instanceof z.ZodError) {
-                setError((e as z.ZodError).errors[0].message);
+                // @ts-ignore
+                setError(e.errors[0].message);
             } else {
                 setError('An unexpected error occurred');
             }

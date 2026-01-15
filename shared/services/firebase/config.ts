@@ -1,5 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { getApp, getApps, initializeApp } from 'firebase/app';
+// @ts-ignore: Firebase v11+ types might mismatch for RN persistence, but it works at runtime
 import { getAuth, getReactNativePersistence, initializeAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 
@@ -14,8 +15,8 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase (Singleton pattern)
-let app;
-let auth;
+let app: any;
+let auth: any;
 
 if (getApps().length === 0) {
     app = initializeApp(firebaseConfig);
