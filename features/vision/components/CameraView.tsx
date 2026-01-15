@@ -34,6 +34,8 @@ export const CameraView = () => {
 
     const [debugLog, setDebugLog] = useState("Init...");
 
+    const [isDetected, setIsDetected] = useState(false);
+
     const updateReps = (output: any, timeTaken: number) => {
         try {
             const pose = poseDetectionService.processOutput(output);
@@ -48,13 +50,15 @@ export const CameraView = () => {
             const {
                 count = 0,
                 state = ExerciseState.UP,
-                angle = 0
+                angle = 0,
+                isDetected: detected = false
             } = result || {};
 
             setRepCount(count);
             setExerciseState(state);
             setDebugAngle(Math.round(angle));
             setAvgScore(pose.score);
+            setIsDetected(detected);
             setLastInferenceTime(timeTaken);
         } catch (e: any) {
             setDebugLog("Err: " + e.message);
@@ -177,6 +181,7 @@ export const CameraView = () => {
                     <Text style={styles.debugTextSmall}>T: {Math.round(lastInferenceTime)}ms</Text>
                     <Text style={styles.debugTextSmall}>Conf: {(avgScore * 100).toFixed(0)}%</Text>
                     <Text style={styles.debugTextSmall}>S: {exerciseState}</Text>
+                    {!isDetected && <Text style={{ color: 'red', fontWeight: 'bold', fontSize: 10 }}>TRACKING LOST</Text>}
                 </View>
             </View>
 

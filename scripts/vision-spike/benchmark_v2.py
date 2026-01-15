@@ -1,106 +1,95 @@
 import cv2
 import time
 import numpy as np
-import pandas as pd
-from ultralytics import YOLO
 import tensorflow as tf
-import tensorflow_hub as hub
+from ultralytics import YOLO
 import mediapipe as mp
 from collections import deque
+import math
 
 # --- CONFIG ---
-INPUT_VIDEO = 'scripts/vision-spike/input.mp4'
-OUTPUT_VIDEO = 'scripts/vision-spike/comparison_output.mp4'
-TARGET_SIZE = (480, 480) # Resize for detailed grid
-STANDING_THRESHOLD = 0.50
-SQUAT_THRESHOLD = 0.60
+INPUT_VIDEO = 'assets/squats/WhatsApp Video 2026-01-11 at 23.41.14.mp4'
+OUTPUT_VIDEO = 'scripts/vision-spike/benchmark_results.mp4'
+TARGET_SIZE = (480, 480) # Resize for visualization
 
-# --- UTILS ---
+# --- REP COUNTER (MATCHING APP LOGIC) ---
+class ExerciseState:
+    UP = 'UP'
+    DOWN = 'DOWN'
+
 class RepCounter:
     def __init__(self):
-        self.reps = 0
-        self.state = 'STANDING'
-        self.history = deque(maxlen=5) # Smoothing
-        self.last_y = 0
+        self.count = 0
+        self.state = ExerciseState.UP
+        self.buffer = deque(maxlen=5)
+        # Thresholds from RepCounter.ts (Relaxed for Front View)
+        self.UP_THRESHOLD = 160
+        self.DOWN_THRESHOLD = 130
+    
+    def calculate_angle(self, a, b, c):
+        # a, b, c are (x, y) tuples
+        rad = math.atan2(c[1] - b[1], c[0] - b[0]) - math.atan2(a[1] - b[1], a[0] - b[0])
+        deg = abs(rad * (180.0 / math.pi))
+        if deg > 180.0:
+            deg = 360.0 - deg
+        return deg
 
-    def update(self, hip_y):
-        if hip_y is None or hip_y == 0: return self.reps, self.state
+    def update(self, hip, knee, ankle, confs):
+        # confs is list of scores [hip, knee, ankle]
+        if any(c < 0.3 for c in confs):
+            return self.count, self.state, 0
+
+        angle = self.calculate_angle(hip, knee, ankle)
         
-        self.history.append(hip_y)
-        avg_y = sum(self.history) / len(self.history)
-        self.last_y = avg_y
-
-        if self.state == 'STANDING':
-            if avg_y > SQUAT_THRESHOLD:
-                self.state = 'BOTTOM'
-        elif self.state == 'BOTTOM':
-            if avg_y < STANDING_THRESHOLD:
-                self.state = 'STANDING'
-                self.reps += 1
+        # Smooth
+        self.buffer.append(angle)
+        smoothed_angle = sum(self.buffer) / len(self.buffer)
         
-        return self.reps, self.state
+        # DEBUG: Print angle occasionally
+        # if int(smoothed_angle) % 10 == 0:
+        #    print(f"Angle: {smoothed_angle:.1f}")
 
-def draw_stats(image, model_name, inf_ms, fps, reps, state, hip_y):
-    # Overlay semi-transparent box
+        # State Machine
+        if self.state == ExerciseState.UP:
+            if smoothed_angle < self.DOWN_THRESHOLD:
+                self.state = ExerciseState.DOWN
+        elif self.state == ExerciseState.DOWN:
+            if smoothed_angle > self.UP_THRESHOLD:
+                self.state = ExerciseState.UP
+                self.count += 1
+        
+        return self.count, self.state, smoothed_angle
+
+# --- UTILS ---
+def draw_stats(image, model_name, inf_ms, fps, reps, state, angle):
+    # Overlay
     overlay = image.copy()
-    cv2.rectangle(overlay, (0, 0), (220, 130), (0, 0, 0), -1)
+    cv2.rectangle(overlay, (0, 0), (280, 150), (0, 0, 0), -1)
     alpha = 0.6
     cv2.addWeighted(overlay, alpha, image, 1 - alpha, 0, image)
 
-    color = (0, 255, 0) if state == 'STANDING' else (0, 0, 255)
+    color = (0, 255, 0) if state == ExerciseState.UP else (0, 0, 255)
     
     cv2.putText(image, f"{model_name}", (10, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255, 255, 255), 2)
     cv2.putText(image, f"Inf: {inf_ms:.1f}ms", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 1)
-    cv2.putText(image, f"FPS: {fps:.1f}", (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 1)
-    cv2.putText(image, f"Reps: {reps}", (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 0), 2)
-    cv2.putText(image, f"{state}", (100, 100), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+    cv2.putText(image, f"Angle: {int(angle)}", (10, 75), cv2.FONT_HERSHEY_SIMPLEX, 0.8, color, 2)
+    cv2.putText(image, f"Reps: {reps}", (10, 110), cv2.FONT_HERSHEY_SIMPLEX, 1.0, (255, 255, 0), 2)
+    cv2.putText(image, f"{state}", (120, 110), cv2.FONT_HERSHEY_SIMPLEX, 0.6, color, 2)
+
+def center_crop_and_resize(frame, target_size=256):
+    h, w, _ = frame.shape
+    dim = min(h, w)
     
-    # Progress Bar for Depth
-    bar_h = 10
-    bar_w = 200
-    bar_x, bar_y = 10, 115
-    fill = max(0, min(1, (hip_y - 0.3) / (0.7 - 0.3))) # Approximate range
-    cv2.rectangle(image, (bar_x, bar_y), (bar_x + bar_w, bar_y + bar_h), (50, 50, 50), -1)
-    cv2.rectangle(image, (bar_x, bar_y), (bar_x + int(bar_w * fill), bar_y + bar_h), color, -1)
+    # Center Crop
+    start_x = (w - dim) // 2
+    start_y = (h - dim) // 2
+    cropped = frame[start_y:start_y+dim, start_x:start_x+dim]
+    
+    # Resize
+    resized = cv2.resize(cropped, (target_size, target_size))
+    return resized, dim, start_x, start_y
 
 # --- MODELS ---
-
-# --- UTILS ---
-def get_primary_person(results):
-    """
-    Selects the 'primary' person explicitly based on heuristic score:
-    Score = (Area * 0.7) + ((1 - DistToCenter) * 0.3)
-    Assumes the user is the largest object and roughly centered.
-    """
-    if not results or len(results) == 0: return None, None
-
-    best_idx = -1
-    max_score = -1
-    
-    # Image dims (normalized 0-1)
-    center_x, center_y = 0.5, 0.5
-    
-    boxes = results[0].boxes
-    if boxes is None: return None, None
-
-    for i, box in enumerate(boxes):
-        # Box format: [x1, y1, x2, y2] (pixels) but we want ratio for heuristic or just raw pixels
-        # Let's use normalized xywh if available or calc from pixel boxes
-        b = box.xywhn.cpu().numpy()[0] # [x_center, y_center, w, h] normalized
-        
-        area = b[2] * b[3]
-        dist = ((b[0] - center_x)**2 + (b[1] - center_y)**2)**0.5
-        norm_dist = max(0, 1 - (dist * 2)) # 1 is at center, 0 is at edge
-
-        score = (area * 0.7) + (norm_dist * 0.3)
-        
-        if score > max_score:
-            max_score = score
-            best_idx = i
-            
-    if best_idx != -1:
-        return best_idx, max_score
-    return None, None
 
 class YOLOModel:
     def __init__(self, name):
@@ -112,188 +101,147 @@ class YOLOModel:
         start = time.time()
         results = self.model(frame, verbose=False)
         inf_ms = (time.time() - start) * 1000
-        
-        # Get annotated frame - we will manually draw ONLY the best person to clean up
-        # annotated = results[0].plot() # This draws EVERYONE
         annotated = frame.copy()
-        
-        best_idx, score = get_primary_person(results)
-        best_hip_y = 0
+
+        # Extract Keypoints (Left Side: 11, 13, 15)
+        angle = 0
+        reps = self.counter.count
         state = self.counter.state
 
-        if best_idx is not None:
-            # Draw only the primary person
-            # Reuse Ultralytics plotter but filtered? 
-            # Or manually draw simple skeleton for clarity
-            kps = results[0].keypoints.xy.cpu().numpy()[best_idx] # [17, 2] pixels
+        if results and results[0].boxes:
+            # Assume Person 0 is user
+            kps = results[0].keypoints.xy.cpu().numpy()[0]
+            scores = results[0].keypoints.conf.cpu().numpy()[0]
             
-            # Draw Skeleton
-            skeleton = [
-                (5,6),(5,7),(7,9),(6,8),(8,10), # Arms
-                (5,11),(6,12),(11,12), # Torso
-                (11,13),(13,15),(12,14),(14,16) # Legs
-            ]
-            
-            for p1, p2 in skeleton:
-                if p1 < len(kps) and p2 < len(kps):
-                    pt1 = (int(kps[p1][0]), int(kps[p1][1]))
-                    pt2 = (int(kps[p2][0]), int(kps[p2][1]))
-                    if pt1 != (0,0) and pt2 != (0,0):
-                        cv2.line(annotated, pt1, pt2, (0, 255, 0), 2)
-            
-            for kp in kps:
-                pt = (int(kp[0]), int(kp[1]))
-                if pt != (0,0):
-                    cv2.circle(annotated, pt, 4, (0, 255, 255), -1)
+            if len(kps) > 15:
+                start_p = 5 # Draw from shoulders down
+                for i in range(5, 17):
+                    pt = (int(kps[i][0]), int(kps[i][1]))
+                    if scores[i] > 0.5:
+                        cv2.circle(annotated, pt, 4, (0, 255, 255), -1)
+                
+                # Update Counter
+                hip = kps[11]
+                knee = kps[13]
+                ankle = kps[15]
+                confs = [scores[11], scores[13], scores[15]]
+                
+                reps, state, angle = self.counter.update(hip, knee, ankle, confs)
 
-            # Get normalized Hip Y for counting
-            # Need to re-normalize manually since .xy is pixels
-            h, w, _ = frame.shape
-            kps_n = results[0].keypoints.xyn.cpu().numpy()[best_idx]
-            best_hip_y = kps_n[11][1]
-            
-            # Bounding Box for debug
-            box = results[0].boxes.xyxy.cpu().numpy()[best_idx]
-            cv2.rectangle(annotated, (int(box[0]), int(box[1])), (int(box[2]), int(box[3])), (255, 0, 0), 2)
-
-        reps, state = self.counter.update(best_hip_y)
-        draw_stats(annotated, self.name, inf_ms, 1000/inf_ms if inf_ms > 0 else 0, reps, state, self.counter.last_y)
+        draw_stats(annotated, self.name, inf_ms, 0, reps, state, angle)
         return annotated
 
-class MediaPipeModel:
-    def __init__(self):
-        self.name = "MediaPipe"
-        try:
-            self.mp_pose = mp.solutions.pose
-            self.pose = self.mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, model_complexity=1)
-            self.mp_drawing = mp.solutions.drawing_utils
-            self.available = True
-        except:
-            self.available = False
-        self.counter = RepCounter()
-
-    def process(self, frame):
-        if not self.available:
-            dummy = frame.copy()
-            cv2.putText(dummy, "MediaPipe N/A", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-            return dummy
-
-        start = time.time()
-        image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        image.flags.writeable = False
-        results = self.pose.process(image)
-        inf_ms = (time.time() - start) * 1000
-        
-        image.flags.writeable = True
-        image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
-        
-        hip_y = 0
-        if results.pose_landmarks:
-            self.mp_drawing.draw_landmarks(image, results.pose_landmarks, self.mp_pose.POSE_CONNECTIONS)
-            hip_y = results.pose_landmarks.landmark[self.mp_pose.PoseLandmark.LEFT_HIP].y
-            
-        reps, state = self.counter.update(hip_y)
-        draw_stats(image, self.name, inf_ms, 1000/inf_ms if inf_ms > 0 else 0, reps, state, self.counter.last_y)
-        return image
-
-class MoveNetModel:
-    def __init__(self, name="MoveNet"):
+class MoveNetTFLite:
+    def __init__(self, model_path, name):
         self.name = name
-        # Thunder is higher accuracy, Lightning is faster
-        try:
-            model_url = "https://tfhub.dev/google/movenet/singlepose/thunder/4"
-            self.model = hub.load(model_url)
-            self.movenet = self.model.signatures['serving_default']
-            self.available = True
-        except Exception as e:
-            print(f"MoveNet Load Error: {e}")
-            self.available = False
+        self.interpreter = tf.lite.Interpreter(model_path=model_path)
+        self.interpreter.allocate_tensors()
+        self.input_details = self.interpreter.get_input_details()
+        self.output_details = self.interpreter.get_output_details()
         self.counter = RepCounter()
 
     def process(self, frame):
-        if not self.available:
-            dummy = frame.copy()
-            cv2.putText(dummy, "MoveNet N/A", (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
-            return dummy
-
         start = time.time()
-        # Resize to 256x256 for Thunder
-        input_image = tf.image.resize_with_pad(tf.expand_dims(frame, axis=0), 256, 256)
-        input_image = tf.cast(input_image, dtype=tf.int32)
-
-        outputs = self.movenet(input_image)
-        keypoints = outputs['output_0'].numpy()[0][0] # [17, 3] (y, x, conf)
         
+        # Get expected input shape
+        input_shape = self.input_details[0]['shape']
+        target_h, target_w = input_shape[1], input_shape[2]
+
+        # Preprocess: Center Crop -> Target Size -> Uint8
+        resized_img, dim, off_x, off_y = center_crop_and_resize(frame, target_w) # Assumes w=h
+        input_data = np.expand_dims(resized_img, axis=0) # [1, H, W, 3]
+        
+        # Inference
+        self.interpreter.set_tensor(self.input_details[0]['index'], input_data)
+        self.interpreter.invoke()
+        
+        # Output: [1, 1, 17, 3]
+        output_data = self.interpreter.get_tensor(self.output_details[0]['index'])
+        keypoints = output_data[0][0] # [17, 3] -> (y, x, conf) normalized 0-1 relative to CROP
+
         inf_ms = (time.time() - start) * 1000
         
         annotated = frame.copy()
-        h, w, _ = annotated.shape
         
-        # Draw Keypoints
-        hip_y = 0
-        for i, kp in enumerate(keypoints):
+        # Map Back to Original Frame
+        real_kps = []
+        scores = []
+        
+        for kp in keypoints:
             ky, kx, conf = kp
+            # Remap: values are relative to 256x256 crop
+            # real_x = (kx * dim) + off_x
+            real_x = (kx * dim) + off_x
+            real_y = (ky * dim) + off_y
+            real_kps.append((real_x, real_y))
+            scores.append(conf)
+            
             if conf > 0.3:
-                cv2.circle(annotated, (int(kx * w), int(ky * h)), 5, (0, 255, 255), -1)
-                if i == 11: # Left Hip
-                    hip_y = ky 
+                cv2.circle(annotated, (int(real_x), int(real_y)), 5, (255, 0, 255), -1)
 
-        reps, state = self.counter.update(hip_y)
-        draw_stats(annotated, self.name, inf_ms, 1000/inf_ms if inf_ms > 0 else 0, reps, state, self.counter.last_y)
+        # Update Counter (Left: 11, 13, 15)
+        hip = real_kps[11]
+        knee = real_kps[13]
+        ankle = real_kps[15]
+        confs = [scores[11], scores[13], scores[15]]
+        
+        reps, state, angle = self.counter.update(hip, knee, ankle, confs)
+        
+        draw_stats(annotated, self.name, inf_ms, 0, reps, state, angle)
         return annotated
 
 # --- MAIN ---
 def run_benchmark():
     cap = cv2.VideoCapture(INPUT_VIDEO)
+    if not cap.isOpened():
+        print(f"Error opening video: {INPUT_VIDEO}")
+        return
+
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     fps = cap.get(cv2.CAP_PROP_FPS)
-    
-    # Setup Models
+
+    print(f"Video: {width}x{height} @ {fps}fps")
+
     models = [
+        MoveNetTFLite('assets/models/movenet_thunder_int8.tflite', 'Thunder Int8'),
+        MoveNetTFLite('assets/models/movenet_lightning_int8.tflite', 'Lightning Int8'),
         YOLOModel('yolov8n-pose.pt'),
-        YOLOModel('yolov8s-pose.pt'),
-        MediaPipeModel(),
-        MoveNetModel('MoveNet Thunder')
+        # YOLOModel('yolov8s-pose.pt'),
     ]
+
+    # Output grid setup
+    grid_w = TARGET_SIZE[0] * 3 
+    grid_h = TARGET_SIZE[1] # 1x3 row
     
-    # Setup Output
-    # Grid: 2x2. Output size = (TARGET_SIZE[0]*2, TARGET_SIZE[1]*2)
-    grid_w = TARGET_SIZE[0] * 2
-    grid_h = TARGET_SIZE[1] * 2
     out = cv2.VideoWriter(OUTPUT_VIDEO, cv2.VideoWriter_fourcc(*'mp4v'), fps, (grid_w, grid_h))
 
     frame_count = 0
-    print("Starting Benchmark loop...")
-
     while True:
         ret, frame = cap.read()
         if not ret: break
-        
-        processed_frames = []
-        for model in models:
-            res = model.process(frame.copy())
+
+        processed = []
+        for m in models:
+            res = m.process(frame.copy())
             resized = cv2.resize(res, TARGET_SIZE)
-            processed_frames.append(resized)
-            
-        # Compose Grid
-        top = np.hstack((processed_frames[0], processed_frames[1]))
-        bottom = np.hstack((processed_frames[2], processed_frames[3]))
-        grid = np.vstack((top, bottom))
-        
+            processed.append(resized)
+
+        grid = np.hstack(processed)
         out.write(grid)
-        frame_count += 1
-        if frame_count % 10 == 0:
-            print(f"Processed {frame_count} frames...")
         
-        # Cap at 300 frames for speed (approx 5-10s of video)
-        if frame_count >= 300:
-            print("Reached frame cap (300). Stopping...")
-            break
+        frame_count += 1
+        if frame_count % 30 == 0:
+            print(f"Processed {frame_count} frames... Reps: {[m.counter.count for m in models]}")
 
     cap.release()
     out.release()
-    print(f"Done! Saved to {OUTPUT_VIDEO}")
+    print("Benchmark Complete.")
+    
+    # Summary
+    print("\n--- RESULTS ---")
+    for m in models:
+        print(f"{m.name}: {m.counter.count} reps detected.")
 
 if __name__ == '__main__':
     run_benchmark()

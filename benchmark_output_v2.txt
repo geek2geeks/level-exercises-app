@@ -1,0 +1,34 @@
+2026-01-15 20:02:55.090442: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-15 20:02:56.076542: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Video: 1280x720 @ 60.0fps
+C:\Users\ukped\anaconda3\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Processed 30 frames... Reps: [0, 0, 0]
+Processed 60 frames... Reps: [0, 0, 0]
+Processed 90 frames... Reps: [0, 0, 0]
+Processed 120 frames... Reps: [0, 0, 0]
+Processed 150 frames... Reps: [1, 0, 0]
+Processed 180 frames... Reps: [1, 0, 0]
+Processed 210 frames... Reps: [1, 0, 0]
+Processed 240 frames... Reps: [1, 0, 0]
+Processed 270 frames... Reps: [1, 0, 0]
+Processed 300 frames... Reps: [1, 0, 0]
+Processed 330 frames... Reps: [2, 0, 0]
+Processed 360 frames... Reps: [2, 0, 0]
+Processed 390 frames... Reps: [2, 0, 0]
+Processed 420 frames... Reps: [3, 0, 0]
+Processed 450 frames... Reps: [3, 0, 0]
+Processed 480 frames... Reps: [3, 0, 0]
+Processed 510 frames... Reps: [3, 0, 0]
+Processed 540 frames... Reps: [3, 0, 0]
+Benchmark Complete.
+
+--- RESULTS ---
+Thunder Int8: 3 reps detected.
+Lightning Int8: 0 reps detected.
+yolov8n-pose.pt: 0 reps detected.

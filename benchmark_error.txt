@@ -1,0 +1,21 @@
+2026-01-15 19:59:34.665911: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-01-15 19:59:35.682875: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\ukped\anaconda3\Lib\site-packages\tensorflow\lite\python\interpreter.py:457: UserWarning:     Warning: tf.lite.Interpreter is deprecated and is scheduled for deletion in
+    TF 2.20. Please use the LiteRT interpreter from the ai_edge_litert package.
+    See the [migration guide](https://ai.google.dev/edge/litert/migration)
+    for details.
+    
+  warnings.warn(_INTERPRETER_DELETION_WARNING)
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+Video: 1280x720 @ 60.0fps
+Traceback (most recent call last):
+  File "C:\app\scripts\vision-spike\benchmark_v2.py", line 239, in <module>
+    run_benchmark()
+  File "C:\app\scripts\vision-spike\benchmark_v2.py", line 218, in run_benchmark
+    res = m.process(frame.copy())
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\app\scripts\vision-spike\benchmark_v2.py", line 147, in process
+    self.interpreter.set_tensor(self.input_details[0]['index'], input_data)
+  File "C:\Users\ukped\anaconda3\Lib\site-packages\tensorflow\lite\python\interpreter.py", line 764, in set_tensor
+    self._interpreter.SetTensor(tensor_index, value)
+ValueError: Cannot set tensor: Dimension mismatch. Got 256 but expected 192 for dimension 1 of input 0.

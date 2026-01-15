@@ -5,19 +5,79 @@ export enum ExerciseState {
     DOWN = 'DOWN',
 }
 
+// OneEuroFilter implementation for smoothing
+class OneEuroFilter {
+    private minCutoff: number;
+    private beta: number;
+    private dCutoff: number;
+    private xPrev: number | null = null;
+    private dxPrev: number | null = null;
+    private tPrev: number | null = null;
+
+    constructor(minCutoff: number = 1.0, beta: number = 0.0, dCutoff: number = 1.0) {
+        this.minCutoff = minCutoff;
+        this.beta = beta;
+        this.dCutoff = dCutoff;
+    }
+
+    filter(t: number, x: number): number {
+        if (this.xPrev === null) {
+            this.xPrev = x;
+            this.dxPrev = 0;
+            this.tPrev = t;
+            return x;
+        }
+
+        const dt = (t - (this.tPrev || t)) / 1000.0; // convert ms to seconds
+        this.tPrev = t;
+
+        if (dt <= 0) return this.xPrev; // duplicate timestamp, return prev
+
+        const alphaD = this.smoothingFactor(dt, this.dCutoff);
+        const dx = (x - this.xPrev) * alphaD + (this.dxPrev || 0) * (1 - alphaD);
+
+        const edx = Math.abs(dx);
+        const cutoff = this.minCutoff + this.beta * edx;
+        const alpha = this.smoothingFactor(dt, cutoff);
+
+        const xHat = x * alpha + this.xPrev * (1 - alpha);
+
+        this.xPrev = xHat;
+        this.dxPrev = dx;
+
+        return xHat;
+    }
+
+    private smoothingFactor(dt: number, cutoff: number): number {
+        const r = 2 * Math.PI * cutoff * dt;
+        return r / (r + 1);
+    }
+
+    reset() {
+        this.xPrev = null;
+        this.dxPrev = null;
+        this.tPrev = null;
+    }
+}
+
 export class RepCounter {
     private count: number = 0;
     private state: ExerciseState = ExerciseState.UP;
-    private buffer: number[] = [];
-    private readonly BUFFER_SIZE = 5;
+    private filter: OneEuroFilter;
 
     // Thresholds for Squat (Hip-Knee-Ankle angle)
     // Standing: ~170-180 degrees
-    // Squat Depth: < 90-100 degrees
+    // Squat Depth: < 130 degrees (Aligned with Benchmark v4)
     private readonly UP_THRESHOLD = 160;
-    private readonly DOWN_THRESHOLD = 100;
+    private readonly DOWN_THRESHOLD = 130;
 
-    constructor() { }
+    // Confidence Threshold (expert recommendation)
+    private readonly CONFIDENCE_THRESHOLD = 0.45;
+
+    constructor() {
+        // Tuned params for human motion smoothing
+        this.filter = new OneEuroFilter(1.0, 0.007, 1.0);
+    }
 
     public update(pose: Pose): { count: number; state: ExerciseState; angle: number; isDetected: boolean } {
         const leftHip = pose.keypoints[PoseLandmark.LEFT_HIP];
@@ -25,12 +85,16 @@ export class RepCounter {
         const leftAnkle = pose.keypoints[PoseLandmark.LEFT_ANKLE];
 
         // Ensure high enough confidence
-        if (leftHip.score < 0.3 || leftKnee.score < 0.3 || leftAnkle.score < 0.3) {
+        if (leftHip.score < this.CONFIDENCE_THRESHOLD ||
+            leftKnee.score < this.CONFIDENCE_THRESHOLD ||
+            leftAnkle.score < this.CONFIDENCE_THRESHOLD) {
+            // TODO: Implement 'LOST' state if needed, for now just return last known legit state
             return { count: this.count, state: this.state, angle: 0, isDetected: false };
         }
 
-        const angle = this.calculateAngle(leftHip, leftKnee, leftAnkle);
-        const smoothedAngle = this.smoothValue(angle);
+        const rawAngle = this.calculateAngle(leftHip, leftKnee, leftAnkle);
+        const timestamp = Date.now();
+        const smoothedAngle = this.filter.filter(timestamp, rawAngle);
 
         this.processState(smoothedAngle);
 
@@ -51,15 +115,6 @@ export class RepCounter {
         return deg;
     }
 
-    private smoothValue(val: number): number {
-        this.buffer.push(val);
-        if (this.buffer.length > this.BUFFER_SIZE) {
-            this.buffer.shift();
-        }
-        const sum = this.buffer.reduce((a, b) => a + b, 0);
-        return sum / this.buffer.length;
-    }
-
     private processState(angle: number) {
         if (this.state === ExerciseState.UP) {
             if (angle < this.DOWN_THRESHOLD) {
@@ -76,6 +131,6 @@ export class RepCounter {
     public reset() {
         this.count = 0;
         this.state = ExerciseState.UP;
-        this.buffer = [];
+        this.filter.reset();
     }
 }
