@@ -1,0 +1,906 @@
+--------- beginning of main
+01-15 23:29:03.739   798  2235 D FileUtils: Rounded bytes from 2061062144 to 4000000000
+01-15 23:29:03.826  1602  2780 V ClearcutMetricXmitter: Transmission is done.
+--------- beginning of system
+01-15 23:29:04.463   798  2235 W ActivityTaskManager: callingPackage for (uid=2000, pid=11109) has no WPC
+01-15 23:29:04.464   798  2235 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=null display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@46370037 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037 task null, skipping
+01-15 23:29:04.464   798  2235 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=null display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@46370037 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037
+01-15 23:29:04.465   798  2235 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@ff175c87 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+01-15 23:29:04.465   798  2235 V WindowManager: DesktopModeLaunchParamsModifier: phase= 0 task=null activity=ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@46370037 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037 task null, skipping
+01-15 23:29:04.465   798  2235 V WindowManager: TaskLaunchParamsModifier:phase=0 task=null activity=ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@46370037 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037
+01-15 23:29:04.465   798  2235 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=null activity=ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@46370037 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037 task null, skipping
+01-15 23:29:04.465   798  2235 V WindowManager: TaskLaunchParamsModifier:phase=3 task=null activity=ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity t-1} display-area-from-current-params=null display-area-from-default-fallback=DefaultTaskDisplayArea@46370037 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037 non-freeform-task-display-area display-area=DefaultTaskDisplayArea@46370037 skip-bounds-fullscreen
+01-15 23:29:04.467   798  2235 V WindowManager: DesktopModeLaunchParamsModifier: phase= 3 task=Task{10a43e9 #35 type=standard A=10227:com.geek2geeks.level} activity=ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037 not entering desktop mode, skipping
+01-15 23:29:04.467   798  2235 V WindowManager: TaskLaunchParamsModifier:phase=3 task=Task{10a43e9 #35 type=standard A=10227:com.geek2geeks.level} activity=ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity t-1} display-from-task=0 display-id=0 task-display-area-windowing-mode=1 suggested-display-area=DefaultTaskDisplayArea@46370037 inherit-from-task=fullscreen non-freeform-task-display-area display-area=DefaultTaskDisplayArea@46370037 skip-bounds-fullscreen
+01-15 23:29:04.469   649   676 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+01-15 23:29:04.472   798  2235 I ActivityTaskManager: START u0 {flg=0x10000000 xflg=0x5 cmp=com.geek2geeks.level/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (com.android.shell) (BAL_ALLOW_PERMISSION) result code=0
+01-15 23:29:04.473  1052  1122 V WindowManagerShell: Transition requested (#32): android.os.BinderProxy@386a192 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=35 effectiveUid=10227 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.geek2geeks.level/.MainActivity } baseActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} topActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} origActivity=null realActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} numActivities=1 lastActiveTime=7233102 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@e797763} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{5aa2f60 com.geek2geeks.level.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 32 }
+01-15 23:29:04.473  1052  1122 D ShellSplitScreen: logExit: no-op, mLoggerSessionId is null
+01-15 23:29:04.473  1052  1122 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=35 effectiveUid=10227 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.geek2geeks.level/.MainActivity } baseActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} topActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} origActivity=null realActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} numActivities=1 lastActiveTime=7233102 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@e797763} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{5aa2f60 com.geek2geeks.level.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 32 }
+01-15 23:29:04.473  1052  1122 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+01-15 23:29:04.474  1197  1197 D RecentsView: onTaskDisplayChanged: 35, new displayId = 0
+01-15 23:29:04.476   699   786 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+01-15 23:29:04.476   699   786 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+01-15 23:29:04.480   798   823 V GrammaticalInflectionUtils: AttributionSource: android.content.AttributionSource@ff175c87 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+01-15 23:29:04.481  1197  1197 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+01-15 23:29:04.482   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:04.482  1052  1122 D ShellDesktopMode: DesktopRepository: Removes freeform task: taskId=33
+01-15 23:29:04.482  1052  1122 W ShellDesktopMode: DesktopRepository: No display id found for task: taskId=33
+01-15 23:29:04.483  1197  1197 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+01-15 23:29:04.489   580   580 D Zygote  : Forked child process 11112
+01-15 23:29:04.490   798   833 I ActivityManager: Start proc 11112:com.geek2geeks.level/u0a227 for next-top-activity {com.geek2geeks.level/com.geek2geeks.level.MainActivity}
+01-15 23:29:04.495 11112 11112 I Zygote  : Process 11112 created for com.geek2geeks.level
+01-15 23:29:04.495 11112 11112 I eek2geeks.level: Using CollectorTypeCMC GC.
+01-15 23:29:04.495 11112 11112 W eek2geeks.level: Unexpected CPU variant for x86: x86_64.
+01-15 23:29:04.495 11112 11112 W eek2geeks.level: Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+01-15 23:29:04.516 11112 11112 D nativeloader: Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+01-15 23:29:04.535   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:04.588  1197  1197 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+01-15 23:29:04.588 11112 11112 D nativeloader: Configuring clns-9 for other apk /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64:/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.geek2geeks.level
+01-15 23:29:04.607 11112 11112 V GraphicsEnvironment: Currently set values for:
+01-15 23:29:04.607 11112 11112 V GraphicsEnvironment:   angle_gl_driver_selection_pkgs=[]
+01-15 23:29:04.607 11112 11112 V GraphicsEnvironment:   angle_gl_driver_selection_values=[]
+01-15 23:29:04.607 11112 11112 V GraphicsEnvironment: com.geek2geeks.level is not listed in per-application setting
+01-15 23:29:04.607 11112 11112 V GraphicsEnvironment: ANGLE allowlist from config: com.dreamgames.royalmatch com.dts.freefiremax com.dxx.firenow com.gramgames.mergedragons com.ludo.king com.mojang.minecraftpe com.my.defense com.nintendo.zaka com.os.airforce com.playrix.fishdomdd.gplay io.teslatech.callbreak jp.konami.prospia net.peakgames.toonblast
+01-15 23:29:04.608 11112 11112 V GraphicsEnvironment: No special selections for ANGLE, returning default driver choice
+01-15 23:29:04.609 11112 11112 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+01-15 23:29:04.659 11112 11112 W SoLoader: Initializing SoLoader: 0
+01-15 23:29:04.660 11112 11112 W SoLoader: Recording new base apk path: /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk
+01-15 23:29:04.660 11112 11112 W SoLoader: Previously recorded 0 base apk paths.
+01-15 23:29:04.661 11112 11112 I SoLoader: Preparing SO source: DirectorySoSource[root = /vendor/lib64 flags = 2]
+01-15 23:29:04.661 11112 11112 I SoLoader: Preparing SO source: DirectorySoSource[root = /system/lib64 flags = 2]
+01-15 23:29:04.661 11112 11112 I SoLoader: Preparing SO source: ApplicationSoSource[DirectorySoSource[root = /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64 flags = 0]]
+01-15 23:29:04.661 11112 11112 I SoLoader: Preparing SO source: BackupSoSource[root = /data/data/com.geek2geeks.level/lib-main flags = 1 apks = [/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk]]
+01-15 23:29:04.661 11112 11112 I SoLoader: init finish: 4 SO sources prepared
+01-15 23:29:04.661 11112 11112 W SoLoader: SoLoader initialized: 0
+01-15 23:29:04.701   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:04.772 11112 11112 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libreactnative.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Entering merged library JNI_OnLoad.
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing 12 pre-merged libs (including stub)
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x7cc3990b0ba0
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x7cc39918c530
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x7cc39919f0a0
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x7cc3991c5fa0
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x7cc39926da50
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7cc3992888c0
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7cc39928f150
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x7cc3992ad450
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x7cc399358b80
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x7cc399360ab0
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x7cc399368130
+01-15 23:29:04.773 11112 11112 D jni_lib_merge: About to register 11 actual methods.
+01-15 23:29:04.783 11112 11112 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libappmodules.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:04.790 11112 11127 I DisplayManager: Choreographer implicitly registered for the refresh rate.
+01-15 23:29:04.790   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:04.790   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:04.811 11112 11112 D DesktopExperienceFlags: Toggle override initialized to: false
+01-15 23:29:04.815 11112 11112 D AppCompatDelegate: Checking for metadata for AppLocalesMetadataHolderService : Service not found
+01-15 23:29:04.820 11112 11112 E ashmem  : Pinning is deprecated since Android Q. Please use trim or other methods.
+01-15 23:29:04.834 11112 11112 D CompatChangeReporter: Compat change id reported: 377864165; UID 10227; state: ENABLED
+01-15 23:29:04.834 11112 11112 D DesktopModeFlags: Toggle override initialized to: OVERRIDE_UNSET
+01-15 23:29:04.839 11112 11127 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv1_CM_emulation.so
+01-15 23:29:04.840 11112 11127 I GFXSTREAM: [eglDisplay.cpp(297)] Opening libGLESv2_emulation.so
+01-15 23:29:04.845 11112 11127 W HWUI    : Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+01-15 23:29:04.846 11112 11127 W HWUI    : Failed to initialize 101010-2 format, error = EGL_SUCCESS
+01-15 23:29:04.864 11112 11112 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libfbjni.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:04.891 11112 11112 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+01-15 23:29:04.891 11112 11112 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+01-15 23:29:04.892 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+01-15 23:29:04.892 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+01-15 23:29:04.893 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+01-15 23:29:04.894 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactContext(): Creating BridgelessReactContext
+01-15 23:29:04.894 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+01-15 23:29:04.904 11112 11112 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+01-15 23:29:04.904 11112 11112 W unknown:BridgelessReact: ReactContext.onHostResume()
+01-15 23:29:04.919 11112 11132 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libhermestooling.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:04.919 11112 11132 D jni_lib_merge: Entering merged library JNI_OnLoad.
+01-15 23:29:04.920 11112 11132 D jni_lib_merge: Preparing 4 pre-merged libs (including stub)
+01-15 23:29:04.920 11112 11132 D jni_lib_merge: Preparing to register libhermes_executor_so.  onload_func: 0x7cc4171e1730
+01-15 23:29:04.920 11112 11132 D jni_lib_merge: Preparing to register libhermesinstancejni_so.  onload_func: 0x7cc4171e8db0
+01-15 23:29:04.920 11112 11132 D jni_lib_merge: Preparing to register libjsijniprofiler_so.  onload_func: 0x7cc4171e9540
+01-15 23:29:04.920 11112 11132 D jni_lib_merge: About to register 3 actual methods.
+01-15 23:29:04.924  1052  1368 V WindowManagerShell: onTransitionReady(transaction=3427383905177)
+01-15 23:29:04.925  1052  1122 V WindowManagerShell: onTransitionReady (#32) android.os.BinderProxy@386a192: {id=32 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+01-15 23:29:04.925  1052  1122 V WindowManagerShell:         {m=OPEN f=NONE leash=Surface(name=Task=35#381)/@0x841d624 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+01-15 23:29:04.925  1052  1122 V WindowManagerShell:         {m=TO_BACK f=NONE leash=Surface(name=Task=34#360)/@0x71f558d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+01-15 23:29:04.925  1052  1122 V WindowManagerShell:     ]}
+01-15 23:29:04.927  1052  1122 V WindowManagerShell: Playing animation for (#32) android.os.BinderProxy@386a192@0
+01-15 23:29:04.927  1052  1122 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+01-15 23:29:04.927  1052  1122 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+01-15 23:29:04.927  1052  1122 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=32 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=35#381)/@0x841d624 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=NONE leash=Surface(name=Task=34#360)/@0x71f558d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+01-15 23:29:04.927  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@97702bb windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@22353d8, appThread = android.app.IApplicationThread$Stub$Proxy@da6b331, debugName = overlayBackTransition }}
+01-15 23:29:04.927  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@3796a16, appThread = android.app.IApplicationThread$Stub$Proxy@c090f97, debugName = LauncherToDream }}
+01-15 23:29:04.928  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@865d584, appThread = android.app.IApplicationThread$Stub$Proxy@282516d, debugName = QuickstepLaunchHome }}
+01-15 23:29:04.928  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[OPEN,TO_FRONT] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=freeform isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@9870b35, appThread = null, debugName = DesktopWindowLimitUnminimize }}
+01-15 23:29:04.928  1052  1122 V WindowManagerShell:  Delegate animation for (#32) to null
+01-15 23:29:04.928  1052  1122 V WindowManagerShell: start default transition animation, info = {id=32 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=35#381)/@0x841d624 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=TO_BACK f=NONE leash=Surface(name=Task=34#360)/@0x71f558d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+01-15 23:29:04.928  1052  1122 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@238bd89 animAttr=0x9 type=OPEN isEntrance=false
+01-15 23:29:04.930 11112 11112 W HWUI    : Unknown dataspace 0
+01-15 23:29:04.942   798   820 V WindowManager: Sent Transition (#32) createdAt=01-15 23:29:04.465 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=35 effectiveUid=10227 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.geek2geeks.level/.MainActivity } baseActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} topActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} origActivity=null realActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} numActivities=1 lastActiveTime=7233102 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{be01839 Task{10a43e9 #35 type=standard A=10227:com.geek2geeks.level}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{ae1de7e com.geek2geeks.level.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 0, debugId = 32 }
+01-15 23:29:04.942   798   820 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+01-15 23:29:04.943   798   820 V WindowManager:     info={id=32 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+01-15 23:29:04.943   798   820 V WindowManager:         {WCT{RemoteToken{be01839 Task{10a43e9 #35 type=standard A=10227:com.geek2geeks.level}}} m=OPEN f=NONE leash=Surface(name=Task=35#381)/@0xd749694 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+01-15 23:29:04.943   798   820 V WindowManager:         {WCT{RemoteToken{b7ceb1b Task{a74bc70 #34 type=standard A=1000:com.android.settings}}} m=TO_BACK f=NONE leash=Surface(name=Task=34#360)/@0x14f9a15 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+01-15 23:29:04.943   798   820 V WindowManager:     ]}
+01-15 23:29:04.945 11112 11132 I FrameProcessorPluginRegistry: Successfully registered Frame Processor Plugin "resize"!
+01-15 23:29:04.948  1052  1122 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@e215466 animAttr=0x8 type=OPEN isEntrance=true
+01-15 23:29:04.949  1052  1122 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@420a061
+01-15 23:29:04.949  1052  1122 V ShellTaskOrganizer: Task appeared taskId=35 listener=FullscreenTaskListener
+01-15 23:29:04.949  1052  1122 V ShellTaskOrganizer: Fullscreen Task Appeared: #35
+01-15 23:29:04.950  1197  1197 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+01-15 23:29:04.952 11112 11112 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): android.app.Activity$$ExternalSyntheticLambda0@53f5ab5
+01-15 23:29:04.952 11112 11112 D WindowOnBackDispatcher: setTopOnBackInvokedCallback (unwrapped): androidx.activity.OnBackPressedDispatcher$Api34Impl$createOnBackAnimationCallback$1@69af54a
+01-15 23:29:04.953   798  1806 D CoreBackPreview: Window{ba0fef5 u0 com.geek2geeks.level/com.geek2geeks.level.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@8b55718, mPriority=-1, mIsAnimationCallback=false, mOverrideBehavior=0}
+01-15 23:29:04.953   798  1806 D CoreBackPreview: Window{ba0fef5 u0 com.geek2geeks.level/com.geek2geeks.level.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@a4f9571, mPriority=0, mIsAnimationCallback=true, mOverrideBehavior=0}
+01-15 23:29:04.953 11112 11112 D VRI[MainActivity]: WindowInsets changed: 1080x2400 statusBars:[0,63,0,0] navigationBars:[0,0,0,63] mandatorySystemGestures:[0,63,0,84] 
+01-15 23:29:04.981  1197  1205 W System  : A resource failed to call release. 
+01-15 23:29:04.981  1197  1205 W System  : A resource failed to call release. 
+01-15 23:29:04.981  1197  1205 W System  : A resource failed to call release. 
+01-15 23:29:05.023 11112 11132 I ExpoModulesCore: ✅ AppContext was initialized
+01-15 23:29:05.053 11112 11132 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libVisionCamera.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:05.057 11112 11132 I CameraManagerGlobal: Connecting to camera service
+01-15 23:29:05.062 11112 11148 I CameraDevices: Initializing ProcessCameraProvider...
+01-15 23:29:05.066 11112 11148 D QuirkSettingsLoader: QuirkSettings$MetadataHolderService is not found.
+01-15 23:29:05.066 11112 11148 D CameraX : QuirkSettings from app metadata: null
+01-15 23:29:05.067 11112 11148 D CameraX : QuirkSettings by default: QuirkSettings{enabledWhenDeviceHasQuirk=true, forceEnabledQuirks=[], forceDisabledQuirks=[]}
+01-15 23:29:05.075 11112 11150 D DeviceQuirks: camera2 DeviceQuirks = 
+01-15 23:29:05.091 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+01-15 23:29:05.091 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Calling DevSupportManagerBase.onNewReactContextCreated(reactContext)
+01-15 23:29:05.092 11112 11132 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+01-15 23:29:05.103 11112 11112 W unknown:BridgelessReact: ReactContext.onHostResume()
+01-15 23:29:05.103 11112 11112 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+01-15 23:29:05.109 11112 11150 D CameraRepository: Added camera: 1
+01-15 23:29:05.113 11112 11150 D CameraQuirks: camera2 CameraQuirks = 
+01-15 23:29:05.123 11112 11133 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libexpo-modules-core.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:05.125 11112 11150 I Camera2CameraInfo: Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_FULL
+01-15 23:29:05.127 11112 11150 D CameraRepository: Added camera: 10
+01-15 23:29:05.127 11112 11150 D CameraQuirks: camera2 CameraQuirks = 
+01-15 23:29:05.128 11112 11150 I Camera2CameraInfo: Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED
+01-15 23:29:05.128 11112 11150 D CameraValidator: Verifying camera lens facing on emu64xa, lensFacingInteger: null
+01-15 23:29:05.129 11112 11133 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/libreact_codegen_rnscreens.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes3.dex): ok
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Entering merged library JNI_OnLoad.
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing 12 pre-merged libs (including stub)
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libfabricjni_so.  onload_func: 0x7cc3990b0ba0
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libreact_devsupportjni_so.  onload_func: 0x7cc39918c530
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libreact_featureflagsjni_so.  onload_func: 0x7cc39919f0a0
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libreact_newarchdefaults_so.  onload_func: 0x7cc3991c5fa0
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libreactnativeblob_so.  onload_func: 0x7cc39926da50
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libreactnativejni_so.  onload_func: 0x7cc3992888c0
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libreactnativejni_common_so.  onload_func: 0x7cc39928f150
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register librninstance_so.  onload_func: 0x7cc3992ad450
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libturbomodulejsijni_so.  onload_func: 0x7cc399358b80
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libuimanagerjni_so.  onload_func: 0x7cc399360ab0
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: Preparing to register libyoga_so.  onload_func: 0x7cc399368130
+01-15 23:29:05.129 11112 11133 D jni_lib_merge: About to register 11 actual methods.
+01-15 23:29:05.129 11112 11153 I CameraDevices: Initializing ExtensionsManager...
+01-15 23:29:05.130 11112 11153 D ExtenderVersion: No versioning extender found. Falling back to default.
+01-15 23:29:05.131 11112 11153 I CameraDevices: Successfully initialized!
+01-15 23:29:05.139 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaProviderManager
+01-15 23:29:05.142 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.uimanager.LayoutShadowNode
+01-15 23:29:05.142 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.SearchBarManager
+01-15 23:29:05.143 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenFooterManager
+01-15 23:29:05.144 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.tabs.TabScreenViewManager
+01-15 23:29:05.145 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class expo.modules.kotlin.views.GroupViewManagerWrapper
+01-15 23:29:05.146 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContainerViewManager
+01-15 23:29:05.146 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.gamma.tabs.TabsHostViewManager
+01-15 23:29:05.147 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.shopify.reactnative.skia.SkiaPictureViewManager
+01-15 23:29:05.147 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ModalScreenViewManager
+01-15 23:29:05.148 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderConfigViewManager
+01-15 23:29:05.148 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.mrousavy.camera.react.CameraViewManager
+01-15 23:29:05.149 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenContentWrapperManager
+01-15 23:29:05.150 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewManager
+01-15 23:29:05.150 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.th3rdwave.safeareacontext.SafeAreaViewShadowNode
+01-15 23:29:05.150 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenViewManager
+01-15 23:29:05.151 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackHeaderSubviewManager
+01-15 23:29:05.151 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.rnscreens.ScreenStackViewManager
+01-15 23:29:05.157 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager
+01-15 23:29:05.159 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewManager
+01-15 23:29:05.159 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewShadowNode
+01-15 23:29:05.160 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+01-15 23:29:05.161 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+01-15 23:29:05.161 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+01-15 23:29:05.162 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+01-15 23:29:05.162 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ProgressBarShadowNode
+01-15 23:29:05.163 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+01-15 23:29:05.165 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+01-15 23:29:05.166 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+01-15 23:29:05.167 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+01-15 23:29:05.168 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+01-15 23:29:05.169 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+01-15 23:29:05.170 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+01-15 23:29:05.171 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+01-15 23:29:05.171 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+01-15 23:29:05.172 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+01-15 23:29:05.173 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchShadowNode
+01-15 23:29:05.174 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+01-15 23:29:05.174 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+01-15 23:29:05.175 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.swiperefresh.SwipeRefreshLayoutManager
+01-15 23:29:05.177 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+01-15 23:29:05.177 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+01-15 23:29:05.178 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+01-15 23:29:05.178 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+01-15 23:29:05.179 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager
+01-15 23:29:05.183 11112 11133 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+01-15 23:29:05.191 11112 11133 I ExpoModulesCore: ✅ JSI interop was installed
+01-15 23:29:05.193 11112 11133 I ExpoModulesCore: ✅ Constants were exported
+01-15 23:29:05.213 11112 11133 D nativeloader: Load /data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/lib/x86_64/librnscreens.so using class loader ns clns-9 (caller=/data/app/~~lrh_BaQopD06FYosjLS-zg==/com.geek2geeks.level-Gr7vq89aLleE0CuEC2eZmw==/base.apk!classes2.dex): ok
+01-15 23:29:05.216 11112 11133 I ReactNativeJS: Running "main"
+01-15 23:29:05.232 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.232 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.232 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.232 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.233 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.233 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.233 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.233 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.234 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.234 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.235 11112 11133 E ReactNativeJS: { [TypeError: Cannot read property 'ErrorBoundary' of undefined]
+01-15 23:29:05.235 11112 11133 E ReactNativeJS:   componentStack: '\n    at ContextNavigator (address at index.android.bundle:1:1147268)\n    at ExpoRoot (address at index.android.bundle:1:1146911)\n    at App (<anonymous>)\n    at RCTView (<anonymous>)\n    at View (address at index.android.bundle:1:491251)\n    at AppContainer (address at index.android.bundle:1:490579)',
+01-15 23:29:05.235 11112 11133 E ReactNativeJS:   isComponentError: true }
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: ReactHost{0}.handleHostException(message = "FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: createErrorInternal@1:1826113
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: _assert@1:1826346
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:1850689
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getOrInitializeService@1:1790188
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: initialize@1:1789664
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: initializeAuth@1:1836823
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: initializeAuth@1:1818680
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:1771886
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2661742
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2533299
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2532761
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2668951
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61566
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: get@1:821536
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroContext@1:821349
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadRoute@1:1113369
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getLayoutNode@1:1115514
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: _loop3@1:1113261
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getDirectoryTree@1:1111039
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getRoutes@1:1110024
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getRoutes@1:1109020
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: useStore@1:1080622
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: ContextNavigator@1:1147426
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: renderWithHooks@1:250168
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: updateFunctionComponent@1:268931
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: beginWork@1:276753
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: performUnitOfWork@1:295393
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: workLoopSync@1:294401
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: renderRootSync@1:294233
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: performWorkOnRoot@1:291660
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: ")
+--------- beginning of crash
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: FATAL EXCEPTION: mqt_v_native
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: Process: com.geek2geeks.level, PID: 11112
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: com.facebook.react.common.JavascriptException: FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: createErrorInternal@1:1826113
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: _assert@1:1826346
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:1850689
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getOrInitializeService@1:1790188
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initialize@1:1789664
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initializeAuth@1:1836823
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initializeAuth@1:1818680
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:1771886
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2661742
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2533299
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2532761
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2668951
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61566
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: get@1:821536
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroContext@1:821349
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadRoute@1:1113369
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getLayoutNode@1:1115514
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: _loop3@1:1113261
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getDirectoryTree@1:1111039
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getRoutes@1:1110024
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getRoutes@1:1109020
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: useStore@1:1080622
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: ContextNavigator@1:1147426
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: renderWithHooks@1:250168
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: updateFunctionComponent@1:268931
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: beginWork@1:276753
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performUnitOfWork@1:295393
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: workLoopSync@1:294401
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: renderRootSync@1:294233
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performWorkOnRoot@1:291660
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$1(MessageQueueThreadImpl.kt:175)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$ldnZnqelhYFctGaUKkOKYj5rxo4(Unknown Source:0)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 23:29:05.243   798 11154 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+01-15 23:29:05.246   798  1806 W ActivityTaskManager:   Force finishing activity com.geek2geeks.level/.MainActivity
+01-15 23:29:05.249   798  1806 W TransitionChain: Combining AR.finish-force-crash into #33(CLOSE|R|0x10) from finishTopCrash
+01-15 23:29:05.249  1052  1122 V WindowManagerShell: Transition requested (#33): android.os.BinderProxy@1663f8f TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=35 effectiveUid=10227 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.geek2geeks.level/.MainActivity } baseActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} topActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} origActivity=null realActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} numActivities=1 lastActiveTime=7233417 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@e797763} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{780d21c com.geek2geeks.level.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 16, debugId = 33 }
+01-15 23:29:05.250  1052  1122 V ShellDesktopMode: DesktopTasksController: handleRequest request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=35 effectiveUid=10227 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.geek2geeks.level/.MainActivity } baseActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} topActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} origActivity=null realActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} numActivities=1 lastActiveTime=7233417 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.os.BinderProxy@e797763} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{780d21c com.geek2geeks.level.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 16, debugId = 33 }
+01-15 23:29:05.250  1052  1122 V ShellDesktopMode: DesktopTasksController: skipping handleRequest reason=triggerTask's display doesn't support desktop mode
+01-15 23:29:05.252   649   908 I libbinder.BpBinder: onLastStrongRef automatically unlinking death recipients for descriptor: '(not cached)'
+01-15 23:29:05.255 11112 11134 I Process : Sending signal. PID: 11112 SIG: 9
+01-15 23:29:05.256  1197  1197 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+01-15 23:29:05.265   798   914 W InputDispatcher: channel 'ba0fef5 com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Consumer closed input channel or an error occurred.  events=0x9
+01-15 23:29:05.265   798   914 E InputDispatcher: channel 'ba0fef5 com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Channel is unrecoverably broken and will be disposed!
+01-15 23:29:05.265   798   914 I WindowManager: WINDOW DIED Window{ba0fef5 u0 com.geek2geeks.level/com.geek2geeks.level.MainActivity}
+01-15 23:29:05.266   798  1806 I ActivityManager: Process com.geek2geeks.level (pid 11112) has died: fg  TOP 
+01-15 23:29:05.267   580   580 I Zygote  : Process 11112 exited due to signal 9 (Killed)
+01-15 23:29:05.268   798   834 I libprocessgroup: Removed cgroup /sys/fs/cgroup/apps/uid_10227/pid_11112
+01-15 23:29:05.273   798  1806 W TransitionChain: Combining appDied into #33(CLOSE|R|0x10) from finishTopCrash
+01-15 23:29:05.273   798   960 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+01-15 23:29:05.273   798   960 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+01-15 23:29:05.273   798   960 D InetDiagMessage: Destroyed live tcp sockets for uids={10227} in 1ms
+01-15 23:29:05.275   798   960 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+01-15 23:29:05.275   798   960 D InetDiagMessage: Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+01-15 23:29:05.275   798   960 D InetDiagMessage: Destroyed live tcp sockets for uids={20227} in 2ms
+01-15 23:29:05.278  1052  1564 V WindowManagerShell: onTransitionReady(transaction=3427383905208)
+01-15 23:29:05.278  1052  1122 V WindowManagerShell: onTransitionReady (#33) android.os.BinderProxy@1663f8f: {id=33 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[
+01-15 23:29:05.278  1052  1122 V WindowManagerShell:         {m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=34#360)/@0xf862e25 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+01-15 23:29:05.278  1052  1122 V WindowManagerShell:         {m=CLOSE f=NONE leash=Surface(name=Task=35#381)/@0x3cf1bfa sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+01-15 23:29:05.278  1052  1122 V WindowManagerShell:     ]}
+01-15 23:29:05.279  1052  1122 V WindowManagerShell: Transition (#33) android.os.BinderProxy@1663f8f@0 ready while (#32) android.os.BinderProxy@386a192@0 is still animating. Notify the animating transition in case they can be merged
+01-15 23:29:05.283  1052  1122 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#32) android.os.BinderProxy@386a192@0
+01-15 23:29:05.311   798   820 V WindowManager: Sent Transition (#33) createdAt=01-15 23:29:05.247 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=35 effectiveUid=10227 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.geek2geeks.level/.MainActivity } baseActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} topActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} origActivity=null realActivity=ComponentInfo{com.geek2geeks.level/com.geek2geeks.level.MainActivity} numActivities=1 lastActiveTime=7233417 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{be01839 Task{10a43e9 #35 type=standard A=10227:com.geek2geeks.level}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{ae1de7e com.geek2geeks.level.MainActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=null capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=503 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false isLeafTask= true eligibleForLetterboxEducation= false isLetterboxEducationEnabled= true isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityAppBounds=Rect(0, 0 - 1080, 2400) isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { cameraCompatMode=undefinedundefined} topNonResizableActivityAspectRatio=-1.0} topActivityMainWindowFrame=null isAppBubble=false}, pipChange = null, remoteTransition = null, displayChange = null, requestedLocation = null, userChange = null, windowingLayerChange = null, flags = 16, debugId = 33 }
+01-15 23:29:05.311   798   820 V WindowManager:     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+01-15 23:29:05.311   798   823 W ActivityManager: setHasOverlayUi called on unknown pid: 11112
+01-15 23:29:05.311   798   820 V WindowManager:     info={id=33 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[
+01-15 23:29:05.311   798   820 V WindowManager:         {WCT{RemoteToken{b7ceb1b Task{a74bc70 #34 type=standard A=1000:com.android.settings}}} m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=34#360)/@0x14f9a15 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},
+01-15 23:29:05.311   798   820 V WindowManager:         {WCT{RemoteToken{be01839 Task{10a43e9 #35 type=standard A=10227:com.geek2geeks.level}}} m=CLOSE f=NONE leash=Surface(name=Task=35#381)/@0xd749694 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}
+01-15 23:29:05.311   798   820 V WindowManager:     ]}
+01-15 23:29:05.312   798   820 V WindowManager: Finish Transition (#32): created at 01-15 23:29:04.465 collect-started=0.074ms request-sent=6.692ms started=10.607ms ready=321.986ms sent=455.66ms commit=29.437ms finished=846.542ms
+01-15 23:29:05.312   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:05.313  1052  1122 V WindowManagerShell: Playing animation for (#33) android.os.BinderProxy@1663f8f@0
+01-15 23:29:05.313  1052  1122 V ShellRecents: RecentsTransitionHandler.startAnimation: no controller found
+01-15 23:29:05.313  1052  1122 V ShellDesktopMode: DesktopMixedTransitionHandler: No pending desktop transition
+01-15 23:29:05.313  1052  1122 V WindowManagerShell: Transition doesn't have explicit remote, search filters for match for {id=33 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=34#360)/@0xf862e25 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CLOSE f=NONE leash=Surface(name=Task=35#381)/@0x3cf1bfa sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+01-15 23:29:05.313  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@97702bb windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@22353d8, appThread = android.app.IApplicationThread$Stub$Proxy@da6b331, debugName = overlayBackTransition }}
+01-15 23:29:05.313  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@3796a16, appThread = android.app.IApplicationThread$Stub$Proxy@c090f97, debugName = LauncherToDream }}
+01-15 23:29:05.313  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined isCrossDisplayMove=false},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@865d584, appThread = android.app.IApplicationThread$Stub$Proxy@282516d, debugName = QuickstepLaunchHome }}
+01-15 23:29:05.313  1052  1122 V WindowManagerShell:  Checking filter Pair{{types=[OPEN,TO_FRONT] flags=0x0] notFlags=0x0 checks=[{atype=standard independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=freeform isCrossDisplayMove=false}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@9870b35, appThread = null, debugName = DesktopWindowLimitUnminimize }}
+01-15 23:29:05.313  1052  1122 V WindowManagerShell:  Delegate animation for (#33) to null
+01-15 23:29:05.313  1052  1122 V WindowManagerShell: start default transition animation, info = {id=33 t=CLOSE f=0x10 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=34#360)/@0xf862e25 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0},{m=CLOSE f=NONE leash=Surface(name=Task=35#381)/@0x3cf1bfa sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1 winMode=1 userId=0}]}
+01-15 23:29:05.313   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:05.313   798  1007 D BackgroundInstallControlService: Package event received: 0
+01-15 23:29:05.314  1052  1122 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@c1c9187 animAttr=0xb type=CLOSE isEntrance=false
+01-15 23:29:05.314  1052  1122 V WindowManagerShell: loadAnimation: anim=android.view.animation.AnimationSet@8cfcdd animAttr=0xa type=CLOSE isEntrance=true
+01-15 23:29:05.316  1052  1122 V WindowManagerShell:  animated by com.android.wm.shell.transition.DefaultTransitionHandler@420a061
+01-15 23:29:05.321   699  9345 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+01-15 23:29:05.321   699  9345 W libbinder.IPCThreadState: Sending oneway calls to frozen process.
+01-15 23:29:05.322   798   923 I ImeTracker: com.android.settings:402f0b5a: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+01-15 23:29:05.323  3476  3476 D InsetsController: hide(ime())
+01-15 23:29:05.323  3476  3476 I ImeTracker: com.android.settings:402f0b5a: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+01-15 23:29:05.325  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onFinishInput():2057 
+01-15 23:29:05.325  1496  1496 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 0, locked = false
+01-15 23:29:05.327  1496  1496 I GoogleInputMethodService: GoogleInputMethodService.onStartInput():1318 onStartInput(EditorInfo{EditorInfo{packageName=com.android.settings, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+01-15 23:29:05.327  1496  1496 I Module  : DeviceLockedStatusModuleProvider$Module.updateDeviceLockedStatus():100 repeatCheckTimes = 1, locked = false
+01-15 23:29:05.328   798  1314 W PackageConfigPersister: App-specific configuration not found for packageName: com.android.settings and userId: 0
+01-15 23:29:05.752   798   823 W ActivityTaskManager: Activity top resumed state loss timeout for ActivityRecord{54285424 u0 com.geek2geeks.level/.MainActivity t35 f} isExiting}
+01-15 23:29:05.849  1052  1122 V WindowManagerShell: Transition animation finished (aborted=false), notifying core (#33) android.os.BinderProxy@1663f8f@0
+01-15 23:29:05.851   798   820 V WindowManager: Finish Transition (#33): created at 01-15 23:29:05.247 collect-started=0.7ms request-sent=1.036ms started=7.295ms ready=28.401ms sent=29.843ms commit=39.672ms finished=603.997ms
+01-15 23:29:05.854  1052  1122 V WindowManagerShell: Track 0 became idle
+01-15 23:29:05.854  1052  1122 V WindowManagerShell: All active transition animations finished
+01-15 23:29:05.856  1197  1197 D RecentsView: onTaskRemoved: 35, not handling task stack changes
+01-15 23:29:05.856  1197  1197 D RecentsView: onTaskRemoved: 35, not handling task stack changes
+01-15 23:29:05.859   798  1028 W ImageReader_JNI: Unable to acquire a buffer item, very likely client tried to acquire more than maxImages buffers
+01-15 23:29:05.867  1052  1122 V ShellTaskOrganizer: Task vanished taskId=35
+01-15 23:29:05.867  1052  1122 V ShellTaskOrganizer: Fullscreen Task Vanished: #35
+01-15 23:29:05.867  1052  1122 V ShellDesktopMode: Task Vanished: #35 closed=true
+01-15 23:29:05.868  1052  1122 D ShellDesktopMode: AppToWebRepository: Task 35 is vanishing. Removing task data from repository
+01-15 23:29:05.868  1197  1197 D b/417220811: invalidateLoadedTasks - previous requestLoadId: -1
+01-15 23:29:05.868  1052  1122 V AppCompat: SingleSurfaceLetterboxController: []
+01-15 23:29:05.868  1052  1122 V AppCompat: MultiSurfaceLetterboxController: []
+01-15 23:29:05.868  1052  1122 V AppCompat: LetterboxInputController: []
+01-15 23:29:05.868  1052  1122 V AppCompat: RoundedCornersLetterboxController: {}
+01-15 23:29:06.768  1052  1235 I QuickAccessWalletTile: QAW service is unavailable, recreating the wallet client.
+01-15 23:29:06.835  1052  1235 D ControlsListingControllerImpl: Subscribing callback, service count: 0
+01-15 23:29:06.838  1052  1235 D ControlsListingControllerImpl: Unsubscribing callback
+01-15 23:29:07.708   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:08.483   798  1725 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+01-15 23:29:08.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:29:08.623  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:29:10.715   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:12.584 11158 11158 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:29:12.695  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:29:12.698  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.699  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.701  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.702  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.704  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.705  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.706  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.708  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.709  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:12.710  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:29:12.711  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:29:12.712  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:29:12.713  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:29:12.713  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:29:12.714  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:29:12.714  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:29:12.715  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:29:12.717  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:29:12.718  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:12.719  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:29:12.721  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:29:12.722  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:29:12.723  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:12.724  2983  2983 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:29:13.722   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:16.728   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:18.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:29:18.623  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:29:19.735   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:22.607 11161 11161 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:29:22.746   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:22.754  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:29:22.756  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.757  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.759  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.761  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.762  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.763  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.764  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.766  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.767  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:22.768  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:29:22.770  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:29:22.770  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:29:22.771  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:29:22.772  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:29:22.773  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:29:22.774  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:29:22.775  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:29:22.776  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:29:22.778  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:22.779  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:29:22.780  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:29:22.781  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:29:22.783  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:22.783  2983  2983 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:29:25.753   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:28.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:29:28.623  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:29:28.759   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:31.767   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:32.602 11164 11164 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:29:32.730  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:29:32.732  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.734  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.735  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.736  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.738  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.740  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.741  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.743  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.745  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:32.746  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:29:32.747  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:29:32.747  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:29:32.749  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:29:32.749  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:29:32.750  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:29:32.750  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:29:32.751  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:29:32.753  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:29:32.754  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:32.756  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:29:32.757  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:29:32.759  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:29:32.760  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:32.761  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:29:34.774   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:37.781   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:38.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:29:38.623  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:29:40.788   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:42.622 11174 11174 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:29:42.762  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:29:42.765  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.767  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.769  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.770  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.772  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.773  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.774  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.776  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.777  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:42.778  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:29:42.779  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:29:42.780  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:29:42.781  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:29:42.782  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:29:42.783  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:29:42.783  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:29:42.784  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:29:42.786  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:29:42.787  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:42.788  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:29:42.790  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:29:42.791  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:29:42.793  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:42.793  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:29:43.795   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:46.802   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:48.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:29:48.623  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:29:49.809   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:51.801  1137  1137 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+01-15 23:29:51.802  1137  1137 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+01-15 23:29:51.804  1137  1137 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+01-15 23:29:51.804  1137 11168 D NetworkMonitor/103: PROBE_DNS www.google.com 10017ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+01-15 23:29:51.805  1137  1137 W DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+01-15 23:29:51.805  1137 11169 D NetworkMonitor/103: PROBE_DNS connectivitycheck.gstatic.com 10018ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+01-15 23:29:52.624 11187 11187 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:29:52.731  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:29:52.732  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.735  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.737  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.738  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.740  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.741  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.743  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.744  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.746  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:29:52.747  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:29:52.748  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:29:52.748  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:29:52.750  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:29:52.750  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:29:52.751  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:29:52.751  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:29:52.752  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:29:52.754  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:29:52.755  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:52.756  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:29:52.758  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:29:52.759  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:29:52.761  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:29:52.761  2983  2983 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:29:52.816   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:55.823   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:29:58.624  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:29:58.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:29:58.830   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:01.819  1137 11167 D NetworkMonitor/103: PROBE_FALLBACK http://www.google.com/gen_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+01-15 23:30:01.822  1137 11168 D NetworkMonitor/103: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+01-15 23:30:01.824  1137 11169 D NetworkMonitor/103: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "connectivitycheck.gstatic.com": No address associated with hostname
+01-15 23:30:01.824  1137 11167 D NetworkMonitor/103: isCaptivePortal: isSuccessful()=false isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=20039ms
+01-15 23:30:01.825   798   960 D ConnectivityService: [103 CELLULAR] validation failed
+01-15 23:30:01.837   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:02.635 11190 11190 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:30:02.748  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:30:02.751  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.752  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.753  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.755  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.756  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.757  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.759  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.760  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.762  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:02.763  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:30:02.764  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:30:02.765  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:30:02.766  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:30:02.766  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:30:02.767  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:30:02.768  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:30:02.769  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:30:02.771  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:30:02.772  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:02.773  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:30:02.774  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:30:02.776  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:30:02.777  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:02.778  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:30:04.846   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:07.852   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:08.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:30:08.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:30:10.859   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:12.628 11193 11193 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:30:12.721  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:30:12.723  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.725  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.726  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.727  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.729  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.730  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.731  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.733  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.734  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:12.735  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:30:12.736  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:30:12.736  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:30:12.737  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:30:12.738  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:30:12.739  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:30:12.739  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:30:12.740  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:30:12.742  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:30:12.743  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:12.744  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:30:12.745  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:30:12.747  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:30:12.748  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:12.748  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:30:13.866   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:16.875   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:18.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:30:18.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:30:19.881   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:22.644 11196 11196 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:30:22.781  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:30:22.783  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.784  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.786  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.787  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.788  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.790  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.792  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.793  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.795  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:22.796  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:30:22.797  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:30:22.798  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:30:22.799  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:30:22.800  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:30:22.801  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:30:22.802  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:30:22.803  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:30:22.805  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:30:22.806  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:22.808  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:30:22.809  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:30:22.811  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:30:22.812  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:22.813  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:30:22.888   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:25.896   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:28.624  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:30:28.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:30:28.903   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:31.908   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:32.664 11202 11202 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:30:32.783  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:30:32.787  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.788  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.790  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.791  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.793  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.794  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.795  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.796  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.798  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:32.798  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:30:32.800  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:30:32.800  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:30:32.801  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:30:32.802  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:30:32.803  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:30:32.803  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:30:32.804  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:30:32.806  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:30:32.807  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:32.808  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:30:32.810  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:30:32.812  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:30:32.814  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:32.814  2983  2983 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:30:34.915   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:37.921   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:38.623  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:30:38.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:30:40.927   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:42.659 11205 11205 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:30:42.738   798   811 I system_server: Background young concurrent mark compact GC freed 22MB AllocSpace bytes, 6(120KB) LOS objects, 39% free, 35MB/57MB, paused 5.874ms,2.500ms total 50.759ms
+01-15 23:30:42.781  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:30:42.784  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.786  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.787  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.788  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.790  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.792  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.793  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.795  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.796  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:42.797  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:30:42.798  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:30:42.799  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:30:42.800  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:30:42.801  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:30:42.802  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:30:42.802  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:30:42.803  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:30:42.805  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:30:42.806  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:42.807  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:30:42.808  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:30:42.810  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:30:42.811  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:42.812  2983  2983 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:30:43.933   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:46.940   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:48.624  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:30:48.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:30:49.946   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:52.691 11211 11211 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:30:52.812  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:30:52.815  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.817  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.818  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.819  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.821  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.822  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.824  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.826  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.827  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:30:52.828  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:30:52.830  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:30:52.830  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:30:52.831  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:30:52.832  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:30:52.833  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:30:52.833  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:30:52.834  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:30:52.836  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:30:52.837  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:52.838  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:30:52.840  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:30:52.841  2983  2983 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:30:52.843  2983  2983 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:30:52.843  2983  2983 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:30:52.952   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:55.959   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:30:58.624  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:30:58.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:30:58.966   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:01.973   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:02.691 11214 11214 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:31:02.829  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:31:02.833  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.835  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.836  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.838  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.840  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.841  2983  2983 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.843  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.845  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.846  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:02.847  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:31:02.848  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:31:02.849  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:31:02.850  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:31:02.851  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:31:02.852  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:31:02.853  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:31:02.854  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:31:02.855  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:31:02.857  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:31:02.859  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:31:02.860  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:31:02.862  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:31:02.863  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:31:02.864  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:31:04.979   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:07.986   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:08.624  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:31:08.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:31:10.994   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:12.709 11220 11220 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:31:12.836  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:31:12.839  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.841  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.843  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.844  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.846  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.847  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.848  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.850  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.851  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:12.852  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:31:12.853  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:31:12.853  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:31:12.855  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:31:12.855  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:31:12.856  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:31:12.857  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:31:12.858  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:31:12.859  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:31:12.860  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:31:12.861  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:31:12.863  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:31:12.864  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:31:12.866  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:31:12.867  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:31:14.000   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:17.004   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:18.624  1185  1331 D SatelliteController: iisInCarrierRoamingNbIotNtn: satellite is disabled
+01-15 23:31:18.624  1185  1331 D SatelliteController: getCarrierRoamingNtnConnectType: Falling back to global carrier config connect type: 0
+01-15 23:31:20.010   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:21.903   798   878 D WifiNl80211Manager: Scan result ready event
+01-15 23:31:21.903   798   878 D WifiNative: Scan result ready event
+01-15 23:31:21.906  1377  3846 I WifiScanner: onFullResults
+01-15 23:31:21.906  1377  1639 I WifiScanner: onFullResults
+01-15 23:31:21.909   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:22.717 11226 11226 W libbinder.BackendUnifiedServiceManager: Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: package
+01-15 23:31:22.831  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/base.odex) is kOatUpToDate with filter 'speed-profile' executable 'false'
+01-15 23:31:22.834  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_AdsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.835  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_CronetDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.836  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteLoader_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.838  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesA_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.839  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_DynamiteModulesC_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.841  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_GoogleCertificates_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.842  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MapsDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.843  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_MeasurementDynamite_installtime.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.845  2983  2997 I artd    : GetBestInfo: odex next to the dex file (/data/app/~~32zfW-euUumZmapXCsiMfw==/com.google.android.gms-BB5zRItgPYm45pDbJHp9zQ==/oat/x86_64/split_all_locale_splits.odex) is kOatUpToDate with filter 'speed' executable 'false'
+01-15 23:31:22.846  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000008/dl-TfliteDynamiteDynamite.integ_243930802100800.apk has no usable artifacts
+01-15 23:31:22.847  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000010/dl-PlayCloudSearch.optional_254932100000.apk has no usable artifacts
+01-15 23:31:22.848  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000001/CronetDynamite.apk has no usable artifacts
+01-15 23:31:22.849  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000011/dl-VisionOcr.optional_254932100000.apk has no usable artifacts
+01-15 23:31:22.850  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000002/DynamiteLoader.apk has no usable artifacts
+01-15 23:31:22.851  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000f/dl-MlkitOcrCommon.optional_254932100800.apk has no usable artifacts
+01-15 23:31:22.851  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000005/GoogleCertificates.apk has no usable artifacts
+01-15 23:31:22.852  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000e/dl-MlkitBarcodeUi.optional_254932100800.apk has no usable artifacts
+01-15 23:31:22.854  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000a/dl-VisionOcr.optional_253434100000.apk has no usable artifacts
+01-15 23:31:22.856  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/3E73B89A0E8F8D5E047D9204352987BD0EB5D68B/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:31:22.857  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000d/dl-Appsearch.optional_254932100800.apk has no usable artifacts
+01-15 23:31:22.858  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/00000009/dl-MlkitOcrCommon.optional_253434100800.apk has no usable artifacts
+01-15 23:31:22.860  2983  2997 I artd    : GetBestInfo: /data/user_de/0/com.google.android.gms/app_chimera/m/0000000b/dl-PlayCloudSearch.optional_253434100000.apk has no usable artifacts
+01-15 23:31:22.862  2983  2997 I artd    : GetBestInfo: vdex next to the dex file (/data/user/0/com.google.android.gms/app_dg_cache/D7ECB6ECAAAB0DCD8DECD74AE43F16D2EC2B3A20/oat/x86_64/the.vdex) is kOatUpToDate with filter 'verify' executable 'false'
+01-15 23:31:22.862  2983  2997 W artd    : Could not get dex checksums for location /data/app/~~bOQytt44Qr5Gb_ikif2I-Q==/com.android.vending-QpoCtcw5VYD9UTaWrMAz-A==/base.apk, fd=-1
+01-15 23:31:23.015   798   954 I HalDevMgr: bestIfaceCreationProposal is null, requestIface=STA, existingIface=[name=wlan0 type=STA]
+01-15 23:31:24.013  1587  3719 W MediaProvider: isAppCloneUserPair for user 0: false
+01-15 23:31:24.061  1377  1377 D BoundBrokerSvc: onBind: Intent { act=com.google.android.contextmanager.service.ContextManagerLogsUploadBoundService.ACTION_TASK_READY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+01-15 23:31:24.061  1377  1377 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.contextmanager.service.ContextManagerLogsUploadBoundService.ACTION_TASK_READY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+01-15 23:31:24.069  1377  8973 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+01-15 23:31:24.081  1377  9882 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+01-15 23:31:24.083  1377  1377 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.contextmanager.service.ContextManagerLogsUploadBoundService.ACTION_TASK_READY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+01-15 23:31:24.124  1377  1377 D BoundBrokerSvc: onBind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.TrustedTimeMaintenanceTaskService.ACTION_TASK_READY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+01-15 23:31:24.124  1377  1377 D BoundBrokerSvc: Loading bound service for intent: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.TrustedTimeMaintenanceTaskService.ACTION_TASK_READY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+01-15 23:31:24.134  1377  8973 I NetworkScheduler.Stats: (REDACTED) Task %s/%s started execution. cause:%s exec_start_elapsed_seconds: %s
+01-15 23:31:24.135  1377 10652 I TrustedTime: Trusted time maintenance task executing [CONTEXT service_id=326 ]
+01-15 23:31:24.145  1377  1377 D BoundBrokerSvc: onUnbind: Intent { act=com.google.android.gms.time.trustedtime.singleuserapi.service.TrustedTimeMaintenanceTaskService.ACTION_TASK_READY dat=chimera-action:/... xflg=0x4 cmp=com.google.android.gms/.chimera.PersistentInternalBoundBrokerService }
+01-15 23:31:24.145  1377 10652 I NetworkScheduler.Stats: (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s

@@ -19,13 +19,23 @@ let app: any;
 let auth: any;
 
 if (getApps().length === 0) {
-    app = initializeApp(firebaseConfig);
-    auth = initializeAuth(app, {
-        persistence: getReactNativePersistence(AsyncStorage),
-    });
+    try {
+        app = initializeApp(firebaseConfig);
+        auth = initializeAuth(app, {
+            persistence: getReactNativePersistence(AsyncStorage),
+        });
+    } catch (e) {
+        console.error("Firebase Init Failed (Non-Fatal):", e);
+        // Fallback or retry logic could go here. 
+        // For now, we allow the app to boot without auth to avoid crash loops.
+    }
 } else {
     app = getApp();
-    auth = getAuth(app);
+    try {
+        auth = getAuth(app);
+    } catch (e) {
+        console.error("Firebase GetAuth Failed:", e);
+    }
 }
 
 export { auth };

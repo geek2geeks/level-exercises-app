@@ -1,0 +1,233 @@
+01-15 23:29:04.495 11112 11112 I Zygote  : Process 11112 created for com.geek2geeks.level
+01-15 23:29:04.945 11112 11132 I FrameProcessorPluginRegistry: Successfully registered Frame Processor Plugin "resize"!
+01-15 23:29:05.062 11112 11148 I CameraDevices: Initializing ProcessCameraProvider...
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: FATAL EXCEPTION: mqt_v_native
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: Process: com.geek2geeks.level, PID: 11112
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: com.facebook.react.common.JavascriptException: FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: createErrorInternal@1:1826113
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: _assert@1:1826346
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:1850689
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getOrInitializeService@1:1790188
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initialize@1:1789664
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initializeAuth@1:1836823
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initializeAuth@1:1818680
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:1771886
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2661742
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2533299
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2532761
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2668951
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61566
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: get@1:821536
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroContext@1:821349
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadRoute@1:1113369
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getLayoutNode@1:1115514
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: _loop3@1:1113261
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getDirectoryTree@1:1111039
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getRoutes@1:1110024
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getRoutes@1:1109020
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: useStore@1:1080622
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: ContextNavigator@1:1147426
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: renderWithHooks@1:250168
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: updateFunctionComponent@1:268931
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: beginWork@1:276753
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performUnitOfWork@1:295393
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: workLoopSync@1:294401
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: renderRootSync@1:294233
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performWorkOnRoot@1:291660
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$1(MessageQueueThreadImpl.kt:175)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$ldnZnqelhYFctGaUKkOKYj5rxo4(Unknown Source:0)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 23:29:05.255 11112 11134 I Process : Sending signal. PID: 11112 SIG: 9
+01-15 23:29:05.265   798   914 W InputDispatcher: channel 'ba0fef5 com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Consumer closed input channel or an error occurred.  events=0x9
+01-15 23:29:05.265   798   914 E InputDispatcher: channel 'ba0fef5 com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Channel is unrecoverably broken and will be disposed!
+01-15 23:29:05.266   798  1806 I ActivityManager: Process com.geek2geeks.level (pid 11112) has died: fg  TOP 
+01-15 23:29:05.267   580   580 I Zygote  : Process 11112 exited due to signal 9 (Killed)
+01-15 23:31:34.550   798   816 W ProcessStats: Tracking association SourceState{d856d1a system/1000 ImpBg #4735} whose proc state 6 is better than process ProcessState{85fda38 com.google.android.partnersetup/10152 pkg=com.google.android.partnersetup} proc state 14 (19 skipped)
+01-15 23:32:46.438   798  2233 W ProcessStats: Tracking association SourceState{d6b00c8 com.android.vending/10153 ImpBg #4745} whose proc state 6 is better than process ProcessState{e65e4b4 com.android.vending:background/10153 pkg=com.android.vending} proc state 14 (1 skipped)
+01-15 23:33:28.542  3370  3370 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c2d package.install- [truncated])
+01-15 23:33:28.580  3370  3370 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c2d package.install- [truncated])
+01-15 23:33:29.348  3370  3370 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c2d package.install- [truncated])
+01-15 23:33:29.386  3370  3370 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c2d package.install- [truncated])
+01-15 23:33:30.075 11333 11333 W libprocessgroup: A JoinCgroup action in the SystemMemoryProcess profile is used for controller memory in the cgroup v2 hierarchy and will be ignored
+01-15 23:33:32.599   798  1014 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10227, mPackageName='com.geek2geeks.level, mAppProcessToken='null'}
+01-15 23:33:32.809   798  1014 I SdkSandboxManager: No SDKs used. Skipping SDK data reconcilation for CallingInfo{mUid=10227, mPackageName='com.geek2geeks.level, mAppProcessToken='null'}
+01-15 23:33:33.153  3476 11360 D DataProcessor: getHistoryMapWithExpectedTimestamps() size=27 in 1/ms
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 09:00:00
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 16:00:00
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 17:00:00
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 18:00:00
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 19:00:00
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 20:00:00
+01-15 23:33:33.154  3476 11360 E DataProcessor: abnormal entry list in the timestamp:Jan 15, 2026, 21:00:00
+01-15 23:33:33.551   798  2202 W ProcessStats: Tracking association SourceState{d6b00c8 com.android.vending/10153 Receivr #4787} whose proc state 10 is better than process ProcessState{e65e4b4 com.android.vending:background/10153 pkg=com.android.vending} proc state 14 (1 skipped)
+01-15 23:33:33.800  3476 11360 D DataProcessor: getBatteryUsageStats() from BatteryStatsManager in 646/ms, maxStatsAgeMs=0
+01-15 23:33:33.802  3476 11360 W DataProcessor: shouldShowBatteryAttributionList(): 0.1
+01-15 23:33:33.802  3476 11360 W DataProcessor: batteryEntryList is null or empty in convertToBatteryHistEntry()
+01-15 23:33:44.167 11421 11421 I Zygote  : Process 11421 created for com.geek2geeks.level
+01-15 23:33:44.757 11421 11442 I FrameProcessorPluginRegistry: Successfully registered Frame Processor Plugin "resize"!
+01-15 23:33:44.929 11421 11457 I CameraDevices: Initializing ProcessCameraProvider...
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: FATAL EXCEPTION: mqt_v_native
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: Process: com.geek2geeks.level, PID: 11421
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: com.facebook.react.common.JavascriptException: FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: createErrorInternal@1:1826113
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: _assert@1:1826346
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: anonymous@1:1850689
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: getOrInitializeService@1:1790188
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: initialize@1:1789664
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: initializeAuth@1:1836823
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: initializeAuth@1:1818680
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: anonymous@1:1771886
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: anonymous@1:2661742
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: anonymous@1:2533299
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: anonymous@1:2532761
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: anonymous@1:2668951
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: guardedLoadModule@1:61566
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: get@1:821536
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: metroContext@1:821349
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: loadRoute@1:1113369
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: getLayoutNode@1:1115514
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: _loop3@1:1113261
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: getDirectoryTree@1:1111039
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: getRoutes@1:1110024
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: getRoutes@1:1109020
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: useStore@1:1080622
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: ContextNavigator@1:1147426
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: renderWithHooks@1:250168
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: updateFunctionComponent@1:268931
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: beginWork@1:276753
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: performUnitOfWork@1:295393
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: workLoopSync@1:294401
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: renderRootSync@1:294233
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: performWorkOnRoot@1:291660
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$1(MessageQueueThreadImpl.kt:175)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$ldnZnqelhYFctGaUKkOKYj5rxo4(Unknown Source:0)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+01-15 23:33:45.105 11421 11444 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 23:33:45.116 11421 11444 I Process : Sending signal. PID: 11421 SIG: 9
+01-15 23:33:45.129   798   914 W InputDispatcher: channel 'd24b98f com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Consumer closed input channel or an error occurred.  events=0x9
+01-15 23:33:45.129   798   914 E InputDispatcher: channel 'd24b98f com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Channel is unrecoverably broken and will be disposed!
+01-15 23:33:45.131   798   876 I ActivityManager: Process com.geek2geeks.level (pid 11421) has died: fg  TOP 
+01-15 23:33:45.131   580   580 I Zygote  : Process 11421 exited due to signal 9 (Killed)
+01-15 23:33:47.032 11471 11471 W libbinder.BpBinder: Linking to death on android.gui.ISurfaceComposer but there are no threads (yet?) listening to incoming transactions. See ProcessState::startThreadPool and ProcessState::setThreadPoolMaxThreadCount. Generally you should setup the binder threadpool before other initialization steps.
+01-15 23:33:47.033 11471 11471 W libbinder.ProcessState: Extra binder thread started, but 0 threads requested. Do not use *startThreadPool when zero threads are requested.
+01-15 23:33:47.380  1587  1779 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=09f61899-3967-4f1b-bfe1-52f24ace9bfa, generation=0)
+01-15 23:33:47.380  1587  1779 D WM-Processor: Work WorkGenerationalId(workSpecId=09f61899-3967-4f1b-bfe1-52f24ace9bfa, generation=0) is already enqueued for processing
+01-15 23:33:47.417  1587  1587 D WM-Processor: Processor 09f61899-3967-4f1b-bfe1-52f24ace9bfa executed; reschedule = false
+01-15 23:33:48.919  1587  1773 D WM-Processor: Processor: processing WorkGenerationalId(workSpecId=4031ce33-d583-453b-9229-d361066d1ca1, generation=0)
+01-15 23:33:48.940  1587  1721 D WM-Processor: Work WorkGenerationalId(workSpecId=4031ce33-d583-453b-9229-d361066d1ca1, generation=0) is already enqueued for processing
+01-15 23:33:48.966  1587  1587 D WM-Processor: Processor 4031ce33-d583-453b-9229-d361066d1ca1 executed; reschedule = false
+01-15 23:33:52.459   798  1817 W InputDispatcher: Attempted to pilfer points from a channel without any on-going pointer streams. Ignoring.
+01-15 23:33:54.010 11486 11486 I Zygote  : Process 11486 created for com.geek2geeks.level
+01-15 23:33:54.504 11486 11504 I FrameProcessorPluginRegistry: Successfully registered Frame Processor Plugin "resize"!
+01-15 23:33:54.646 11486 11519 I CameraDevices: Initializing ProcessCameraProvider...
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: FATAL EXCEPTION: mqt_v_native
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: Process: com.geek2geeks.level, PID: 11486
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: com.facebook.react.common.JavascriptException: FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: createErrorInternal@1:1826113
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: _assert@1:1826346
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: anonymous@1:1850689
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: getOrInitializeService@1:1790188
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: initialize@1:1789664
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: initializeAuth@1:1836823
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: initializeAuth@1:1818680
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: anonymous@1:1771886
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: anonymous@1:2661742
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: anonymous@1:2533299
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: anonymous@1:2532761
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: anonymous@1:2668951
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: guardedLoadModule@1:61566
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: metroRequire@1:61120
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: get@1:821536
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: metroContext@1:821349
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: loadRoute@1:1113369
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: getLayoutNode@1:1115514
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: _loop3@1:1113261
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: getDirectoryTree@1:1111039
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: getRoutes@1:1110024
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: getRoutes@1:1109020
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: useStore@1:1080622
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: ContextNavigator@1:1147426
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: renderWithHooks@1:250168
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: updateFunctionComponent@1:268931
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: beginWork@1:276753
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: performUnitOfWork@1:295393
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: workLoopSync@1:294401
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: renderRootSync@1:294233
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: performWorkOnRoot@1:291660
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$1(MessageQueueThreadImpl.kt:175)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$ldnZnqelhYFctGaUKkOKYj5rxo4(Unknown Source:0)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+01-15 23:33:54.828 11486 11506 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 23:33:57.087   580   580 I Zygote  : Process 11486 exited due to signal 9 (Killed)

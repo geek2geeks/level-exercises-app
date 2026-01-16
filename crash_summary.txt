@@ -1,0 +1,174 @@
+01-15 23:29:04.495 11112 11112 I Zygote  : Process 11112 created for com.geek2geeks.level
+01-15 23:29:04.891 11112 11112 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Schedule
+01-15 23:29:04.891 11112 11112 W unknown:BridgelessReact: ReactHost{0}.attachSurface(surfaceId = 0)
+01-15 23:29:04.892 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask()
+01-15 23:29:04.892 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Start
+01-15 23:29:04.893 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getJSBundleLoader()
+01-15 23:29:04.894 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactContext(): Creating BridgelessReactContext
+01-15 23:29:04.894 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Creating ReactInstance
+01-15 23:29:04.904 11112 11112 W unknown:BridgelessReact: ReactHost{0}.onHostResume(activity)
+01-15 23:29:04.904 11112 11112 W unknown:BridgelessReact: ReactContext.onHostResume()
+01-15 23:29:04.945 11112 11132 I FrameProcessorPluginRegistry: Successfully registered Frame Processor Plugin "resize"!
+01-15 23:29:05.062 11112 11148 I CameraDevices: Initializing ProcessCameraProvider...
+01-15 23:29:05.091 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Loading JS Bundle
+01-15 23:29:05.091 11112 11132 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Calling DevSupportManagerBase.onNewReactContextCreated(reactContext)
+01-15 23:29:05.092 11112 11132 W unknown:BridgelessReact: ReactHost{0}.startSurface(surfaceId = 0): Execute
+01-15 23:29:05.103 11112 11112 W unknown:BridgelessReact: ReactContext.onHostResume()
+01-15 23:29:05.103 11112 11112 W unknown:BridgelessReact: ReactHost{0}.getOrCreateReactInstanceTask(): Executing ReactInstanceEventListeners
+01-15 23:29:05.159 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewManager
+01-15 23:29:05.159 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.safeareaview.ReactSafeAreaViewShadowNode
+01-15 23:29:05.160 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.modal.ReactModalHostManager
+01-15 23:29:05.161 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageViewManager
+01-15 23:29:05.161 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.frescosupport.FrescoBasedReactTextInlineImageShadowNode
+01-15 23:29:05.162 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.progressbar.ReactProgressBarViewManager
+01-15 23:29:05.163 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollViewManager
+01-15 23:29:05.165 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.image.ReactImageManager
+01-15 23:29:05.166 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextViewManager
+01-15 23:29:05.167 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactTextShadowNode
+01-15 23:29:05.168 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactHorizontalScrollContainerViewManager
+01-15 23:29:05.169 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.unimplementedview.ReactUnimplementedViewManager
+01-15 23:29:05.170 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.scroll.ReactScrollViewManager
+01-15 23:29:05.171 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.view.ReactViewManager
+01-15 23:29:05.171 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.drawer.ReactDrawerLayoutManager
+01-15 23:29:05.172 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchManager
+01-15 23:29:05.173 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.switchview.ReactSwitchShadowNode
+01-15 23:29:05.174 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextViewManager
+01-15 23:29:05.174 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactVirtualTextShadowNode
+01-15 23:29:05.177 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextManager
+01-15 23:29:05.177 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.text.ReactRawTextShadowNode
+01-15 23:29:05.178 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputManager
+01-15 23:29:05.178 11112 11133 W unknown:ViewManagerPropertyUpdater: Could not find generated setter for class com.facebook.react.views.textinput.ReactTextInputShadowNode
+01-15 23:29:05.183 11112 11133 W BridgelessReactContext: [WARNING] Bridgeless doesn't support CatalystInstance. Accessing an API that's not part of the new architecture is not encouraged usage.
+01-15 23:29:05.216 11112 11133 I ReactNativeJS: Running "main"
+01-15 23:29:05.232 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.232 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.232 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.232 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.233 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.233 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.233 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.233 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.234 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.234 11112 11133 E ReactNativeJS: { [FirebaseError: Firebase: Error (auth/invalid-api-key).]
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   code: 'auth/invalid-api-key',
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   customData: { appName: '[DEFAULT]' },
+01-15 23:29:05.234 11112 11133 E ReactNativeJS:   name: 'FirebaseError' }
+01-15 23:29:05.235 11112 11133 E ReactNativeJS: { [TypeError: Cannot read property 'ErrorBoundary' of undefined]
+01-15 23:29:05.235 11112 11133 E ReactNativeJS:   componentStack: '\n    at ContextNavigator (address at index.android.bundle:1:1147268)\n    at ExpoRoot (address at index.android.bundle:1:1146911)\n    at App (<anonymous>)\n    at RCTView (<anonymous>)\n    at View (address at index.android.bundle:1:491251)\n    at AppContainer (address at index.android.bundle:1:490579)',
+01-15 23:29:05.235 11112 11133 E ReactNativeJS:   isComponentError: true }
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: ReactHost{0}.handleHostException(message = "FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: createErrorInternal@1:1826113
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: _assert@1:1826346
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:1850689
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getOrInitializeService@1:1790188
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: initialize@1:1789664
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: initializeAuth@1:1836823
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: initializeAuth@1:1818680
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:1771886
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2661742
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2533299
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2532761
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: anonymous@1:2668951
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: guardedLoadModule@1:61566
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: get@1:821536
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: metroContext@1:821349
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: loadRoute@1:1113369
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getLayoutNode@1:1115514
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: _loop3@1:1113261
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getDirectoryTree@1:1111039
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getRoutes@1:1110024
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: getRoutes@1:1109020
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: useStore@1:1080622
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: ContextNavigator@1:1147426
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: renderWithHooks@1:250168
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: updateFunctionComponent@1:268931
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: beginWork@1:276753
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: performUnitOfWork@1:295393
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: workLoopSync@1:294401
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: renderRootSync@1:294233
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: performWorkOnRoot@1:291660
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:29:05.239 11112 11134 W unknown:BridgelessReact: ")
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: FATAL EXCEPTION: mqt_v_native
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: Process: com.geek2geeks.level, PID: 11112
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: com.facebook.react.common.JavascriptException: FirebaseError: Firebase: Error (auth/invalid-api-key)., stack:
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: createErrorInternal@1:1826113
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: _assert@1:1826346
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:1850689
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getOrInitializeService@1:1790188
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initialize@1:1789664
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initializeAuth@1:1836823
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: initializeAuth@1:1818680
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:1771886
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2661742
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2533299
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2532761
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61610
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: anonymous@1:2668951
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadModuleImplementation@1:62087
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: guardedLoadModule@1:61566
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroRequire@1:61120
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: get@1:821536
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: metroContext@1:821349
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: loadRoute@1:1113369
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getLayoutNode@1:1115514
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: _loop3@1:1113261
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getDirectoryTree@1:1111039
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getRoutes@1:1110024
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: getRoutes@1:1109020
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: useStore@1:1080622
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: ContextNavigator@1:1147426
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: renderWithHooks@1:250168
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: updateFunctionComponent@1:268931
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: beginWork@1:276753
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performUnitOfWork@1:295393
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: workLoopSync@1:294401
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: renderRootSync@1:294233
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performWorkOnRoot@1:291660
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: performWorkOnRootViaSchedulerTask@1:245633
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.modules.core.ExceptionsManagerModule.reportException(ExceptionsManagerModule.kt:52)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.jni.NativeRunnable.run(Native Method)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:1070)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:125)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadHandler.dispatchMessage(MessageQueueThreadHandler.kt:21)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.dispatchMessage(Looper.java:333)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.loopOnce(Looper.java:263)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:367)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.startNewBackgroundThread$lambda$1(MessageQueueThreadImpl.kt:175)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion.$r8$lambda$ldnZnqelhYFctGaUKkOKYj5rxo4(Unknown Source:0)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at com.facebook.react.bridge.queue.MessageQueueThreadImpl$Companion$$ExternalSyntheticLambda0.run(D8$$SyntheticClass:0)
+01-15 23:29:05.239 11112 11134 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:1563)
+01-15 23:29:05.255 11112 11134 I Process : Sending signal. PID: 11112 SIG: 9
+01-15 23:29:05.265   798   914 W InputDispatcher: channel 'ba0fef5 com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Consumer closed input channel or an error occurred.  events=0x9
+01-15 23:29:05.265   798   914 E InputDispatcher: channel 'ba0fef5 com.geek2geeks.level/com.geek2geeks.level.MainActivity' ~ Channel is unrecoverably broken and will be disposed!
+01-15 23:29:05.266   798  1806 I ActivityManager: Process com.geek2geeks.level (pid 11112) has died: fg  TOP 
+01-15 23:29:05.267   580   580 I Zygote  : Process 11112 exited due to signal 9 (Killed)
