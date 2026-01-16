@@ -1,7 +1,18 @@
 import { loadTensorflowModel, TensorflowModel } from 'react-native-fast-tflite';
 import { Pose } from '../../types/vision';
+import { getDeviceCapabilities } from './DeviceCapabilities';
 
 export type ModelType = 'movenet_thunder' | 'movenet_lightning';
+
+export type ExerciseType = 'squat' | 'pushup' | 'lunge' | 'plank' | 'complex';
+
+const EXERCISE_MODEL_MAP: Record<ExerciseType, ModelType> = {
+    squat: 'movenet_lightning',    // Joint angles only, fast
+    pushup: 'movenet_lightning',   // Joint angles only, fast
+    lunge: 'movenet_lightning',    // Joint angles only, fast
+    plank: 'movenet_thunder',      // Needs full body precision
+    complex: 'movenet_thunder',    // Yoga, etc.
+};
 
 class PoseDetectionService {
     private _model: TensorflowModel | null = null;
@@ -20,7 +31,11 @@ class PoseDetectionService {
         return this._currentType;
     }
 
-    async loadModel(type: ModelType = 'movenet_thunder'): Promise<void> {
+    getRecommendedModel(exercise: ExerciseType): ModelType {
+        return EXERCISE_MODEL_MAP[exercise] ?? 'movenet_lightning';
+    }
+
+    async loadModel(type: ModelType = 'movenet_thunder', forceDelegate?: 'nnapi' | 'gpu' | 'cpu'): Promise<void> {
         try {
             console.log(`Loading model: ${type}...`);
             this._isReady = false;
@@ -34,23 +49,91 @@ class PoseDetectionService {
                 throw new Error(`Unknown model type: ${type}`);
             }
 
-            // Try to load with NNAPI (Android NPU) first, then GPU, then CPU
+            // 1. Check Capabilities
+            const caps = await getDeviceCapabilities();
+            console.log(`[PoseService] Device Caps: API=${caps.androidApiLevel} GPU=${caps.supportsGpu} NNAPI=${caps.supportsNnapi} Rec=${caps.recommendedDelegate}`);
+
+            const startTime = performance.now();
+            let usedDelegate = 'cpu';
+
+            // 2. Try to load with forced delegate or intelligent sequence
             try {
-                console.log("Attempting to load with NNAPI delegate...");
-                this._model = await loadTensorflowModel(modelAsset, 'nnapi');
-            } catch (nnapiError) {
-                console.warn("NNAPI failed, trying GPU...", nnapiError);
-                try {
-                    this._model = await loadTensorflowModel(modelAsset, 'android-gpu');
-                } catch (gpuError) {
-                    console.warn("GPU failed, falling back to CPU...", gpuError);
-                    this._model = await loadTensorflowModel(modelAsset);
+                if (forceDelegate) {
+                    const delegateMap: Record<string, any> = { 'gpu': 'android-gpu', 'nnapi': 'nnapi', 'cpu': undefined };
+                    usedDelegate = forceDelegate;
+                    console.log(`Forcing delegate: ${forceDelegate}`);
+                    this._model = await loadTensorflowModel(modelAsset, delegateMap[forceDelegate]);
+                } else {
+                    // Intelligent Sequence based on Device Capabilities
+                    const isIOS = require('react-native').Platform.OS === 'ios';
+
+                    if (isIOS) {
+                        if (caps.recommendedDelegate === 'core-ml') {
+                            try {
+                                console.log("Attempting CoreML delegate...");
+                                this._model = await loadTensorflowModel(modelAsset, 'core-ml');
+                                usedDelegate = 'core-ml';
+                            } catch (e) {
+                                console.warn("CoreML failed, fallback CPU", e);
+                                this._model = await loadTensorflowModel(modelAsset);
+                                usedDelegate = 'cpu';
+                            }
+                        } else {
+                            this._model = await loadTensorflowModel(modelAsset); // Simulator or forced CPU
+                            usedDelegate = 'cpu';
+                        }
+                    } else {
+                        // Android Smart Chain
+                        if (caps.supportsGpu) {
+                            try {
+                                console.log("Attempting GPU delegate...");
+                                this._model = await loadTensorflowModel(modelAsset, 'android-gpu');
+                                usedDelegate = 'android-gpu';
+                            } catch (gpuErr) {
+                                console.warn("GPU failed...", gpuErr);
+                                if (caps.supportsNnapi) {
+                                    try {
+                                        console.log("Falling back to NNAPI...");
+                                        this._model = await loadTensorflowModel(modelAsset, 'nnapi');
+                                        usedDelegate = 'nnapi';
+                                    } catch (nnapiErr) {
+                                        console.warn("NNAPI failed, fallback CPU", nnapiErr);
+                                        this._model = await loadTensorflowModel(modelAsset);
+                                        usedDelegate = 'cpu';
+                                    }
+                                } else {
+                                    console.log("NNAPI not supported/recommended, fallback CPU");
+                                    this._model = await loadTensorflowModel(modelAsset);
+                                    usedDelegate = 'cpu';
+                                }
+                            }
+                        } else if (caps.supportsNnapi) {
+                            try {
+                                console.log("GPU not supported, trying NNAPI...");
+                                this._model = await loadTensorflowModel(modelAsset, 'nnapi');
+                                usedDelegate = 'nnapi';
+                            } catch (nnapiErr) {
+                                console.warn("NNAPI failed, fallback CPU", nnapiErr);
+                                this._model = await loadTensorflowModel(modelAsset);
+                                usedDelegate = 'cpu';
+                            }
+                        } else {
+                            console.log("Accelerators not supported, using CPU");
+                            this._model = await loadTensorflowModel(modelAsset);
+                            usedDelegate = 'cpu';
+                        }
+                    }
                 }
+            } catch (error) {
+                console.error("Delegate selection failed, forcing absolute fallback to CPU", error);
+                this._model = await loadTensorflowModel(modelAsset);
+                usedDelegate = 'cpu';
             }
 
-            this._currentType = type;
+            const loadTime = performance.now() - startTime;
+            console.log(`${type} loaded. Delegate: ${this._model?.delegate} (Attempted: ${usedDelegate}) in ${loadTime.toFixed(0)}ms`);
 
-            console.log(`${type} loaded successfully. Delegate: ${this._model.delegate}`);
+            this._currentType = type;
             this._isReady = true;
         } catch (error) {
             console.error(`Failed to load ${type}:`, error);

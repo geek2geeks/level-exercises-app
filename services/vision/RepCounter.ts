@@ -71,15 +71,15 @@ export class RepCounter {
     private readonly UP_THRESHOLD = 160;
     private readonly DOWN_THRESHOLD = 130;
 
-    // Confidence Threshold (expert recommendation)
-    private readonly CONFIDENCE_THRESHOLD = 0.45;
+    // Confidence Threshold - lowered from 0.45 to 0.3 for better tracking reliability
+    private readonly CONFIDENCE_THRESHOLD = 0.3;
 
     constructor() {
         // Tuned params for human motion smoothing
         this.filter = new OneEuroFilter(1.0, 0.007, 1.0);
     }
 
-    public update(pose: Pose): { count: number; state: ExerciseState; angle: number; isDetected: boolean } {
+    public update(pose: Pose, frameTimestamp?: number): { count: number; state: ExerciseState; angle: number; isDetected: boolean } {
         const leftHip = pose.keypoints[PoseLandmark.LEFT_HIP];
         const leftKnee = pose.keypoints[PoseLandmark.LEFT_KNEE];
         const leftAnkle = pose.keypoints[PoseLandmark.LEFT_ANKLE];
@@ -93,7 +93,8 @@ export class RepCounter {
         }
 
         const rawAngle = this.calculateAngle(leftHip, leftKnee, leftAnkle);
-        const timestamp = Date.now();
+        // Use provided frame timestamp (ms) or fallback to Date.now()
+        const timestamp = frameTimestamp ?? Date.now();
         const smoothedAngle = this.filter.filter(timestamp, rawAngle);
 
         this.processState(smoothedAngle);

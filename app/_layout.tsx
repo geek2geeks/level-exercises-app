@@ -10,12 +10,14 @@ import { Stack, useRouter, useSegments } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { observer } from 'mobx-react-lite';
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
 // Prevent local splash screen from auto-hiding
-SplashScreen.preventAutoHideAsync();
+SplashScreen.preventAutoHideAsync().catch(() => {
+  // Can throw if called multiple times during fast refresh.
+});
 
 const InitialLayout = observer(() => {
   const { authStore } = useStores();
@@ -53,7 +55,7 @@ const InitialLayout = observer(() => {
         router.replace('/(tabs)');
       }
     }
-  }, [authStore.isAuthenticated, authStore.isLoading, segments]);
+  }, [authStore.isAuthenticated, authStore.isLoading, router, segments]);
 
   if (authStore.isLoading) {
     return null; // Or a splash screen component
@@ -68,6 +70,10 @@ const InitialLayout = observer(() => {
   );
 });
 
+import { SplashScreen as AnimatedSplashScreen } from '@features/splash/SplashScreen';
+
+// ... imports
+
 export default function RootLayout() {
   const [loaded, error] = useFonts({
     SpaceGrotesk_400Regular,
@@ -75,14 +81,58 @@ export default function RootLayout() {
     SpaceGrotesk_700Bold,
   });
 
-  useEffect(() => {
-    if (loaded || error) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded, error]);
+  const [splashTimedOut, setSplashTimedOut] = useState(false);
+  const [isSplashAnimationFinished, setIsSplashAnimationFinished] = useState(false);
+  const rootViewDidLayoutRef = useRef(false);
+  const splashHiddenRef = useRef(false);
 
-  if (!loaded && !error) {
+  const appIsReady = loaded || !!error || splashTimedOut;
+
+  const hideSplash = useCallback(async (reason: string) => {
+    if (splashHiddenRef.current) return;
+    splashHiddenRef.current = true;
+    try {
+      console.log(`[splash] hiding (${reason}) loaded=${loaded} error=${!!error} timedOut=${splashTimedOut}`);
+      await SplashScreen.hideAsync();
+    } catch (e) {
+      console.warn('[splash] hideAsync failed', e);
+    }
+  }, [error, loaded, splashTimedOut]);
+
+  const onLayoutRootView = useCallback(() => {
+    rootViewDidLayoutRef.current = true;
+    if (appIsReady) {
+      void hideSplash('layout');
+    }
+  }, [appIsReady, hideSplash]);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      console.warn('[splash] font load timeout; continuing without fonts');
+      setSplashTimedOut(true);
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
+    if (appIsReady && rootViewDidLayoutRef.current) {
+      void hideSplash('ready');
+    }
+  }, [appIsReady, hideSplash]);
+
+  if (!appIsReady) {
     return null;
+  }
+
+  // Show Animated Splash until it finishes, then show App
+  if (!isSplashAnimationFinished) {
+    return (
+      <GestureHandlerRootView style={{ flex: 1 }} onLayout={onLayoutRootView}>
+        <AnimatedSplashScreen onFinish={() => setIsSplashAnimationFinished(true)} />
+        <StatusBar style="light" />
+      </GestureHandlerRootView>
+    );
   }
 
   return (
