@@ -1,120 +1,131 @@
-import { useRouter } from "expo-router";
 import React, { useEffect } from "react";
-import { ImageStyle, Text, TextStyle, View, ViewStyle } from "react-native";
+import { Text, TextStyle, View, ViewStyle } from "react-native";
 import Animated, {
     Easing,
     Extrapolation,
     interpolate,
-    interpolateColor,
     runOnJS,
     useAnimatedStyle,
     useSharedValue,
     withDelay,
-    withTiming,
+    withTiming
 } from "react-native-reanimated";
 
-// Hardcoded colors/styles if theme is missing, or import if available. 
-// Assuming standard palette from inspection.
 const colors = {
-    transparent: "transparent",
     palette: {
         neutral100: "#FFFFFF",
-        primary500: "#CCFF00", // The level-fitness green
+        primary500: "#CCFF00",
     }
 }
 
-const splashIcon = require("../../assets/images/android-icon-foreground.png")
+const ANI_DURATION = 1600;
+const INITIAL_DELAY = 500;
+const MORPH_EASING = Easing.bezier(0.25, 0.8, 0.25, 1);
 
 export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
-    const router = useRouter()
-    const logoProgress = useSharedValue(0)
-    const iconOpacity = useSharedValue(1)
-    const textOpacity = useSharedValue(0)
+    // Animation Values
+    const progress = useSharedValue(0); // 0 -> 1 (Main sequence)
+    const curtainOpacity = useSharedValue(1);
 
     useEffect(() => {
-        // Sequence:
-        // 1. Wait 500ms (showing Static Icon, matching Native Splash)
-        // 2. Crossfade: Icon Out, Text In (Text is in LVL state)
-        // 3. Animate Text: LVL -> LEVEL
-        // 4. Navigate
+        // Sequence matching HTML:
+        // 1. Wait DELAY (500ms)
+        // 2. Animate Progress 0 -> 1 (1.6s)
+        //    This drives: Box Widen, E Reveal, L Slide In
+        // 3. Reveal BG (Curtain Fade) and Tagline
 
-        // Start Crossfade after delay
-        iconOpacity.value = withDelay(500, withTiming(0, { duration: 500 }))
-        textOpacity.value = withDelay(500, withTiming(1, { duration: 500 }))
+        progress.value = withDelay(INITIAL_DELAY, withTiming(1, {
+            duration: ANI_DURATION,
+            easing: MORPH_EASING
+        }, (finished) => {
+            // After expansion, fade out black curtain
+            if (finished) {
+                curtainOpacity.value = withDelay(1000, withTiming(0, { duration: 1500 }, (f) => {
+                    if (f) runOnJS(onFinish)();
+                }));
+            }
+        }));
+    }, []);
 
-        // Start Expansion after crossfade
-        logoProgress.value = withDelay(
-            1000,
-            withTiming(1, { duration: 1500, easing: Easing.out(Easing.exp) }, (finished) => {
-                if (finished) {
-                    runOnJS(onFinish)()
-                }
-            }),
-        )
-    }, [])
+    // 1. Box Widen: 50px -> 140px (Approx to fit EVE)
+    const $boxStyle = useAnimatedStyle(() => ({
+        width: interpolate(progress.value, [0, 1], [50, 126]), // 44->116 in HTML + padding
+        // Border "Close" simulation: We can just keep border constant or animate color
+        borderColor: colors.palette.neutral100,
+    }));
 
-    const $animatedBoxStyle = useAnimatedStyle(() => ({
-        borderColor: interpolateColor(
-            logoProgress.value,
-            [0, 1],
-            [colors.transparent, colors.palette.neutral100],
-        ),
-    }))
+    // 2. E Slide Out: Translate X 10 -> 0, Opacity 0 -> 1
+    const $eLeftStyle = useAnimatedStyle(() => ({
+        opacity: interpolate(progress.value, [0, 0.3], [0, 1], Extrapolation.CLAMP),
+        transform: [{
+            translateX: interpolate(progress.value, [0, 1], [15, 0], Extrapolation.CLAMP),
+        }],
+    }));
 
-    const $animatedEStyle = useAnimatedStyle(() => ({
-        opacity: interpolate(logoProgress.value, [0, 0.5], [0, 1], Extrapolation.CLAMP),
-        width: interpolate(logoProgress.value, [0, 1], [0, 35], Extrapolation.CLAMP),
+    const $eRightStyle = useAnimatedStyle(() => ({
+        opacity: interpolate(progress.value, [0, 0.3], [0, 1], Extrapolation.CLAMP),
         transform: [
-            {
-                translateX: interpolate(logoProgress.value, [0, 1], [10, 0], Extrapolation.CLAMP),
-            },
+            { scaleX: -1 }, // Inverted L
+            { translateX: interpolate(progress.value, [0, 1], [15, 0], Extrapolation.CLAMP) }
         ],
-    }))
+    }));
 
-    const $iconStyle = useAnimatedStyle(() => ({
-        opacity: iconOpacity.value,
-    }))
+    // 3. L Slide In: Translate X 20 -> 0, Opacity 0 -> 1
+    const $lLeftStyle = useAnimatedStyle(() => ({
+        opacity: interpolate(progress.value, [0, 1], [0, 1], Extrapolation.CLAMP),
+        transform: [{
+            translateX: interpolate(progress.value, [0, 1], [20, 0], Extrapolation.CLAMP),
+        }],
+    }));
 
-    const $textContainerStyle = useAnimatedStyle(() => ({
-        opacity: textOpacity.value,
-    }))
+    const $lRightStyle = useAnimatedStyle(() => ({
+        opacity: interpolate(progress.value, [0, 1], [0, 1], Extrapolation.CLAMP),
+        transform: [
+            { scaleX: -1 }, // Inverted L
+            { translateX: interpolate(progress.value, [0, 1], [20, 0], Extrapolation.CLAMP) }
+        ],
+    }));
+
+    // Tagline Fade In (Late)
+    const $taglineStyle = useAnimatedStyle(() => ({
+        opacity: interpolate(curtainOpacity.value, [1, 0], [0, 1]), // Inverse of curtain
+    }));
 
     return (
         <View style={$container}>
+            {/* White/Black Sequence Background is handled by Curtain Logic or just opacity */}
+
+            {/* Black Curtain (Fades out to reveal app behind? Or just stays black?) 
+                HTML has #black-curtain over #bg-image. 
+                In RN, we might just want to fade the whole splash View out or show content underneath.
+                The prompt implies: Splash -> Welcome.
+                So we probably keep black background until finish.
+            */}
+
             <View style={$contentContainer}>
-                {/* Static Icon Layer */}
-                <View style={[$logoRowOuter, { position: 'absolute' }]}>
-                    <Animated.Image
-                        source={splashIcon}
-                        style={[$splashImage, $iconStyle]}
-                        resizeMode="contain"
-                    />
+                <View style={$logoRow}>
+                    {/* Left L */}
+                    <Animated.Text style={[$logoText, $lLeftStyle]}>L</Animated.Text>
+
+                    {/* Box [ E V E ] */}
+                    <Animated.View style={[$logoBox, $boxStyle]}>
+                        {/* Box Border Emulation (Optional complexity) - simple CSS border for now */}
+
+                        <Animated.Text style={[$logoText, $eLeftStyle]}>E</Animated.Text>
+                        <Text style={[$logoText, $greenLogoText]}>V</Text>
+                        <Animated.Text style={[$logoText, $eRightStyle]}>E</Animated.Text>
+                    </Animated.View>
+
+                    {/* Right L */}
+                    <Animated.Text style={[$logoText, $invertedL, $lRightStyle]}>L</Animated.Text>
                 </View>
 
-                {/* Animated Text Layer */}
-                <Animated.View style={[$logoRowOuter, $textContainerStyle]}>
-                    <Text style={$logoText}>L</Text>
-                    <Animated.View style={[$logoBox, $animatedBoxStyle]}>
-                        <Animated.View style={[{ overflow: "hidden" }, $animatedEStyle]}>
-                            <Text style={$logoText}>E</Text>
-                        </Animated.View>
-                        <Text style={[$logoText, $greenLogoText]}>V</Text>
-                        <Animated.View style={[{ overflow: "hidden" }, $animatedEStyle]}>
-                            <Text style={[$logoText, $invertedL]}>E</Text>
-                        </Animated.View>
-                    </Animated.View>
-                    <Text style={[$logoText, $invertedL]}>L</Text>
-                </Animated.View>
-
-                <Animated.View style={{ opacity: logoProgress }}>
-                    <Text style={$tagline}>ELEVATE YOUR FORM.</Text>
-                </Animated.View>
+                <Animated.Text style={[$tagline, $taglineStyle]}>ELEVATE YOUR FORM.</Animated.Text>
             </View>
         </View>
     )
 }
 
-// STYLES
 const $container: ViewStyle = {
     flex: 1,
     backgroundColor: "#000",
@@ -127,43 +138,40 @@ const $contentContainer: ViewStyle = {
     justifyContent: "center",
 }
 
-const $logoRowOuter: ViewStyle = {
-    marginBottom: 8,
+const $logoRow: ViewStyle = {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
     gap: 4,
 }
 
 const $logoBox: ViewStyle = {
+    height: 64,
     borderWidth: 4,
     borderColor: colors.palette.neutral100,
-    paddingHorizontal: 8,
-    paddingVertical: 4,
     flexDirection: "row",
     alignItems: "center",
-    marginHorizontal: 4,
-    gap: 4,
+    justifyContent: "center",
+    overflow: "hidden", // Clip content as it expands
 }
 
 const $logoText: TextStyle = {
-    fontFamily: "SpaceGrotesk-Bold", // Ensure this font is loaded in RootLayout
+    fontFamily: "SpaceGrotesk-Bold", // Ensure font matches
     fontSize: 48,
-    lineHeight: 52,
+    lineHeight: 52, // Match HTML approx
     fontWeight: "900",
     color: colors.palette.neutral100,
-}
-
-const $invertedL: TextStyle = {
-    transform: [{ scaleX: -1 }],
+    includeFontPadding: false,
+    textAlignVertical: "center",
 }
 
 const $greenLogoText: TextStyle = {
     color: colors.palette.primary500,
+    zIndex: 10,
 }
 
-const $splashImage: ImageStyle = {
-    width: 300,
-    height: 300,
+const $invertedL: TextStyle = {
+    // transform handled in animated style
 }
 
 const $tagline: TextStyle = {
