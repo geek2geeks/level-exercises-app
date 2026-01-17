@@ -125,23 +125,19 @@ export default function RootLayout() {
     return null;
   }
 
-  // Show Animated Splash until it finishes, then show App
-  if (!isSplashAnimationFinished) {
-    return (
-      <GestureHandlerRootView style={{ flex: 1 }} onLayout={onLayoutRootView}>
-        <AnimatedSplashScreen onFinish={() => setIsSplashAnimationFinished(true)} />
-        <StatusBar style="light" />
-      </GestureHandlerRootView>
-    );
-  }
-
+  // Layer the screens: App renders underneath, Splash overlays on top and fades out
+  // This creates seamless transition where logo appears to "stay" in place
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <GestureHandlerRootView style={{ flex: 1 }} onLayout={onLayoutRootView}>
       <SafeAreaProvider>
         <RootStoreProvider>
           <ActionSheetProvider>
             <>
               <InitialLayout />
+              {/* Splash overlays on top and fades out to reveal Welcome */}
+              {!isSplashAnimationFinished && (
+                <AnimatedSplashScreen onFinish={() => setIsSplashAnimationFinished(true)} />
+              )}
               <StatusBar style="light" />
             </>
           </ActionSheetProvider>

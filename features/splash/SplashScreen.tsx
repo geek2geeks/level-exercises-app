@@ -11,6 +11,8 @@ import Animated, {
     withTiming
 } from "react-native-reanimated";
 
+// Logo is vertically centered to match native splash screen
+
 const colors = {
     palette: {
         neutral100: "#FFFFFF",
@@ -19,42 +21,39 @@ const colors = {
 }
 
 const ANI_DURATION = 1600;
-const INITIAL_DELAY = 500;
+const INITIAL_DELAY = 300; // Reduced from 500ms for snappier feel
 const MORPH_EASING = Easing.bezier(0.25, 0.8, 0.25, 1);
 
 export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
-    // Animation Values
-    const progress = useSharedValue(0); // 0 -> 1 (Main sequence)
-    const curtainOpacity = useSharedValue(1);
+    const progress = useSharedValue(0);
+    const fadeOut = useSharedValue(1);
 
     useEffect(() => {
         // Sequence:
-        // 1. Wait DELAY (500ms) to match native splash
-        // 2. Animate Progress 0 -> 1 (1.6s) - Box Widen, E Reveal, L Slide In
-        // 3. Brief hold, then immediately transition to Welcome (no fade)
+        // 1. Brief pause (300ms) - static "V" box visible
+        // 2. Animate LEVEL expansion (1.6s)
+        // 3. Quick fade out (200ms) - Welcome screen already positioned behind
 
         progress.value = withDelay(INITIAL_DELAY, withTiming(1, {
             duration: ANI_DURATION,
             easing: MORPH_EASING
         }, (finished) => {
-            // After expansion completes, wait briefly then go to Welcome
             if (finished) {
-                // Short delay for user to see the final "LEVEL" logo, then transition
-                curtainOpacity.value = withDelay(800, withTiming(0, { duration: 300 }, (f) => {
+                // Immediate transition - no extra delay
+                fadeOut.value = withTiming(0, { duration: 200 }, (f) => {
                     if (f) runOnJS(onFinish)();
-                }));
+                });
             }
         }));
     }, []);
 
-    // 1. Box Widen: 50px -> 140px (Approx to fit EVE)
+    // Box expands from 50px (just V) to ~110px (E V E with tight padding)
     const $boxStyle = useAnimatedStyle(() => ({
-        width: interpolate(progress.value, [0, 1], [50, 126]), // 44->116 in HTML + padding
-        // Border "Close" simulation: We can just keep border constant or animate color
+        width: interpolate(progress.value, [0, 1], [50, 110]),
         borderColor: colors.palette.neutral100,
     }));
 
-    // 2. E Slide Out: Translate X 10 -> 0, Opacity 0 -> 1
+    // E letters slide out from behind V
     const $eLeftStyle = useAnimatedStyle(() => ({
         opacity: interpolate(progress.value, [0, 0.3], [0, 1], Extrapolation.CLAMP),
         transform: [{
@@ -65,12 +64,12 @@ export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
     const $eRightStyle = useAnimatedStyle(() => ({
         opacity: interpolate(progress.value, [0, 0.3], [0, 1], Extrapolation.CLAMP),
         transform: [
-            { scaleX: -1 }, // Inverted L
+            { scaleX: -1 },
             { translateX: interpolate(progress.value, [0, 1], [15, 0], Extrapolation.CLAMP) }
         ],
     }));
 
-    // 3. L Slide In: Translate X 20 -> 0, Opacity 0 -> 1
+    // L letters slide in from outside
     const $lLeftStyle = useAnimatedStyle(() => ({
         opacity: interpolate(progress.value, [0, 1], [0, 1], Extrapolation.CLAMP),
         transform: [{
@@ -81,27 +80,23 @@ export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
     const $lRightStyle = useAnimatedStyle(() => ({
         opacity: interpolate(progress.value, [0, 1], [0, 1], Extrapolation.CLAMP),
         transform: [
-            { scaleX: -1 }, // Inverted L
+            { scaleX: -1 },
             { translateX: interpolate(progress.value, [0, 1], [20, 0], Extrapolation.CLAMP) }
         ],
     }));
 
-    // Tagline Fade In (Late)
+    // Tagline fades in after expansion
     const $taglineStyle = useAnimatedStyle(() => ({
-        opacity: interpolate(curtainOpacity.value, [1, 0], [0, 1]), // Inverse of curtain
+        opacity: interpolate(progress.value, [0.7, 1], [0, 1], Extrapolation.CLAMP),
+    }));
+
+    // Entire splash fades out at the end
+    const $containerStyle = useAnimatedStyle(() => ({
+        opacity: fadeOut.value,
     }));
 
     return (
-        <View style={$container}>
-            {/* White/Black Sequence Background is handled by Curtain Logic or just opacity */}
-
-            {/* Black Curtain (Fades out to reveal app behind? Or just stays black?) 
-                HTML has #black-curtain over #bg-image. 
-                In RN, we might just want to fade the whole splash View out or show content underneath.
-                The prompt implies: Splash -> Welcome.
-                So we probably keep black background until finish.
-            */}
-
+        <Animated.View style={[$container, $containerStyle]}>
             <View style={$contentContainer}>
                 <View style={$logoRow}>
                     {/* Left L */}
@@ -109,8 +104,6 @@ export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
 
                     {/* Box [ E V E ] */}
                     <Animated.View style={[$logoBox, $boxStyle]}>
-                        {/* Box Border Emulation (Optional complexity) - simple CSS border for now */}
-
                         <Animated.Text style={[$logoText, $eLeftStyle]}>E</Animated.Text>
                         <Text style={[$logoText, $greenLogoText]}>V</Text>
                         <Animated.Text style={[$logoText, $eRightStyle]}>E</Animated.Text>
@@ -122,20 +115,20 @@ export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
 
                 <Animated.Text style={[$tagline, $taglineStyle]}>ELEVATE YOUR FORM.</Animated.Text>
             </View>
-        </View>
+        </Animated.View>
     )
 }
 
 const $container: ViewStyle = {
-    flex: 1,
+    ...require('react-native').StyleSheet.absoluteFillObject,
     backgroundColor: "#000",
-    justifyContent: "center",
-    alignItems: "center",
+    zIndex: 100, // Ensure splash is on top
 }
 
 const $contentContainer: ViewStyle = {
+    flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center", // Vertically centered to match native splash
 }
 
 const $logoRow: ViewStyle = {
@@ -152,13 +145,13 @@ const $logoBox: ViewStyle = {
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "center",
-    overflow: "hidden", // Clip content as it expands
+    overflow: "hidden",
 }
 
 const $logoText: TextStyle = {
-    fontFamily: "SpaceGrotesk-Bold", // Ensure font matches
+    fontFamily: "SpaceGrotesk_700Bold",
     fontSize: 48,
-    lineHeight: 52, // Match HTML approx
+    lineHeight: 52,
     fontWeight: "900",
     color: colors.palette.neutral100,
     includeFontPadding: false,
@@ -183,4 +176,5 @@ const $tagline: TextStyle = {
     marginTop: 24,
     textShadowColor: "rgba(204, 255, 0, 0.5)",
     textShadowRadius: 10,
+    fontFamily: "SpaceGrotesk_700Bold",
 }

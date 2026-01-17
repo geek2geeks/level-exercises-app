@@ -16,7 +16,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 // Assets
 const welcomeBg = require('@assets/images/welcome-bg-dynamic.jpg');
 
-const { width, height } = Dimensions.get('window');
+const { width, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
 export const WelcomeScreen = () => {
     const router = useRouter();
@@ -51,7 +51,6 @@ export const WelcomeScreen = () => {
     const handleAppleSignIn = async () => {
         setLoadingProvider('apple');
         // TODO: Implement Apple Sign-In
-        // For now, navigate to signup as placeholder
         setTimeout(() => {
             setLoadingProvider(null);
             router.push('/(auth)/signup');
@@ -61,7 +60,6 @@ export const WelcomeScreen = () => {
     const handleGoogleSignIn = async () => {
         setLoadingProvider('google');
         // TODO: Implement Google Sign-In
-        // For now, navigate to signup as placeholder
         setTimeout(() => {
             setLoadingProvider(null);
             router.push('/(auth)/signup');
@@ -76,90 +74,82 @@ export const WelcomeScreen = () => {
         <View style={styles.container}>
             <StatusBar style="light" />
 
-            {/* Animated Background */}
-            <View style={styles.imageContainer}>
+            {/* Animated Background - fades in after splash */}
+            <Animated.View
+                style={styles.imageContainer}
+                entering={FadeIn.duration(600)}
+            >
                 <Animated.Image
                     source={welcomeBg}
                     style={[styles.backgroundImage, animatedImageStyle]}
                     resizeMode="cover"
                 />
                 <View style={styles.overlay} />
-            </View>
+            </Animated.View>
 
-            <View style={[styles.contentContainer, { paddingTop: insets.top + 60, paddingBottom: insets.bottom + 40 }]}>
-
-                {/* Brand / Hero */}
-                <Animated.View
-                    style={styles.topSection}
-                    entering={FadeIn.duration(800)}
-                >
-                    <View style={styles.logoRowOuter}>
-                        <Text style={styles.logoText}>L</Text>
-                        <View style={styles.logoBox}>
-                            <Text style={styles.logoText}>E</Text>
-                            <Text style={[styles.logoText, styles.greenLogoText]}>V</Text>
-                            <Text style={[styles.logoText, styles.invertedL]}>E</Text>
-                        </View>
-                        <Text style={[styles.logoText, styles.invertedL]}>L</Text>
+            {/* Logo Section - CENTERED to match SplashScreen */}
+            <View style={styles.logoSection}>
+                <View style={styles.logoRowOuter}>
+                    <Text style={styles.logoText}>L</Text>
+                    <View style={styles.logoBox}>
+                        <Text style={styles.logoText}>E</Text>
+                        <Text style={[styles.logoText, styles.greenLogoText]}>V</Text>
+                        <Text style={[styles.logoText, styles.invertedL]}>E</Text>
                     </View>
-                    <Animated.Text
-                        entering={FadeIn.delay(400).duration(800)}
-                        style={styles.tagline}
-                    >
-                        ELEVATE YOUR FORM.
-                    </Animated.Text>
-                </Animated.View>
-
-                {/* Auth Buttons */}
-                <Animated.View
-                    style={styles.bottomSection}
-                    entering={FadeIn.delay(600).duration(800)}
-                >
-                    {/* Apple Sign-In (Primary) */}
-                    <TouchableOpacity
-                        style={styles.appleButton}
-                        onPress={handleAppleSignIn}
-                        activeOpacity={0.9}
-                        disabled={loadingProvider !== null}
-                    >
-                        {loadingProvider === 'apple' ? (
-                            <ActivityIndicator color="#000" />
-                        ) : (
-                            <>
-                                <Text style={styles.appleIcon}></Text>
-                                <Text style={styles.appleButtonText}>Continue with Apple</Text>
-                            </>
-                        )}
-                    </TouchableOpacity>
-
-                    {/* Google Sign-In */}
-                    <TouchableOpacity
-                        style={styles.googleButton}
-                        onPress={handleGoogleSignIn}
-                        activeOpacity={0.9}
-                        disabled={loadingProvider !== null}
-                    >
-                        {loadingProvider === 'google' ? (
-                            <ActivityIndicator color="#FFF" />
-                        ) : (
-                            <>
-                                <Text style={styles.googleIcon}>G</Text>
-                                <Text style={styles.googleButtonText}>Continue with Google</Text>
-                            </>
-                        )}
-                    </TouchableOpacity>
-
-                    {/* Email Sign-In Link */}
-                    <TouchableOpacity
-                        style={styles.emailLink}
-                        onPress={handleEmailSignIn}
-                    >
-                        <Text style={styles.emailLinkText}>Sign in with Email</Text>
-                    </TouchableOpacity>
-
-                    <Text style={styles.version}>v1.1.0 (Reborn)</Text>
-                </Animated.View>
+                    <Text style={[styles.logoText, styles.invertedL]}>L</Text>
+                </View>
+                <Text style={styles.tagline}>ELEVATE YOUR FORM.</Text>
             </View>
+
+            {/* Auth Buttons - fade in at bottom */}
+            <Animated.View
+                style={[styles.bottomSection, { paddingBottom: insets.bottom + 40 }]}
+                entering={FadeIn.delay(200).duration(800)}
+            >
+                {/* Apple Sign-In (Primary) */}
+                <TouchableOpacity
+                    style={styles.appleButton}
+                    onPress={handleAppleSignIn}
+                    activeOpacity={0.9}
+                    disabled={loadingProvider !== null}
+                >
+                    {loadingProvider === 'apple' ? (
+                        <ActivityIndicator color="#000" />
+                    ) : (
+                        <>
+                            <Text style={styles.appleIcon}></Text>
+                            <Text style={styles.appleButtonText}>Continue with Apple</Text>
+                        </>
+                    )}
+                </TouchableOpacity>
+
+                {/* Google Sign-In */}
+                <TouchableOpacity
+                    style={styles.googleButton}
+                    onPress={handleGoogleSignIn}
+                    activeOpacity={0.9}
+                    disabled={loadingProvider !== null}
+                >
+                    {loadingProvider === 'google' ? (
+                        <ActivityIndicator color="#FFF" />
+                    ) : (
+                        <>
+                            <Text style={styles.googleIcon}>G</Text>
+                            <Text style={styles.googleButtonText}>Continue with Google</Text>
+                        </>
+                    )}
+                </TouchableOpacity>
+
+                {/* Email Sign-In Link */}
+                <TouchableOpacity
+                    style={styles.emailLink}
+                    onPress={handleEmailSignIn}
+                >
+                    <Text style={styles.emailLinkText}>Sign in with Email</Text>
+                </TouchableOpacity>
+
+                <Text style={styles.version}>v1.1.0 (Reborn)</Text>
+            </Animated.View>
         </View>
     );
 };
@@ -175,37 +165,32 @@ const styles = StyleSheet.create({
     },
     backgroundImage: {
         width: width,
-        height: height,
+        height: SCREEN_HEIGHT,
         position: 'absolute',
     },
     overlay: {
         ...StyleSheet.absoluteFillObject,
         backgroundColor: 'rgba(5, 5, 5, 0.55)',
     },
-    contentContainer: {
-        flex: 1,
-        justifyContent: 'space-between',
-        paddingHorizontal: 24,
-    },
-    topSection: {
+    // Logo section - vertically centered to match splash
+    logoSection: {
+        ...StyleSheet.absoluteFillObject,
         alignItems: 'center',
-        marginTop: 60,
+        justifyContent: 'center',
     },
     logoRowOuter: {
-        marginBottom: 16,
         flexDirection: 'row',
         alignItems: 'center',
         gap: 4,
     },
     logoBox: {
+        height: 64,
+        paddingHorizontal: 6, // Tight fit around EVE
         borderWidth: 4,
         borderColor: '#FFFFFF',
-        paddingHorizontal: 8,
-        paddingVertical: 4,
         flexDirection: 'row',
         alignItems: 'center',
-        marginHorizontal: 4,
-        gap: 4,
+        justifyContent: 'center',
     },
     logoText: {
         fontFamily: 'SpaceGrotesk_700Bold',
@@ -213,6 +198,8 @@ const styles = StyleSheet.create({
         lineHeight: 52,
         fontWeight: '900',
         color: '#FFFFFF',
+        includeFontPadding: false,
+        textAlignVertical: 'center',
     },
     invertedL: {
         transform: [{ scaleX: -1 }],
@@ -226,13 +213,19 @@ const styles = StyleSheet.create({
         letterSpacing: 4,
         fontWeight: 'bold',
         textAlign: 'center',
+        marginTop: 24,
         textShadowColor: 'rgba(204, 255, 0, 0.5)',
         textShadowRadius: 10,
         fontFamily: 'SpaceGrotesk_700Bold',
     },
+    // Bottom auth section
     bottomSection: {
-        gap: 16,
-        width: '100%',
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        paddingHorizontal: 24,
+        gap: 14,
         alignItems: 'center',
     },
     // Apple Button - White background (primary)
@@ -282,7 +275,7 @@ const styles = StyleSheet.create({
     },
     // Email link
     emailLink: {
-        marginTop: 8,
+        marginTop: 4,
         paddingVertical: 12,
     },
     emailLinkText: {
@@ -296,6 +289,6 @@ const styles = StyleSheet.create({
         color: '#525252',
         opacity: 0.5,
         fontSize: 12,
-        marginTop: 8,
+        marginTop: 4,
     },
 });
