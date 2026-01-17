@@ -117,7 +117,7 @@ export const WelcomeScreen = () => {
                         <ActivityIndicator color="#000" />
                     ) : (
                         <>
-                            <Text style={styles.appleIcon}></Text>
+                            <Text style={styles.appleIcon}></Text>
                             <Text style={styles.appleButtonText}>Continue with Apple</Text>
                         </>
                     )}
@@ -224,71 +224,80 @@ const styles = StyleSheet.create({
         bottom: 0,
         left: 0,
         right: 0,
-        paddingHorizontal: 24,
-        gap: 14,
+        paddingHorizontal: 28,
+        gap: 12,
         alignItems: 'center',
     },
-    // Apple Button - White background (primary)
+    // Apple Button - Premium white with shadow
     appleButton: {
         backgroundColor: '#FFFFFF',
-        height: 56,
-        borderRadius: 28,
+        height: 54,
+        borderRadius: 27,
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: 12,
+        gap: 10,
+        // Shadow for premium feel
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 4 },
+        shadowOpacity: 0.3,
+        shadowRadius: 8,
+        elevation: 8,
     },
     appleIcon: {
-        fontSize: 20,
+        fontSize: 18,
         color: '#000000',
+        marginTop: -2, // Optical alignment
     },
     appleButtonText: {
         color: '#000000',
-        fontSize: 16,
+        fontSize: 15,
         fontFamily: 'SpaceGrotesk_700Bold',
         fontWeight: 'bold',
+        letterSpacing: 0.3,
     },
-    // Google Button - Dark with border
+    // Google Button - Glassmorphism effect
     googleButton: {
-        backgroundColor: 'rgba(255, 255, 255, 0.1)',
+        backgroundColor: 'rgba(255, 255, 255, 0.08)',
         borderWidth: 1,
-        borderColor: 'rgba(255, 255, 255, 0.3)',
-        height: 56,
-        borderRadius: 28,
+        borderColor: 'rgba(255, 255, 255, 0.2)',
+        height: 54,
+        borderRadius: 27,
         width: '100%',
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: 12,
+        gap: 10,
     },
     googleIcon: {
-        fontSize: 18,
+        fontSize: 16,
         fontWeight: 'bold',
-        color: '#FFFFFF',
+        color: '#EA4335', // Google Red
     },
     googleButtonText: {
-        color: '#FFFFFF',
-        fontSize: 16,
-        fontFamily: 'SpaceGrotesk_700Bold',
-        fontWeight: 'bold',
+        color: 'rgba(255, 255, 255, 0.9)',
+        fontSize: 15,
+        fontFamily: 'SpaceGrotesk_600SemiBold',
+        letterSpacing: 0.3,
     },
-    // Email link
+    // Email link - More visible
     emailLink: {
-        marginTop: 4,
-        paddingVertical: 12,
+        marginTop: 8,
+        paddingVertical: 14,
+        paddingHorizontal: 20,
     },
     emailLinkText: {
-        color: '#A0A0A0',
+        color: 'rgba(255, 255, 255, 0.7)',
         fontSize: 14,
         fontFamily: 'SpaceGrotesk_500Medium',
-        textDecorationLine: 'underline',
+        letterSpacing: 0.5,
     },
     version: {
         textAlign: 'center',
-        color: '#525252',
-        opacity: 0.5,
-        fontSize: 12,
-        marginTop: 4,
+        color: 'rgba(255, 255, 255, 0.25)',
+        fontSize: 11,
+        marginTop: 8,
+        letterSpacing: 0.5,
     },
 });
