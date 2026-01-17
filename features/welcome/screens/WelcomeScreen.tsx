@@ -4,11 +4,12 @@ import React, { useEffect } from 'react';
 import { Dimensions, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Animated, {
     Easing,
+    FadeIn,
     useAnimatedStyle,
     useSharedValue,
     withRepeat,
     withSequence,
-    withTiming,
+    withTiming
 } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -21,16 +22,16 @@ export const WelcomeScreen = () => {
     const router = useRouter();
     const insets = useSafeAreaInsets();
 
-    // Animation values for Ken Burns effect
+    // Animation values for Ken Burns background effect
     const scale = useSharedValue(1);
     const translateY = useSharedValue(0);
 
     useEffect(() => {
-        // Ken Burns effect: Slow zoom in and slight vertical pan
+        // Ken Burns effect on background
         scale.value = withRepeat(
             withTiming(1.15, { duration: 15000, easing: Easing.inOut(Easing.ease) }),
             -1,
-            true, // reverse
+            true,
         );
         translateY.value = withRepeat(
             withSequence(
@@ -38,7 +39,7 @@ export const WelcomeScreen = () => {
                 withTiming(0, { duration: 15000, easing: Easing.inOut(Easing.ease) }),
             ),
             -1,
-            true, // reverse
+            true,
         );
     }, []);
 
@@ -67,7 +68,10 @@ export const WelcomeScreen = () => {
             <View style={[styles.contentContainer, { paddingTop: insets.top + 60, paddingBottom: insets.bottom + 40 }]}>
 
                 {/* Brand / Hero */}
-                <View style={styles.topSection}>
+                <Animated.View
+                    style={styles.topSection}
+                    entering={FadeIn.duration(800)}
+                >
                     <View style={styles.logoRowOuter}>
                         <Text style={styles.logoText}>L</Text>
                         <View style={styles.logoBox}>
@@ -77,11 +81,19 @@ export const WelcomeScreen = () => {
                         </View>
                         <Text style={[styles.logoText, styles.invertedL]}>L</Text>
                     </View>
-                    <Text style={styles.tagline}>ELEVATE YOUR FORM.</Text>
-                </View>
+                    <Animated.Text
+                        entering={FadeIn.delay(400).duration(800)}
+                        style={styles.tagline}
+                    >
+                        ELEVATE YOUR FORM.
+                    </Animated.Text>
+                </Animated.View>
 
                 {/* Action Area */}
-                <View style={styles.bottomSection}>
+                <Animated.View
+                    style={styles.bottomSection}
+                    entering={FadeIn.delay(600).duration(800)}
+                >
                     <TouchableOpacity
                         style={styles.button}
                         onPress={handleGetStarted}
@@ -97,6 +109,13 @@ export const WelcomeScreen = () => {
                         <Text style={styles.buttonText}>TEST VISION ENGINE</Text>
                     </TouchableOpacity>
 
+                    <TouchableOpacity
+                        style={[styles.button, { marginTop: 10, backgroundColor: '#444' }]}
+                        onPress={() => router.push('/benchmark')}
+                    >
+                        <Text style={styles.buttonText}>BENCHMARK ENGINE</Text>
+                    </TouchableOpacity>
+
                     <View style={styles.loginRow}>
                         <Text style={styles.loginText}>Already have an account? </Text>
                         <TouchableOpacity onPress={() => router.push('/(auth)/login')}>
@@ -105,7 +124,7 @@ export const WelcomeScreen = () => {
                     </View>
 
                     <Text style={styles.version}>v1.1.0 (Reborn)</Text>
-                </View>
+                </Animated.View>
             </View>
         </View>
     );
