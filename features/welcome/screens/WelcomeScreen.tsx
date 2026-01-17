@@ -123,7 +123,7 @@ export const WelcomeScreen = () => {
                     )}
                 </TouchableOpacity>
 
-                {/* Google Sign-In */}
+                {/* Google Sign-In - Must have white bg per Google guidelines */}
                 <TouchableOpacity
                     style={styles.googleButton}
                     onPress={handleGoogleSignIn}
@@ -131,10 +131,12 @@ export const WelcomeScreen = () => {
                     disabled={loadingProvider !== null}
                 >
                     {loadingProvider === 'google' ? (
-                        <ActivityIndicator color="#FFF" />
+                        <ActivityIndicator color="#4285F4" />
                     ) : (
                         <>
-                            <Text style={styles.googleIcon}>G</Text>
+                            <View style={styles.googleLogoContainer}>
+                                <Text style={styles.googleG}>G</Text>
+                            </View>
                             <Text style={styles.googleButtonText}>Continue with Google</Text>
                         </>
                     )}
@@ -257,11 +259,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         letterSpacing: 0.3,
     },
-    // Google Button - Glassmorphism effect
+    // Google Button - White background per Google branding guidelines
     googleButton: {
-        backgroundColor: 'rgba(255, 255, 255, 0.08)',
-        borderWidth: 1,
-        borderColor: 'rgba(255, 255, 255, 0.2)',
+        backgroundColor: '#FFFFFF',
         height: 54,
         borderRadius: 27,
         width: '100%',
@@ -269,14 +269,26 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         gap: 10,
+        // Subtle shadow
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.15,
+        shadowRadius: 4,
+        elevation: 4,
     },
-    googleIcon: {
-        fontSize: 16,
+    googleLogoContainer: {
+        width: 20,
+        height: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    googleG: {
+        fontSize: 18,
         fontWeight: 'bold',
-        color: '#EA4335', // Google Red
+        color: '#4285F4', // Google Blue (primary brand color)
     },
     googleButtonText: {
-        color: 'rgba(255, 255, 255, 0.9)',
+        color: '#3C4043', // Google's text gray
         fontSize: 15,
         fontFamily: 'SpaceGrotesk_600SemiBold',
         letterSpacing: 0.3,
