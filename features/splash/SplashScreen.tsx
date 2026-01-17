@@ -28,19 +28,19 @@ export const SplashScreen = ({ onFinish }: { onFinish: () => void }) => {
     const curtainOpacity = useSharedValue(1);
 
     useEffect(() => {
-        // Sequence matching HTML:
-        // 1. Wait DELAY (500ms)
-        // 2. Animate Progress 0 -> 1 (1.6s)
-        //    This drives: Box Widen, E Reveal, L Slide In
-        // 3. Reveal BG (Curtain Fade) and Tagline
+        // Sequence:
+        // 1. Wait DELAY (500ms) to match native splash
+        // 2. Animate Progress 0 -> 1 (1.6s) - Box Widen, E Reveal, L Slide In
+        // 3. Brief hold, then immediately transition to Welcome (no fade)
 
         progress.value = withDelay(INITIAL_DELAY, withTiming(1, {
             duration: ANI_DURATION,
             easing: MORPH_EASING
         }, (finished) => {
-            // After expansion, fade out black curtain
+            // After expansion completes, wait briefly then go to Welcome
             if (finished) {
-                curtainOpacity.value = withDelay(1000, withTiming(0, { duration: 1500 }, (f) => {
+                // Short delay for user to see the final "LEVEL" logo, then transition
+                curtainOpacity.value = withDelay(800, withTiming(0, { duration: 300 }, (f) => {
                     if (f) runOnJS(onFinish)();
                 }));
             }
